@@ -52,10 +52,12 @@ class TestFullWorkflow:
         export_service = services["export_service"]
         mock_tmdb_client = services["tmdb_client"]
 
-        # Mock API responses
+        # Mock API responses - use side_effect to return different data based on movie ID
+        from tests.conftest import _get_movie_details_by_id, _get_keywords_by_id
+        
         mock_tmdb_client.get_movies_by_year.return_value = mock_tmdb_api_response
-        mock_tmdb_client.get_movie_details.return_value = mock_movie_details_response
-        mock_tmdb_client.get_movie_keywords.return_value = mock_keywords_response
+        mock_tmdb_client.get_movie_details.side_effect = lambda movie_id: _get_movie_details_by_id(movie_id)
+        mock_tmdb_client.get_movie_keywords.side_effect = lambda movie_id: _get_keywords_by_id(movie_id)
 
         # Step 1: Get top movies
         movies, csv_path = movie_service.get_and_export_top_movies(
@@ -102,10 +104,12 @@ class TestFullWorkflow:
         export_service = services["export_service"]
         mock_tmdb_client = services["tmdb_client"]
 
-        # Mock API responses for movie retrieval
+        # Mock API responses for movie retrieval - use side_effect to return different data based on movie ID
+        from tests.conftest import _get_movie_details_by_id, _get_keywords_by_id
+        
         mock_tmdb_client.get_movies_by_year.return_value = mock_tmdb_api_response
-        mock_tmdb_client.get_movie_details.return_value = mock_movie_details_response
-        mock_tmdb_client.get_movie_keywords.return_value = mock_keywords_response
+        mock_tmdb_client.get_movie_details.side_effect = lambda movie_id: _get_movie_details_by_id(movie_id)
+        mock_tmdb_client.get_movie_keywords.side_effect = lambda movie_id: _get_keywords_by_id(movie_id)
 
         # Step 1: Get top movies
         movies, movies_csv_path = movie_service.get_and_export_top_movies(
@@ -117,8 +121,9 @@ class TestFullWorkflow:
         assert len(movies) == 2
         assert Path(movies_csv_path).exists()
 
-        # Mock API responses for similar movies
+        # Mock API responses for similar movies - also need to mock details for similar movies
         mock_tmdb_client.get_similar_movies.return_value = mock_similar_movies_response
+        # Ensure get_movie_details and get_movie_keywords still work for similar movies (IDs 4, 5)
 
         # Step 2: Find similar movies
         similar_movies_data = recommendation_service.get_similar_movies_for_multiple(
@@ -165,10 +170,12 @@ class TestFullWorkflow:
         movie_service = services["movie_service"]
         mock_tmdb_client = services["tmdb_client"]
 
-        # Mock API responses
+        # Mock API responses - use side_effect to return different data based on movie ID
+        from tests.conftest import _get_movie_details_by_id, _get_keywords_by_id
+        
         mock_tmdb_client.get_movies_by_year.return_value = mock_tmdb_api_response
-        mock_tmdb_client.get_movie_details.return_value = mock_movie_details_response
-        mock_tmdb_client.get_movie_keywords.return_value = mock_keywords_response
+        mock_tmdb_client.get_movie_details.side_effect = lambda movie_id: _get_movie_details_by_id(movie_id)
+        mock_tmdb_client.get_movie_keywords.side_effect = lambda movie_id: _get_keywords_by_id(movie_id)
 
         # Get and export movies
         movies, csv_path = movie_service.get_and_export_top_movies(

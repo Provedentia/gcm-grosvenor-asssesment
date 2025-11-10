@@ -46,7 +46,7 @@ class TestEndToEnd:
                 {
                     "id": 2,
                     "title": "Inception",
-                    "release_date": "2010-07-16",
+                    "release_date": "1999-07-16",  # Changed to 1999 for testing
                     "vote_count": 30000,
                     "vote_average": 8.8,
                     "popularity": 90.2,
@@ -143,11 +143,15 @@ class TestEndToEnd:
             "total_results": 2,
         }
 
-        # Configure mock responses
+        # Configure mock responses - use side_effect to return different data based on movie ID
+        from tests.conftest import _get_movie_details_by_id, _get_keywords_by_id
+        
         mock_tmdb_client.get_movies_by_year.return_value = discover_response
-        mock_tmdb_client.get_movie_details.return_value = movie_details_response
-        mock_tmdb_client.get_movie_keywords.return_value = keywords_response
+        mock_tmdb_client.get_movie_details.side_effect = lambda movie_id: _get_movie_details_by_id(movie_id)
+        mock_tmdb_client.get_movie_keywords.side_effect = lambda movie_id: _get_keywords_by_id(movie_id)
         mock_tmdb_client.get_similar_movies.return_value = similar_movies_response
+        # Also need to mock get_movie_recommendations for the recommendation service
+        mock_tmdb_client.get_movie_recommendations.return_value = similar_movies_response
 
         with patch("src.services.movie_service.TMDBClient", return_value=mock_tmdb_client), \
              patch("src.services.recommendation_service.TMDBClient", return_value=mock_tmdb_client):

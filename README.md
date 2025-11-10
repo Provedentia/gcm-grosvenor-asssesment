@@ -174,58 +174,117 @@ Logs are written to:
 
 ## Testing
 
+### Test Organization
+
+Tests are organized into two categories:
+
+1. **Mocked Tests** (default): Use mock data, no API key required
+   - `tests/unit/`: Unit tests for individual components
+   - `tests/integration/`: Integration tests for complete workflows
+
+2. **Real API Tests**: Use actual TMDB API, require API key
+   - `tests/api/`: Tests that make real API calls
+
+**By default, only mocked tests run.** Real API tests are excluded unless explicitly requested.
+
 ### Running Tests
 
-The project includes comprehensive tests for the complete workflow:
+#### Mocked Tests (Default)
 
 ```bash
-# Install test dependencies
-pip install pytest pytest-mock pytest-cov requests-mock
-
-# Run all tests
+# Run all mocked tests (default)
 pytest
+# or
+./run_tests.sh all
 
 # Run unit tests only
 pytest tests/unit/ -m unit
+# or
+./run_tests.sh unit
 
 # Run integration tests only
 pytest tests/integration/ -m integration
+# or
+./run_tests.sh integration
 
 # Run end-to-end tests
 pytest tests/integration/ -m e2e
+# or
+./run_tests.sh e2e
 
 # Run complete timeline test
 pytest tests/integration/test_complete_timeline.py -v
+# or
+./run_tests.sh timeline
 
 # Run with coverage
-pytest --cov=src --cov-report=html --cov-report=term-missing
+pytest --cov=src --cov-report=html --cov-report=term-missing -m "not api"
+# or
+./run_tests.sh coverage
 ```
+
+#### Real API Tests
+
+**Requires TMDB_API_KEY environment variable:**
+
+```bash
+# Set API key
+export TMDB_API_KEY=your_api_key_here
+
+# Run real API tests
+pytest tests/api/ -v -m api
+# or
+./run_tests.sh api
+```
+
+**Note:** Real API tests are excluded by default. They require:
+- Valid TMDB API key
+- Internet connection
+- May be subject to API rate limits
 
 ### Using the Test Runner Script
 
 ```bash
-# Run all tests
-./run_tests.sh
+# Run all mocked tests (default)
+./run_tests.sh all
 
-# Run specific test suite
+# Run specific test suite (mocked)
 ./run_tests.sh unit
 ./run_tests.sh integration
 ./run_tests.sh e2e
 ./run_tests.sh timeline
+./run_tests.sh mocked  # All mocked tests
+
+# Run real API tests (requires API key)
+./run_tests.sh api
+
+# Run with coverage (mocked only)
 ./run_tests.sh coverage
 ```
 
 ### Test Structure
 
-- **Unit Tests** (`tests/unit/`): Test individual components
+#### Mocked Tests (No API Key Required)
+
+- **Unit Tests** (`tests/unit/`): Test individual components with mocks
   - `test_movie_service.py`: Movie service tests
   - `test_recommendation_service.py`: Recommendation service tests
   - `test_export_service.py`: Export service tests
 
-- **Integration Tests** (`tests/integration/`): Test complete workflows
+- **Integration Tests** (`tests/integration/`): Test complete workflows with mocks
   - `test_full_workflow.py`: Full workflow tests
   - `test_end_to_end.py`: End-to-end tests
   - `test_complete_timeline.py`: Complete timeline test (assignment requirements)
+
+#### Real API Tests (Requires API Key)
+
+- **API Tests** (`tests/api/`): Tests that use the actual TMDB API
+  - `test_real_tmdb_api.py`: Real API client tests
+  - Tests for MovieService with real API
+  - Tests for RecommendationService with real API
+  - End-to-end tests with real API
+
+See `tests/api/README.md` for more details on real API tests.
 
 ### Test Coverage
 

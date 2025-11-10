@@ -4,7 +4,7 @@ This module only handles API communication and data retrieval.
 """
 
 import time
-from typing import Any, Dict, Optional
+from typing import Any, Dict, List, Optional, Union
 
 import requests
 
@@ -106,7 +106,8 @@ class TMDBClient:
         min_vote_count: Optional[int] = None,
         min_vote_average: Optional[float] = None,
         sort_by: str = "vote_count.desc",
-        page: int = 1
+        page: int = 1,
+        with_genres: Optional[Union[int, List[int], str]] = None
     ) -> Optional[Dict[str, Any]]:
         """
         Retrieve movies from a specific year using TMDB discover endpoint.
@@ -117,6 +118,10 @@ class TMDBClient:
             min_vote_average: Minimum vote average (from config if not provided)
             sort_by: Sort order (default: vote_count.desc)
             page: Page number to retrieve
+            with_genres: Optional genre filter. Can be:
+                - int: Single genre ID
+                - List[int]: List of genre IDs (will be comma-separated)
+                - str: Comma-separated genre IDs (e.g., "28,12")
 
         Returns:
             API response dictionary with results and pagination info, or None if failed
@@ -126,10 +131,11 @@ class TMDBClient:
         if min_vote_average is None:
             min_vote_average = self.config.get("recommendation.min_vote_average", 6.0)
         
-        self.logger.info(
-            f"Retrieving movies from year {year} "
-            f"(min_votes: {min_vote_count}, min_rating: {min_vote_average}, page: {page})"
-        )
+        log_msg = f"Retrieving movies from year {year} "
+        log_msg += f"(min_votes: {min_vote_count}, min_rating: {min_vote_average}, page: {page})"
+        if with_genres:
+            log_msg += f", genres: {with_genres}"
+        self.logger.info(log_msg)
         
         params = {
             "primary_release_year": year,
@@ -140,6 +146,72 @@ class TMDBClient:
             "include_adult": False
         }
         
+        # Add genre filter if provided
+        if with_genres is not None:
+            # TMDB API accepts comma-separated genre IDs as string
+            if isinstance(with_genres, int):
+                params["with_genres"] = str(with_genres)
+            elif isinstance(with_genres, list):
+                params["with_genres"] = ",".join(str(g) for g in with_genres)
+            else:
+                params["with_genres"] = str(with_genres)
+        
+        data = self._make_request("discover/movie", params)
+        return data
+
+    def discover_movies(
+        self,
+        year: Optional[int] = None,
+        min_vote_count: Optional[int] = None,
+        min_vote_average: Optional[float] = None,
+        sort_by: str = "popularity.desc",
+        page: int = 1,
+        with_genres: Optional[Union[int, List[int], str]] = None,
+    ) -> Optional[Dict[str, Any]]:
+        """
+        Discover movies using TMDB discover endpoint with flexible filtering.
+
+        Args:
+            year: Optional release year filter
+            min_vote_count: Minimum number of votes
+            min_vote_average: Minimum vote average
+            sort_by: Sort order (default: popularity.desc)
+            page: Page number to retrieve
+            with_genres: Optional genre filter. Can be:
+                - int: Single genre ID
+                - List[int]: List of genre IDs (will be comma-separated)
+                - str: Comma-separated genre IDs (e.g., "28,12")
+
+        Returns:
+            API response dictionary with results and pagination info, or None if failed
+        """
+        if min_vote_count is None:
+            min_vote_count = self.config.get("recommendation.min_vote_count", 100)
+        if min_vote_average is None:
+            min_vote_average = self.config.get("recommendation.min_vote_average", 6.0)
+        
+        params = {
+            "vote_count.gte": min_vote_count,
+            "vote_average.gte": min_vote_average,
+            "sort_by": sort_by,
+            "page": page,
+            "include_adult": False
+        }
+        
+        # Add year filter if provided
+        if year is not None:
+            params["primary_release_year"] = year
+        
+        # Add genre filter if provided
+        if with_genres is not None:
+            if isinstance(with_genres, int):
+                params["with_genres"] = str(with_genres)
+            elif isinstance(with_genres, list):
+                params["with_genres"] = ",".join(str(g) for g in with_genres)
+            else:
+                params["with_genres"] = str(with_genres)
+        
+        self.logger.debug(f"Discovering movies with params: {params}")
         data = self._make_request("discover/movie", params)
         return data
 
@@ -189,6 +261,25 @@ class TMDBClient:
         """
         self.logger.debug(f"Getting similar movies for movie ID {movie_id}, page {page}")
         data = self._make_request(f"movie/{movie_id}/similar", params={"page": page})
+        return data
+
+    def get_movie_recommendations(
+        self,
+        movie_id: int,
+        page: int = 1
+    ) -> Optional[Dict[str, Any]]:
+        """
+        Get movie recommendations based on TMDB's recommendation algorithm.
+
+        Args:
+            movie_id: TMDB movie ID
+            page: Page number to retrieve
+
+        Returns:
+            API response dictionary with recommended movies, or None if failed
+        """
+        self.logger.debug(f"Getting recommendations for movie ID {movie_id}, page {page}")
+        data = self._make_request(f"movie/{movie_id}/recommendations", params={"page": page})
         return data
 
     def get_movie_credits(self, movie_id: int) -> Optional[Dict[str, Any]]:

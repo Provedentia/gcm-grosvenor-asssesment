@@ -166,7 +166,8 @@ class MovieService:
 
         Args:
             movies: List of Movie models
-            ignore_articles: If True, ignore articles (A, An, The) when sorting
+            ignore_articles: If True, ignore articles and common words when sorting.
+                Removes: the, a, an, in, on, at, for, with, by, from, to, of, and, or, but
 
         Returns:
             Sorted list of Movie models

@@ -7,7 +7,7 @@ from __future__ import annotations
 
 import re
 from datetime import datetime
-from typing import Any, Dict, List, Mapping, Optional, TypedDict, Union
+from typing import Any, Dict, List, Mapping, Optional, Set, TypedDict, Union
 
 from pydantic import BaseModel, Field, field_validator
 
@@ -267,17 +267,36 @@ class Movie(BaseModel):
         Normalize title for sorting purposes.
 
         Args:
-            ignore_articles: If True, ignore articles (A, An, The) at the beginning
+            ignore_articles: If True, ignore articles and common words at the beginning.
+                Removes: the, a, an, in, on, at, for, with, by, from, to, of, and, or, but
 
         Returns:
-            Normalized title
+            Normalized title with articles removed (if ignore_articles=True)
         """
         title = self.title.strip()
         if ignore_articles:
-            pattern = r"^(The|A|An)\s+(.+)$"
-            match = re.match(pattern, title, re.IGNORECASE)
-            if match:
-                return match.group(2).strip()
+            # Comprehensive list of articles, prepositions, and conjunctions to ignore
+            # Common English articles: a, an, the
+            # Common prepositions: in, on, at, for, with, by, from, to, of
+            # Common conjunctions: and, or, but
+            # Pattern matches these words at the start of the title (case-insensitive)
+            # followed by whitespace and the rest of the title
+            articles_pattern = r"^(the|a|an|in|on|at|for|with|by|from|to|of|and|or|but)\s+(.+)$"
+            
+            # Remove articles iteratively until no more articles are found at the start
+            # This handles cases like "The A-Team" or "A The Movie"
+            # Limit to 5 iterations to avoid infinite loops with edge cases
+            max_iterations = 5
+            iteration = 0
+            while iteration < max_iterations:
+                match = re.match(articles_pattern, title, re.IGNORECASE)
+                if match:
+                    title = match.group(2).strip()
+                    iteration += 1
+                else:
+                    break
+            
+            return title
         return title
 
     class Config:
@@ -437,4 +456,25 @@ def validate_movie_list(movies: List[Mapping[str, Any]]) -> List[Movie]:
             continue
 
     return validated_movies
+
+
+def remove_duplicate_movies(movies: List[Movie]) -> List[Movie]:
+    """
+    Remove duplicate movies from a list based on movie ID while preserving order.
+
+    Args:
+        movies: List of Movie models (may contain duplicates)
+
+    Returns:
+        List of unique Movie models in original order (first occurrence preserved)
+    """
+    seen_ids: Set[int] = set()
+    unique_movies: List[Movie] = []
+
+    for movie in movies:
+        if movie.id not in seen_ids:
+            seen_ids.add(movie.id)
+            unique_movies.append(movie)
+
+    return unique_movies
 
