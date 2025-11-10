@@ -1,35 +1,21 @@
-# Core Dependencies
+# Core Runtime Dependencies
 requests>=2.31.0
 python-dotenv>=1.0.0
 pyyaml>=6.0.1
-
-# Data Processing
-pandas>=2.1.0
-numpy>=1.24.0
-
-# API Framework (optional, for building REST API)
-fastapi>=0.104.0
-uvicorn>=0.24.0
 pydantic>=2.4.0
-
-# Caching
-redis>=5.0.0
-cachetools>=5.3.0
-
-# Logging
 colorlog>=6.7.0
 
-# Testing
+# Testing Dependencies
 pytest>=7.4.0
 pytest-cov>=4.1.0
 pytest-mock>=3.11.1
 requests-mock>=1.11.0
 
-# Code Quality
+# Code Quality Tools
 black>=23.9.0
 flake8>=6.1.0
 mypy>=1.5.0
 isort>=5.12.0
 
-# Development
+# Development Tools
 ipython>=8.15.0

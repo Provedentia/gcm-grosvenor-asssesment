@@ -1,0 +1,548 @@
+2025-11-09 20:59:28 - export_service - INFO - Export service initialized with output directory: data
+2025-11-09 20:59:28 - movie_service - INFO - Movie service initialized
+2025-11-09 20:59:28 - recommendation_service - INFO - Recommendation service initialized
+2025-11-09 20:59:28 - export_service - INFO - Export service initialized with output directory: /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-0/test_complete_assignment_requi0/test_data
+2025-11-09 20:59:28 - movie_service - INFO - Processing top 10 movies from year 2020 for export
+2025-11-09 20:59:28 - movie_service - INFO - Retrieving top 10 movies from year 2020 (min_votes: 100, min_rating: 6.0)
+2025-11-09 20:59:28 - movie_service - DEBUG - Retrieved 10 movies from page 1
+2025-11-09 20:59:28 - movie_service - INFO - Selected top 10 movies from year 2020
+2025-11-09 20:59:28 - export_service - INFO - Exporting 10 movie entries to data/top_movies_2020.csv
+2025-11-09 20:59:28 - export_service - INFO - Successfully exported movies to data/top_movies_2020.csv
+2025-11-09 20:59:28 - movie_service - DEBUG - Exported 10 movies sorted by votes
+2025-11-09 20:59:28 - export_service - INFO - Exporting 10 movie entries to data/top_movies_2020.csv
+2025-11-09 20:59:28 - export_service - INFO - Successfully exported movies to data/top_movies_2020.csv
+2025-11-09 20:59:28 - movie_service - DEBUG - Appended 10 movies sorted by name (with articles)
+2025-11-09 20:59:28 - export_service - INFO - Exporting 10 movie entries to data/top_movies_2020.csv
+2025-11-09 20:59:28 - export_service - INFO - Successfully exported movies to data/top_movies_2020.csv
+2025-11-09 20:59:28 - movie_service - DEBUG - Appended 10 movies sorted by name (without articles)
+2025-11-09 20:59:28 - movie_service - INFO - Successfully exported 10 movies with 3 sort methods to data/top_movies_2020.csv
+2025-11-09 20:59:28 - recommendation_service - INFO - Finding 3 similar movies for: Movie 1
+2025-11-09 20:59:28 - recommendation_service - DEBUG - Getting similar movies from TMDB for movie ID 100
+2025-11-09 20:59:28 - recommendation_service - INFO - Found 3 similar movies for Movie 1 (scores: [0.538, 0.526, 0.524])
+2025-11-09 20:59:28 - recommendation_service - INFO - Finding 3 similar movies for: Movie 2
+2025-11-09 20:59:28 - recommendation_service - DEBUG - Getting similar movies from TMDB for movie ID 101
+2025-11-09 20:59:28 - recommendation_service - INFO - Found 3 similar movies for Movie 2 (scores: [0.541, 0.529, 0.527])
+2025-11-09 20:59:29 - recommendation_service - INFO - Finding 3 similar movies for: Movie 3
+2025-11-09 20:59:29 - recommendation_service - DEBUG - Getting similar movies from TMDB for movie ID 102
+2025-11-09 20:59:29 - recommendation_service - INFO - Found 3 similar movies for Movie 3 (scores: [0.544, 0.532, 0.53])
+2025-11-09 20:59:29 - recommendation_service - INFO - Finding 3 similar movies for: Movie 4
+2025-11-09 20:59:29 - recommendation_service - DEBUG - Getting similar movies from TMDB for movie ID 103
+2025-11-09 20:59:29 - recommendation_service - INFO - Found 3 similar movies for Movie 4 (scores: [0.547, 0.535, 0.533])
+2025-11-09 20:59:30 - recommendation_service - INFO - Finding 3 similar movies for: Movie 5
+2025-11-09 20:59:30 - recommendation_service - DEBUG - Getting similar movies from TMDB for movie ID 104
+2025-11-09 20:59:30 - recommendation_service - INFO - Found 3 similar movies for Movie 5 (scores: [0.55, 0.538, 0.536])
+2025-11-09 20:59:30 - recommendation_service - INFO - Finding 3 similar movies for: Movie 6
+2025-11-09 20:59:30 - recommendation_service - DEBUG - Getting similar movies from TMDB for movie ID 105
+2025-11-09 20:59:30 - recommendation_service - INFO - Found 3 similar movies for Movie 6 (scores: [0.553, 0.541, 0.539])
+2025-11-09 20:59:31 - recommendation_service - INFO - Finding 3 similar movies for: Movie 7
+2025-11-09 20:59:31 - recommendation_service - DEBUG - Getting similar movies from TMDB for movie ID 106
+2025-11-09 20:59:31 - recommendation_service - INFO - Found 3 similar movies for Movie 7 (scores: [0.556, 0.544, 0.542])
+2025-11-09 20:59:31 - recommendation_service - INFO - Finding 3 similar movies for: Movie 8
+2025-11-09 20:59:31 - recommendation_service - DEBUG - Getting similar movies from TMDB for movie ID 107
+2025-11-09 20:59:31 - recommendation_service - INFO - Found 3 similar movies for Movie 8 (scores: [0.553, 0.547, 0.545])
+2025-11-09 20:59:32 - recommendation_service - INFO - Finding 3 similar movies for: Movie 9
+2025-11-09 20:59:32 - recommendation_service - DEBUG - Getting similar movies from TMDB for movie ID 108
+2025-11-09 20:59:32 - recommendation_service - INFO - Found 3 similar movies for Movie 9 (scores: [0.55, 0.548, 0.544])
+2025-11-09 20:59:32 - recommendation_service - INFO - Finding 3 similar movies for: Movie 10
+2025-11-09 20:59:32 - recommendation_service - DEBUG - Getting similar movies from TMDB for movie ID 109
+2025-11-09 20:59:32 - recommendation_service - INFO - Found 3 similar movies for Movie 10 (scores: [0.547, 0.545, 0.541])
+2025-11-09 20:59:33 - export_service - INFO - Exporting 30 similar movie entries to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-0/test_complete_assignment_requi0/test_data/similar_movies_2020.csv
+2025-11-09 20:59:33 - export_service - INFO - Successfully exported similar movies to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-0/test_complete_assignment_requi0/test_data/similar_movies_2020.csv
+2025-11-09 20:59:33 - export_service - INFO - Export service initialized with output directory: data
+2025-11-09 20:59:33 - movie_service - INFO - Movie service initialized
+2025-11-09 20:59:33 - recommendation_service - INFO - Recommendation service initialized
+2025-11-09 20:59:33 - export_service - INFO - Export service initialized with output directory: /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-0/test_timeline_with_different_y0/test_data
+2025-11-09 20:59:33 - movie_service - INFO - Processing top 5 movies from year 2019 for export
+2025-11-09 20:59:33 - movie_service - INFO - Retrieving top 5 movies from year 2019 (min_votes: 100, min_rating: 6.0)
+2025-11-09 20:59:33 - movie_service - DEBUG - Retrieved 5 movies from page 1
+2025-11-09 20:59:33 - movie_service - INFO - Selected top 5 movies from year 2019
+2025-11-09 20:59:33 - export_service - INFO - Exporting 5 movie entries to data/top_movies_2019.csv
+2025-11-09 20:59:33 - export_service - INFO - Successfully exported movies to data/top_movies_2019.csv
+2025-11-09 20:59:33 - movie_service - DEBUG - Exported 5 movies sorted by votes
+2025-11-09 20:59:33 - export_service - INFO - Exporting 5 movie entries to data/top_movies_2019.csv
+2025-11-09 20:59:33 - export_service - INFO - Successfully exported movies to data/top_movies_2019.csv
+2025-11-09 20:59:33 - movie_service - DEBUG - Appended 5 movies sorted by name (with articles)
+2025-11-09 20:59:33 - export_service - INFO - Exporting 5 movie entries to data/top_movies_2019.csv
+2025-11-09 20:59:33 - export_service - INFO - Successfully exported movies to data/top_movies_2019.csv
+2025-11-09 20:59:33 - movie_service - DEBUG - Appended 5 movies sorted by name (without articles)
+2025-11-09 20:59:33 - movie_service - INFO - Successfully exported 5 movies with 3 sort methods to data/top_movies_2019.csv
+2025-11-09 20:59:33 - recommendation_service - INFO - Finding 2 similar movies for: 2019 Movie 1
+2025-11-09 20:59:33 - recommendation_service - DEBUG - Getting similar movies from TMDB for movie ID 200
+2025-11-09 20:59:33 - recommendation_service - INFO - Found 2 similar movies for 2019 Movie 1 (scores: [0.548, 0.536])
+2025-11-09 20:59:33 - recommendation_service - INFO - Finding 2 similar movies for: 2019 Movie 2
+2025-11-09 20:59:33 - recommendation_service - DEBUG - Getting similar movies from TMDB for movie ID 201
+2025-11-09 20:59:33 - recommendation_service - INFO - Found 2 similar movies for 2019 Movie 2 (scores: [0.551, 0.539])
+2025-11-09 20:59:34 - recommendation_service - INFO - Finding 2 similar movies for: 2019 Movie 3
+2025-11-09 20:59:34 - recommendation_service - DEBUG - Getting similar movies from TMDB for movie ID 202
+2025-11-09 20:59:34 - recommendation_service - INFO - Found 2 similar movies for 2019 Movie 3 (scores: [0.548, 0.542])
+2025-11-09 20:59:34 - recommendation_service - INFO - Finding 2 similar movies for: 2019 Movie 4
+2025-11-09 20:59:34 - recommendation_service - DEBUG - Getting similar movies from TMDB for movie ID 203
+2025-11-09 20:59:34 - recommendation_service - INFO - Found 2 similar movies for 2019 Movie 4 (scores: [0.545, 0.543])
+2025-11-09 20:59:35 - recommendation_service - INFO - Finding 2 similar movies for: 2019 Movie 5
+2025-11-09 20:59:35 - recommendation_service - DEBUG - Getting similar movies from TMDB for movie ID 204
+2025-11-09 20:59:35 - recommendation_service - INFO - Found 2 similar movies for 2019 Movie 5 (scores: [0.542, 0.54])
+2025-11-09 20:59:35 - export_service - INFO - Exporting 10 similar movie entries to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-0/test_timeline_with_different_y0/test_data/similar_movies_2019.csv
+2025-11-09 20:59:35 - export_service - INFO - Successfully exported similar movies to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-0/test_timeline_with_different_y0/test_data/similar_movies_2019.csv
+2025-11-09 20:59:35 - export_service - INFO - Export service initialized with output directory: data
+2025-11-09 20:59:35 - movie_service - INFO - Movie service initialized
+2025-11-09 20:59:35 - recommendation_service - INFO - Recommendation service initialized
+2025-11-09 20:59:35 - export_service - INFO - Export service initialized with output directory: /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-0/test_complete_application_work0/test_data
+2025-11-09 20:59:35 - movie_service - INFO - Processing top 2 movies from year 1999 for export
+2025-11-09 20:59:35 - movie_service - INFO - Retrieving top 2 movies from year 1999 (min_votes: 100, min_rating: 6.0)
+2025-11-09 20:59:35 - movie_service - DEBUG - Retrieved 2 movies from page 1
+2025-11-09 20:59:35 - movie_service - INFO - Selected top 2 movies from year 1999
+2025-11-09 20:59:35 - export_service - INFO - Exporting 2 movie entries to data/top_movies_1999.csv
+2025-11-09 20:59:35 - export_service - INFO - Successfully exported movies to data/top_movies_1999.csv
+2025-11-09 20:59:35 - movie_service - DEBUG - Exported 2 movies sorted by votes
+2025-11-09 20:59:35 - export_service - INFO - Exporting 2 movie entries to data/top_movies_1999.csv
+2025-11-09 20:59:35 - export_service - INFO - Successfully exported movies to data/top_movies_1999.csv
+2025-11-09 20:59:35 - movie_service - DEBUG - Appended 2 movies sorted by name (with articles)
+2025-11-09 20:59:35 - export_service - INFO - Exporting 2 movie entries to data/top_movies_1999.csv
+2025-11-09 20:59:35 - export_service - INFO - Successfully exported movies to data/top_movies_1999.csv
+2025-11-09 20:59:35 - movie_service - DEBUG - Appended 2 movies sorted by name (without articles)
+2025-11-09 20:59:35 - movie_service - INFO - Successfully exported 2 movies with 3 sort methods to data/top_movies_1999.csv
+2025-11-09 20:59:35 - recommendation_service - INFO - Finding 2 similar movies for: The Matrix
+2025-11-09 20:59:35 - recommendation_service - DEBUG - Getting similar movies from TMDB for movie ID 1
+2025-11-09 20:59:36 - recommendation_service - INFO - Found 0 similar movies for The Matrix (scores: [])
+2025-11-09 20:59:36 - recommendation_service - INFO - Finding 2 similar movies for: The Matrix
+2025-11-09 20:59:36 - recommendation_service - DEBUG - Getting similar movies from TMDB for movie ID 1
+2025-11-09 20:59:36 - recommendation_service - INFO - Found 0 similar movies for The Matrix (scores: [])
+2025-11-09 20:59:37 - export_service - INFO - Export service initialized with output directory: data
+2025-11-09 20:59:37 - movie_service - INFO - Movie service initialized
+2025-11-09 20:59:37 - recommendation_service - INFO - Recommendation service initialized
+2025-11-09 20:59:37 - export_service - INFO - Export service initialized with output directory: /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-0/test_workflow_data_consistency0/test_data
+2025-11-09 20:59:37 - movie_service - INFO - Processing top 2 movies from year 1999 for export
+2025-11-09 20:59:37 - movie_service - INFO - Retrieving top 2 movies from year 1999 (min_votes: 100, min_rating: 6.0)
+2025-11-09 20:59:37 - movie_service - DEBUG - Retrieved 2 movies from page 1
+2025-11-09 20:59:37 - movie_service - INFO - Selected top 2 movies from year 1999
+2025-11-09 20:59:37 - export_service - INFO - Exporting 2 movie entries to data/test_consistency.csv
+2025-11-09 20:59:37 - export_service - INFO - Successfully exported movies to data/test_consistency.csv
+2025-11-09 20:59:37 - movie_service - DEBUG - Exported 2 movies sorted by votes
+2025-11-09 20:59:37 - export_service - INFO - Exporting 2 movie entries to data/test_consistency.csv
+2025-11-09 20:59:37 - export_service - INFO - Successfully exported movies to data/test_consistency.csv
+2025-11-09 20:59:37 - movie_service - DEBUG - Appended 2 movies sorted by name (with articles)
+2025-11-09 20:59:37 - export_service - INFO - Exporting 2 movie entries to data/test_consistency.csv
+2025-11-09 20:59:37 - export_service - INFO - Successfully exported movies to data/test_consistency.csv
+2025-11-09 20:59:37 - movie_service - DEBUG - Appended 2 movies sorted by name (without articles)
+2025-11-09 20:59:37 - movie_service - INFO - Successfully exported 2 movies with 3 sort methods to data/test_consistency.csv
+2025-11-09 20:59:37 - recommendation_service - INFO - Finding 2 similar movies for: The Matrix
+2025-11-09 20:59:37 - recommendation_service - DEBUG - Getting similar movies from TMDB for movie ID 1
+2025-11-09 20:59:37 - recommendation_service - INFO - Found 0 similar movies for The Matrix (scores: [])
+2025-11-09 20:59:38 - recommendation_service - INFO - Finding 2 similar movies for: The Matrix
+2025-11-09 20:59:38 - recommendation_service - DEBUG - Getting similar movies from TMDB for movie ID 1
+2025-11-09 20:59:38 - recommendation_service - INFO - Found 0 similar movies for The Matrix (scores: [])
+2025-11-09 20:59:38 - export_service - INFO - Export service initialized with output directory: data
+2025-11-09 20:59:38 - movie_service - INFO - Movie service initialized
+2025-11-09 20:59:38 - recommendation_service - INFO - Recommendation service initialized
+2025-11-09 20:59:38 - export_service - INFO - Export service initialized with output directory: /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-0/test_workflow_csv_format_valid0/test_data
+2025-11-09 20:59:38 - movie_service - INFO - Processing top 2 movies from year 1999 for export
+2025-11-09 20:59:38 - movie_service - INFO - Retrieving top 2 movies from year 1999 (min_votes: 100, min_rating: 6.0)
+2025-11-09 20:59:38 - movie_service - DEBUG - Retrieved 2 movies from page 1
+2025-11-09 20:59:38 - movie_service - INFO - Selected top 2 movies from year 1999
+2025-11-09 20:59:38 - export_service - INFO - Exporting 2 movie entries to data/test_format.csv
+2025-11-09 20:59:38 - export_service - INFO - Successfully exported movies to data/test_format.csv
+2025-11-09 20:59:38 - movie_service - DEBUG - Exported 2 movies sorted by votes
+2025-11-09 20:59:38 - export_service - INFO - Exporting 2 movie entries to data/test_format.csv
+2025-11-09 20:59:38 - export_service - INFO - Successfully exported movies to data/test_format.csv
+2025-11-09 20:59:38 - movie_service - DEBUG - Appended 2 movies sorted by name (with articles)
+2025-11-09 20:59:38 - export_service - INFO - Exporting 2 movie entries to data/test_format.csv
+2025-11-09 20:59:38 - export_service - INFO - Successfully exported movies to data/test_format.csv
+2025-11-09 20:59:38 - movie_service - DEBUG - Appended 2 movies sorted by name (without articles)
+2025-11-09 20:59:38 - movie_service - INFO - Successfully exported 2 movies with 3 sort methods to data/test_format.csv
+2025-11-09 20:59:38 - recommendation_service - INFO - Finding 2 similar movies for: The Matrix
+2025-11-09 20:59:38 - recommendation_service - DEBUG - Getting similar movies from TMDB for movie ID 1
+2025-11-09 20:59:39 - recommendation_service - INFO - Found 0 similar movies for The Matrix (scores: [])
+2025-11-09 20:59:39 - recommendation_service - INFO - Finding 2 similar movies for: The Matrix
+2025-11-09 20:59:39 - recommendation_service - DEBUG - Getting similar movies from TMDB for movie ID 1
+2025-11-09 20:59:39 - recommendation_service - INFO - Found 0 similar movies for The Matrix (scores: [])
+2025-11-09 20:59:40 - export_service - INFO - Export service initialized with output directory: data
+2025-11-09 20:59:40 - movie_service - INFO - Movie service initialized
+2025-11-09 20:59:40 - recommendation_service - INFO - Recommendation service initialized
+2025-11-09 20:59:40 - export_service - INFO - Export service initialized with output directory: /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-0/test_complete_workflow_top_mov0/test_data
+2025-11-09 20:59:40 - movie_service - INFO - Processing top 3 movies from year 1999 for export
+2025-11-09 20:59:40 - movie_service - INFO - Retrieving top 3 movies from year 1999 (min_votes: 100, min_rating: 6.0)
+2025-11-09 20:59:40 - movie_service - DEBUG - Retrieved 3 movies from page 1
+2025-11-09 20:59:40 - movie_service - INFO - Selected top 3 movies from year 1999
+2025-11-09 20:59:40 - export_service - INFO - Exporting 3 movie entries to data/test_top_movies.csv
+2025-11-09 20:59:40 - export_service - INFO - Successfully exported movies to data/test_top_movies.csv
+2025-11-09 20:59:40 - movie_service - DEBUG - Exported 3 movies sorted by votes
+2025-11-09 20:59:40 - export_service - INFO - Exporting 3 movie entries to data/test_top_movies.csv
+2025-11-09 20:59:40 - export_service - INFO - Successfully exported movies to data/test_top_movies.csv
+2025-11-09 20:59:40 - movie_service - DEBUG - Appended 3 movies sorted by name (with articles)
+2025-11-09 20:59:40 - export_service - INFO - Exporting 3 movie entries to data/test_top_movies.csv
+2025-11-09 20:59:40 - export_service - INFO - Successfully exported movies to data/test_top_movies.csv
+2025-11-09 20:59:40 - movie_service - DEBUG - Appended 3 movies sorted by name (without articles)
+2025-11-09 20:59:40 - movie_service - INFO - Successfully exported 3 movies with 3 sort methods to data/test_top_movies.csv
+2025-11-09 20:59:40 - export_service - INFO - Export service initialized with output directory: data
+2025-11-09 20:59:40 - movie_service - INFO - Movie service initialized
+2025-11-09 20:59:40 - recommendation_service - INFO - Recommendation service initialized
+2025-11-09 20:59:40 - export_service - INFO - Export service initialized with output directory: /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-0/test_complete_workflow_with_si0/test_data
+2025-11-09 20:59:40 - movie_service - INFO - Processing top 2 movies from year 1999 for export
+2025-11-09 20:59:40 - movie_service - INFO - Retrieving top 2 movies from year 1999 (min_votes: 100, min_rating: 6.0)
+2025-11-09 20:59:40 - movie_service - DEBUG - Retrieved 3 movies from page 1
+2025-11-09 20:59:40 - movie_service - INFO - Selected top 2 movies from year 1999
+2025-11-09 20:59:40 - export_service - INFO - Exporting 2 movie entries to data/test_top_movies.csv
+2025-11-09 20:59:40 - export_service - INFO - Successfully exported movies to data/test_top_movies.csv
+2025-11-09 20:59:40 - movie_service - DEBUG - Exported 2 movies sorted by votes
+2025-11-09 20:59:40 - export_service - INFO - Exporting 2 movie entries to data/test_top_movies.csv
+2025-11-09 20:59:40 - export_service - INFO - Successfully exported movies to data/test_top_movies.csv
+2025-11-09 20:59:40 - movie_service - DEBUG - Appended 2 movies sorted by name (with articles)
+2025-11-09 20:59:40 - export_service - INFO - Exporting 2 movie entries to data/test_top_movies.csv
+2025-11-09 20:59:40 - export_service - INFO - Successfully exported movies to data/test_top_movies.csv
+2025-11-09 20:59:40 - movie_service - DEBUG - Appended 2 movies sorted by name (without articles)
+2025-11-09 20:59:40 - movie_service - INFO - Successfully exported 2 movies with 3 sort methods to data/test_top_movies.csv
+2025-11-09 20:59:40 - recommendation_service - INFO - Finding 2 similar movies for: The Matrix
+2025-11-09 20:59:40 - recommendation_service - DEBUG - Getting similar movies from TMDB for movie ID 1
+2025-11-09 20:59:40 - recommendation_service - INFO - Found 0 similar movies for The Matrix (scores: [])
+2025-11-09 20:59:41 - recommendation_service - INFO - Finding 2 similar movies for: The Matrix
+2025-11-09 20:59:41 - recommendation_service - DEBUG - Getting similar movies from TMDB for movie ID 1
+2025-11-09 20:59:41 - recommendation_service - INFO - Found 0 similar movies for The Matrix (scores: [])
+2025-11-09 20:59:41 - export_service - INFO - Export service initialized with output directory: data
+2025-11-09 20:59:41 - movie_service - INFO - Movie service initialized
+2025-11-09 20:59:41 - recommendation_service - INFO - Recommendation service initialized
+2025-11-09 20:59:41 - export_service - INFO - Export service initialized with output directory: /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-0/test_workflow_sorting_verifica0/test_data
+2025-11-09 20:59:41 - movie_service - INFO - Processing top 3 movies from year 1999 for export
+2025-11-09 20:59:41 - movie_service - INFO - Retrieving top 3 movies from year 1999 (min_votes: 100, min_rating: 6.0)
+2025-11-09 20:59:41 - movie_service - DEBUG - Retrieved 3 movies from page 1
+2025-11-09 20:59:41 - movie_service - INFO - Selected top 3 movies from year 1999
+2025-11-09 20:59:41 - export_service - INFO - Exporting 3 movie entries to data/test_sorting.csv
+2025-11-09 20:59:41 - export_service - INFO - Successfully exported movies to data/test_sorting.csv
+2025-11-09 20:59:41 - movie_service - DEBUG - Exported 3 movies sorted by votes
+2025-11-09 20:59:41 - export_service - INFO - Exporting 3 movie entries to data/test_sorting.csv
+2025-11-09 20:59:41 - export_service - INFO - Successfully exported movies to data/test_sorting.csv
+2025-11-09 20:59:41 - movie_service - DEBUG - Appended 3 movies sorted by name (with articles)
+2025-11-09 20:59:41 - export_service - INFO - Exporting 3 movie entries to data/test_sorting.csv
+2025-11-09 20:59:41 - export_service - INFO - Successfully exported movies to data/test_sorting.csv
+2025-11-09 20:59:41 - movie_service - DEBUG - Appended 3 movies sorted by name (without articles)
+2025-11-09 20:59:41 - movie_service - INFO - Successfully exported 3 movies with 3 sort methods to data/test_sorting.csv
+2025-11-09 20:59:41 - export_service - INFO - Export service initialized with output directory: data
+2025-11-09 20:59:41 - movie_service - INFO - Movie service initialized
+2025-11-09 20:59:41 - recommendation_service - INFO - Recommendation service initialized
+2025-11-09 20:59:41 - export_service - INFO - Export service initialized with output directory: /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-0/test_workflow_error_handling0/test_data
+2025-11-09 20:59:41 - movie_service - INFO - Retrieving top 10 movies from year 1999 (min_votes: 100, min_rating: 6.0)
+2025-11-09 20:59:41 - export_service - INFO - Export service initialized with output directory: data
+2025-11-09 20:59:41 - movie_service - INFO - Movie service initialized
+2025-11-09 20:59:41 - recommendation_service - INFO - Recommendation service initialized
+2025-11-09 20:59:41 - export_service - INFO - Export service initialized with output directory: /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-0/test_workflow_empty_results0/test_data
+2025-11-09 20:59:41 - movie_service - INFO - Retrieving top 10 movies from year 1999 (min_votes: 100, min_rating: 6.0)
+2025-11-09 20:59:41 - export_service - INFO - Export service initialized with output directory: /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-0/test_movie_to_csv_row0/test_data
+2025-11-09 20:59:41 - export_service - INFO - Export service initialized with output directory: /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-0/test_export_movies_to_csv0/test_data
+2025-11-09 20:59:41 - export_service - INFO - Exporting 3 movie entries to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-0/test_export_movies_to_csv0/test_data/test_movies.csv
+2025-11-09 20:59:41 - export_service - INFO - Successfully exported movies to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-0/test_export_movies_to_csv0/test_data/test_movies.csv
+2025-11-09 20:59:41 - export_service - INFO - Export service initialized with output directory: /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-0/test_export_movies_to_csv_appe0/test_data
+2025-11-09 20:59:41 - export_service - INFO - Exporting 1 movie entries to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-0/test_export_movies_to_csv_appe0/test_data/test_append.csv
+2025-11-09 20:59:41 - export_service - INFO - Successfully exported movies to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-0/test_export_movies_to_csv_appe0/test_data/test_append.csv
+2025-11-09 20:59:41 - export_service - INFO - Exporting 1 movie entries to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-0/test_export_movies_to_csv_appe0/test_data/test_append.csv
+2025-11-09 20:59:41 - export_service - INFO - Successfully exported movies to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-0/test_export_movies_to_csv_appe0/test_data/test_append.csv
+2025-11-09 20:59:41 - export_service - INFO - Export service initialized with output directory: /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-0/test_export_similar_movies_to_0/test_data
+2025-11-09 20:59:41 - export_service - INFO - Exporting 1 similar movie entries to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-0/test_export_similar_movies_to_0/test_data/test_similar.csv
+2025-11-09 20:59:41 - export_service - INFO - Successfully exported similar movies to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-0/test_export_similar_movies_to_0/test_data/test_similar.csv
+2025-11-09 20:59:41 - export_service - INFO - Export service initialized with output directory: /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-0/test_export_movies_to_csv_empt0/test_data
+2025-11-09 20:59:41 - export_service - INFO - Export service initialized with output directory: /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-0/test_export_similar_movies_to_1/test_data
+2025-11-09 20:59:41 - export_service - INFO - Export service initialized with output directory: data
+2025-11-09 20:59:41 - movie_service - INFO - Movie service initialized
+2025-11-09 20:59:41 - export_service - INFO - Export service initialized with output directory: data
+2025-11-09 20:59:41 - movie_service - INFO - Movie service initialized
+2025-11-09 20:59:41 - export_service - INFO - Export service initialized with output directory: data
+2025-11-09 20:59:41 - movie_service - INFO - Movie service initialized
+2025-11-09 20:59:41 - export_service - INFO - Export service initialized with output directory: data
+2025-11-09 20:59:41 - movie_service - INFO - Movie service initialized
+2025-11-09 20:59:41 - movie_service - INFO - Retrieving top 2 movies from year 1999 (min_votes: 100, min_rating: 6.0)
+2025-11-09 20:59:41 - movie_service - DEBUG - Retrieved 3 movies from page 1
+2025-11-09 20:59:41 - movie_service - INFO - Selected top 2 movies from year 1999
+2025-11-09 20:59:41 - export_service - INFO - Export service initialized with output directory: data
+2025-11-09 20:59:41 - movie_service - INFO - Movie service initialized
+2025-11-09 20:59:41 - export_service - INFO - Export service initialized with output directory: data
+2025-11-09 20:59:41 - movie_service - INFO - Movie service initialized
+2025-11-09 20:59:41 - export_service - INFO - Export service initialized with output directory: data
+2025-11-09 20:59:41 - movie_service - INFO - Movie service initialized
+2025-11-09 20:59:41 - export_service - INFO - Export service initialized with output directory: data
+2025-11-09 20:59:41 - movie_service - INFO - Movie service initialized
+2025-11-09 20:59:41 - recommendation_service - INFO - Recommendation service initialized
+2025-11-09 20:59:41 - recommendation_service - INFO - Recommendation service initialized
+2025-11-09 20:59:41 - recommendation_service - INFO - Recommendation service initialized
+2025-11-09 20:59:41 - recommendation_service - INFO - Recommendation service initialized
+2025-11-09 20:59:41 - recommendation_service - INFO - Recommendation service initialized
+2025-11-09 20:59:41 - recommendation_service - INFO - Recommendation service initialized
+2025-11-09 20:59:41 - recommendation_service - INFO - Recommendation service initialized
+2025-11-09 20:59:41 - recommendation_service - INFO - Recommendation service initialized
+2025-11-09 20:59:41 - recommendation_service - INFO - Recommendation service initialized
+2025-11-09 20:59:41 - recommendation_service - INFO - Recommendation service initialized
+2025-11-09 20:59:41 - recommendation_service - INFO - Finding 2 similar movies for: The Matrix
+2025-11-09 20:59:41 - recommendation_service - DEBUG - Getting similar movies from TMDB for movie ID 1
+2025-11-09 20:59:41 - recommendation_service - INFO - Found 0 similar movies for The Matrix (scores: [])
+2025-11-09 20:59:42 - recommendation_service - INFO - Recommendation service initialized
+2025-11-09 20:59:51 - export_service - INFO - Export service initialized with output directory: data
+2025-11-09 20:59:51 - movie_service - INFO - Movie service initialized
+2025-11-09 20:59:51 - recommendation_service - INFO - Recommendation service initialized
+2025-11-09 20:59:51 - export_service - INFO - Export service initialized with output directory: /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-1/test_complete_assignment_requi0/test_data
+2025-11-09 20:59:51 - movie_service - INFO - Processing top 10 movies from year 2020 for export
+2025-11-09 20:59:51 - movie_service - INFO - Retrieving top 10 movies from year 2020 (min_votes: 100, min_rating: 6.0)
+2025-11-09 20:59:51 - movie_service - DEBUG - Retrieved 10 movies from page 1
+2025-11-09 20:59:51 - movie_service - INFO - Selected top 10 movies from year 2020
+2025-11-09 20:59:51 - export_service - INFO - Exporting 10 movie entries to data/top_movies_2020.csv
+2025-11-09 20:59:51 - export_service - INFO - Successfully exported movies to data/top_movies_2020.csv
+2025-11-09 20:59:51 - movie_service - DEBUG - Exported 10 movies sorted by votes
+2025-11-09 20:59:51 - export_service - INFO - Exporting 10 movie entries to data/top_movies_2020.csv
+2025-11-09 20:59:51 - export_service - INFO - Successfully exported movies to data/top_movies_2020.csv
+2025-11-09 20:59:51 - movie_service - DEBUG - Appended 10 movies sorted by name (with articles)
+2025-11-09 20:59:51 - export_service - INFO - Exporting 10 movie entries to data/top_movies_2020.csv
+2025-11-09 20:59:51 - export_service - INFO - Successfully exported movies to data/top_movies_2020.csv
+2025-11-09 20:59:51 - movie_service - DEBUG - Appended 10 movies sorted by name (without articles)
+2025-11-09 20:59:51 - movie_service - INFO - Successfully exported 10 movies with 3 sort methods to data/top_movies_2020.csv
+2025-11-09 20:59:51 - recommendation_service - INFO - Finding 3 similar movies for: Movie 1
+2025-11-09 20:59:51 - recommendation_service - DEBUG - Getting similar movies from TMDB for movie ID 100
+2025-11-09 20:59:51 - recommendation_service - INFO - Found 3 similar movies for Movie 1 (scores: [0.538, 0.526, 0.524])
+2025-11-09 20:59:52 - recommendation_service - INFO - Finding 3 similar movies for: Movie 2
+2025-11-09 20:59:52 - recommendation_service - DEBUG - Getting similar movies from TMDB for movie ID 101
+2025-11-09 20:59:52 - recommendation_service - INFO - Found 3 similar movies for Movie 2 (scores: [0.541, 0.529, 0.527])
+2025-11-09 20:59:52 - recommendation_service - INFO - Finding 3 similar movies for: Movie 3
+2025-11-09 20:59:52 - recommendation_service - DEBUG - Getting similar movies from TMDB for movie ID 102
+2025-11-09 20:59:52 - recommendation_service - INFO - Found 3 similar movies for Movie 3 (scores: [0.544, 0.532, 0.53])
+2025-11-09 20:59:53 - recommendation_service - INFO - Finding 3 similar movies for: Movie 4
+2025-11-09 20:59:53 - recommendation_service - DEBUG - Getting similar movies from TMDB for movie ID 103
+2025-11-09 20:59:53 - recommendation_service - INFO - Found 3 similar movies for Movie 4 (scores: [0.547, 0.535, 0.533])
+2025-11-09 20:59:53 - recommendation_service - INFO - Finding 3 similar movies for: Movie 5
+2025-11-09 20:59:53 - recommendation_service - DEBUG - Getting similar movies from TMDB for movie ID 104
+2025-11-09 20:59:53 - recommendation_service - INFO - Found 3 similar movies for Movie 5 (scores: [0.55, 0.538, 0.536])
+2025-11-09 20:59:54 - recommendation_service - INFO - Finding 3 similar movies for: Movie 6
+2025-11-09 20:59:54 - recommendation_service - DEBUG - Getting similar movies from TMDB for movie ID 105
+2025-11-09 20:59:54 - recommendation_service - INFO - Found 3 similar movies for Movie 6 (scores: [0.553, 0.541, 0.539])
+2025-11-09 20:59:54 - recommendation_service - INFO - Finding 3 similar movies for: Movie 7
+2025-11-09 20:59:54 - recommendation_service - DEBUG - Getting similar movies from TMDB for movie ID 106
+2025-11-09 20:59:54 - recommendation_service - INFO - Found 3 similar movies for Movie 7 (scores: [0.556, 0.544, 0.542])
+2025-11-09 20:59:55 - recommendation_service - INFO - Finding 3 similar movies for: Movie 8
+2025-11-09 20:59:55 - recommendation_service - DEBUG - Getting similar movies from TMDB for movie ID 107
+2025-11-09 20:59:55 - recommendation_service - INFO - Found 3 similar movies for Movie 8 (scores: [0.553, 0.547, 0.545])
+2025-11-09 20:59:55 - recommendation_service - INFO - Finding 3 similar movies for: Movie 9
+2025-11-09 20:59:55 - recommendation_service - DEBUG - Getting similar movies from TMDB for movie ID 108
+2025-11-09 20:59:55 - recommendation_service - INFO - Found 3 similar movies for Movie 9 (scores: [0.55, 0.548, 0.544])
+2025-11-09 20:59:56 - recommendation_service - INFO - Finding 3 similar movies for: Movie 10
+2025-11-09 20:59:56 - recommendation_service - DEBUG - Getting similar movies from TMDB for movie ID 109
+2025-11-09 20:59:56 - recommendation_service - INFO - Found 3 similar movies for Movie 10 (scores: [0.547, 0.545, 0.541])
+2025-11-09 20:59:56 - export_service - INFO - Exporting 30 similar movie entries to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-1/test_complete_assignment_requi0/test_data/similar_movies_2020.csv
+2025-11-09 20:59:56 - export_service - INFO - Successfully exported similar movies to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-1/test_complete_assignment_requi0/test_data/similar_movies_2020.csv
+2025-11-09 20:59:56 - export_service - INFO - Export service initialized with output directory: data
+2025-11-09 20:59:56 - movie_service - INFO - Movie service initialized
+2025-11-09 20:59:56 - recommendation_service - INFO - Recommendation service initialized
+2025-11-09 20:59:56 - export_service - INFO - Export service initialized with output directory: /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-1/test_timeline_with_different_y0/test_data
+2025-11-09 20:59:56 - movie_service - INFO - Processing top 5 movies from year 2019 for export
+2025-11-09 20:59:56 - movie_service - INFO - Retrieving top 5 movies from year 2019 (min_votes: 100, min_rating: 6.0)
+2025-11-09 20:59:56 - movie_service - DEBUG - Retrieved 5 movies from page 1
+2025-11-09 20:59:56 - movie_service - INFO - Selected top 5 movies from year 2019
+2025-11-09 20:59:56 - export_service - INFO - Exporting 5 movie entries to data/top_movies_2019.csv
+2025-11-09 20:59:56 - export_service - INFO - Successfully exported movies to data/top_movies_2019.csv
+2025-11-09 20:59:56 - movie_service - DEBUG - Exported 5 movies sorted by votes
+2025-11-09 20:59:56 - export_service - INFO - Exporting 5 movie entries to data/top_movies_2019.csv
+2025-11-09 20:59:56 - export_service - INFO - Successfully exported movies to data/top_movies_2019.csv
+2025-11-09 20:59:56 - movie_service - DEBUG - Appended 5 movies sorted by name (with articles)
+2025-11-09 20:59:56 - export_service - INFO - Exporting 5 movie entries to data/top_movies_2019.csv
+2025-11-09 20:59:56 - export_service - INFO - Successfully exported movies to data/top_movies_2019.csv
+2025-11-09 20:59:56 - movie_service - DEBUG - Appended 5 movies sorted by name (without articles)
+2025-11-09 20:59:56 - movie_service - INFO - Successfully exported 5 movies with 3 sort methods to data/top_movies_2019.csv
+2025-11-09 20:59:56 - recommendation_service - INFO - Finding 2 similar movies for: 2019 Movie 1
+2025-11-09 20:59:56 - recommendation_service - DEBUG - Getting similar movies from TMDB for movie ID 200
+2025-11-09 20:59:56 - recommendation_service - INFO - Found 2 similar movies for 2019 Movie 1 (scores: [0.548, 0.536])
+2025-11-09 20:59:57 - recommendation_service - INFO - Finding 2 similar movies for: 2019 Movie 2
+2025-11-09 20:59:57 - recommendation_service - DEBUG - Getting similar movies from TMDB for movie ID 201
+2025-11-09 20:59:57 - recommendation_service - INFO - Found 2 similar movies for 2019 Movie 2 (scores: [0.551, 0.539])
+2025-11-09 20:59:57 - recommendation_service - INFO - Finding 2 similar movies for: 2019 Movie 3
+2025-11-09 20:59:57 - recommendation_service - DEBUG - Getting similar movies from TMDB for movie ID 202
+2025-11-09 20:59:57 - recommendation_service - INFO - Found 2 similar movies for 2019 Movie 3 (scores: [0.548, 0.542])
+2025-11-09 20:59:58 - recommendation_service - INFO - Finding 2 similar movies for: 2019 Movie 4
+2025-11-09 20:59:58 - recommendation_service - DEBUG - Getting similar movies from TMDB for movie ID 203
+2025-11-09 20:59:58 - recommendation_service - INFO - Found 2 similar movies for 2019 Movie 4 (scores: [0.545, 0.543])
+2025-11-09 20:59:58 - recommendation_service - INFO - Finding 2 similar movies for: 2019 Movie 5
+2025-11-09 20:59:58 - recommendation_service - DEBUG - Getting similar movies from TMDB for movie ID 204
+2025-11-09 20:59:58 - recommendation_service - INFO - Found 2 similar movies for 2019 Movie 5 (scores: [0.542, 0.54])
+2025-11-09 20:59:59 - export_service - INFO - Exporting 10 similar movie entries to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-1/test_timeline_with_different_y0/test_data/similar_movies_2019.csv
+2025-11-09 20:59:59 - export_service - INFO - Successfully exported similar movies to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-1/test_timeline_with_different_y0/test_data/similar_movies_2019.csv
+2025-11-09 20:59:59 - export_service - INFO - Export service initialized with output directory: data
+2025-11-09 20:59:59 - movie_service - INFO - Movie service initialized
+2025-11-09 20:59:59 - recommendation_service - INFO - Recommendation service initialized
+2025-11-09 20:59:59 - export_service - INFO - Export service initialized with output directory: /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-1/test_complete_application_work0/test_data
+2025-11-09 20:59:59 - movie_service - INFO - Processing top 2 movies from year 1999 for export
+2025-11-09 20:59:59 - movie_service - INFO - Retrieving top 2 movies from year 1999 (min_votes: 100, min_rating: 6.0)
+2025-11-09 20:59:59 - movie_service - DEBUG - Retrieved 2 movies from page 1
+2025-11-09 20:59:59 - movie_service - INFO - Selected top 2 movies from year 1999
+2025-11-09 20:59:59 - export_service - INFO - Exporting 2 movie entries to data/top_movies_1999.csv
+2025-11-09 20:59:59 - export_service - INFO - Successfully exported movies to data/top_movies_1999.csv
+2025-11-09 20:59:59 - movie_service - DEBUG - Exported 2 movies sorted by votes
+2025-11-09 20:59:59 - export_service - INFO - Exporting 2 movie entries to data/top_movies_1999.csv
+2025-11-09 20:59:59 - export_service - INFO - Successfully exported movies to data/top_movies_1999.csv
+2025-11-09 20:59:59 - movie_service - DEBUG - Appended 2 movies sorted by name (with articles)
+2025-11-09 20:59:59 - export_service - INFO - Exporting 2 movie entries to data/top_movies_1999.csv
+2025-11-09 20:59:59 - export_service - INFO - Successfully exported movies to data/top_movies_1999.csv
+2025-11-09 20:59:59 - movie_service - DEBUG - Appended 2 movies sorted by name (without articles)
+2025-11-09 20:59:59 - movie_service - INFO - Successfully exported 2 movies with 3 sort methods to data/top_movies_1999.csv
+2025-11-09 20:59:59 - recommendation_service - INFO - Finding 2 similar movies for: The Matrix
+2025-11-09 20:59:59 - recommendation_service - DEBUG - Getting similar movies from TMDB for movie ID 1
+2025-11-09 20:59:59 - recommendation_service - INFO - Found 0 similar movies for The Matrix (scores: [])
+2025-11-09 21:00:00 - recommendation_service - INFO - Finding 2 similar movies for: The Matrix
+2025-11-09 21:00:00 - recommendation_service - DEBUG - Getting similar movies from TMDB for movie ID 1
+2025-11-09 21:00:00 - recommendation_service - INFO - Found 0 similar movies for The Matrix (scores: [])
+2025-11-09 21:00:00 - export_service - INFO - Export service initialized with output directory: data
+2025-11-09 21:00:00 - movie_service - INFO - Movie service initialized
+2025-11-09 21:00:00 - recommendation_service - INFO - Recommendation service initialized
+2025-11-09 21:00:00 - export_service - INFO - Export service initialized with output directory: /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-1/test_workflow_data_consistency0/test_data
+2025-11-09 21:00:00 - movie_service - INFO - Processing top 2 movies from year 1999 for export
+2025-11-09 21:00:00 - movie_service - INFO - Retrieving top 2 movies from year 1999 (min_votes: 100, min_rating: 6.0)
+2025-11-09 21:00:00 - movie_service - DEBUG - Retrieved 2 movies from page 1
+2025-11-09 21:00:00 - movie_service - INFO - Selected top 2 movies from year 1999
+2025-11-09 21:00:00 - export_service - INFO - Exporting 2 movie entries to data/test_consistency.csv
+2025-11-09 21:00:00 - export_service - INFO - Successfully exported movies to data/test_consistency.csv
+2025-11-09 21:00:00 - movie_service - DEBUG - Exported 2 movies sorted by votes
+2025-11-09 21:00:00 - export_service - INFO - Exporting 2 movie entries to data/test_consistency.csv
+2025-11-09 21:00:00 - export_service - INFO - Successfully exported movies to data/test_consistency.csv
+2025-11-09 21:00:00 - movie_service - DEBUG - Appended 2 movies sorted by name (with articles)
+2025-11-09 21:00:00 - export_service - INFO - Exporting 2 movie entries to data/test_consistency.csv
+2025-11-09 21:00:00 - export_service - INFO - Successfully exported movies to data/test_consistency.csv
+2025-11-09 21:00:00 - movie_service - DEBUG - Appended 2 movies sorted by name (without articles)
+2025-11-09 21:00:00 - movie_service - INFO - Successfully exported 2 movies with 3 sort methods to data/test_consistency.csv
+2025-11-09 21:00:00 - recommendation_service - INFO - Finding 2 similar movies for: The Matrix
+2025-11-09 21:00:00 - recommendation_service - DEBUG - Getting similar movies from TMDB for movie ID 1
+2025-11-09 21:00:00 - recommendation_service - INFO - Found 0 similar movies for The Matrix (scores: [])
+2025-11-09 21:00:01 - recommendation_service - INFO - Finding 2 similar movies for: The Matrix
+2025-11-09 21:00:01 - recommendation_service - DEBUG - Getting similar movies from TMDB for movie ID 1
+2025-11-09 21:00:01 - recommendation_service - INFO - Found 0 similar movies for The Matrix (scores: [])
+2025-11-09 21:00:02 - export_service - INFO - Export service initialized with output directory: data
+2025-11-09 21:00:02 - movie_service - INFO - Movie service initialized
+2025-11-09 21:00:02 - recommendation_service - INFO - Recommendation service initialized
+2025-11-09 21:00:02 - export_service - INFO - Export service initialized with output directory: /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-1/test_workflow_csv_format_valid0/test_data
+2025-11-09 21:00:02 - movie_service - INFO - Processing top 2 movies from year 1999 for export
+2025-11-09 21:00:02 - movie_service - INFO - Retrieving top 2 movies from year 1999 (min_votes: 100, min_rating: 6.0)
+2025-11-09 21:00:02 - movie_service - DEBUG - Retrieved 2 movies from page 1
+2025-11-09 21:00:02 - movie_service - INFO - Selected top 2 movies from year 1999
+2025-11-09 21:00:02 - export_service - INFO - Exporting 2 movie entries to data/test_format.csv
+2025-11-09 21:00:02 - export_service - INFO - Successfully exported movies to data/test_format.csv
+2025-11-09 21:00:02 - movie_service - DEBUG - Exported 2 movies sorted by votes
+2025-11-09 21:00:02 - export_service - INFO - Exporting 2 movie entries to data/test_format.csv
+2025-11-09 21:00:02 - export_service - INFO - Successfully exported movies to data/test_format.csv
+2025-11-09 21:00:02 - movie_service - DEBUG - Appended 2 movies sorted by name (with articles)
+2025-11-09 21:00:02 - export_service - INFO - Exporting 2 movie entries to data/test_format.csv
+2025-11-09 21:00:02 - export_service - INFO - Successfully exported movies to data/test_format.csv
+2025-11-09 21:00:02 - movie_service - DEBUG - Appended 2 movies sorted by name (without articles)
+2025-11-09 21:00:02 - movie_service - INFO - Successfully exported 2 movies with 3 sort methods to data/test_format.csv
+2025-11-09 21:00:02 - recommendation_service - INFO - Finding 2 similar movies for: The Matrix
+2025-11-09 21:00:02 - recommendation_service - DEBUG - Getting similar movies from TMDB for movie ID 1
+2025-11-09 21:00:02 - recommendation_service - INFO - Found 0 similar movies for The Matrix (scores: [])
+2025-11-09 21:00:02 - recommendation_service - INFO - Finding 2 similar movies for: The Matrix
+2025-11-09 21:00:02 - recommendation_service - DEBUG - Getting similar movies from TMDB for movie ID 1
+2025-11-09 21:00:03 - recommendation_service - INFO - Found 0 similar movies for The Matrix (scores: [])
+2025-11-09 21:00:03 - export_service - INFO - Export service initialized with output directory: data
+2025-11-09 21:00:03 - movie_service - INFO - Movie service initialized
+2025-11-09 21:00:03 - recommendation_service - INFO - Recommendation service initialized
+2025-11-09 21:00:03 - export_service - INFO - Export service initialized with output directory: /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-1/test_complete_workflow_top_mov0/test_data
+2025-11-09 21:00:03 - movie_service - INFO - Processing top 3 movies from year 1999 for export
+2025-11-09 21:00:03 - movie_service - INFO - Retrieving top 3 movies from year 1999 (min_votes: 100, min_rating: 6.0)
+2025-11-09 21:00:03 - movie_service - DEBUG - Retrieved 3 movies from page 1
+2025-11-09 21:00:03 - movie_service - INFO - Selected top 3 movies from year 1999
+2025-11-09 21:00:03 - export_service - INFO - Exporting 3 movie entries to data/test_top_movies.csv
+2025-11-09 21:00:03 - export_service - INFO - Successfully exported movies to data/test_top_movies.csv
+2025-11-09 21:00:03 - movie_service - DEBUG - Exported 3 movies sorted by votes
+2025-11-09 21:00:03 - export_service - INFO - Exporting 3 movie entries to data/test_top_movies.csv
+2025-11-09 21:00:03 - export_service - INFO - Successfully exported movies to data/test_top_movies.csv
+2025-11-09 21:00:03 - movie_service - DEBUG - Appended 3 movies sorted by name (with articles)
+2025-11-09 21:00:03 - export_service - INFO - Exporting 3 movie entries to data/test_top_movies.csv
+2025-11-09 21:00:03 - export_service - INFO - Successfully exported movies to data/test_top_movies.csv
+2025-11-09 21:00:03 - movie_service - DEBUG - Appended 3 movies sorted by name (without articles)
+2025-11-09 21:00:03 - movie_service - INFO - Successfully exported 3 movies with 3 sort methods to data/test_top_movies.csv
+2025-11-09 21:00:03 - export_service - INFO - Export service initialized with output directory: data
+2025-11-09 21:00:03 - movie_service - INFO - Movie service initialized
+2025-11-09 21:00:03 - recommendation_service - INFO - Recommendation service initialized
+2025-11-09 21:00:03 - export_service - INFO - Export service initialized with output directory: /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-1/test_complete_workflow_with_si0/test_data
+2025-11-09 21:00:03 - movie_service - INFO - Processing top 2 movies from year 1999 for export
+2025-11-09 21:00:03 - movie_service - INFO - Retrieving top 2 movies from year 1999 (min_votes: 100, min_rating: 6.0)
+2025-11-09 21:00:03 - movie_service - DEBUG - Retrieved 3 movies from page 1
+2025-11-09 21:00:03 - movie_service - INFO - Selected top 2 movies from year 1999
+2025-11-09 21:00:03 - export_service - INFO - Exporting 2 movie entries to data/test_top_movies.csv
+2025-11-09 21:00:03 - export_service - INFO - Successfully exported movies to data/test_top_movies.csv
+2025-11-09 21:00:03 - movie_service - DEBUG - Exported 2 movies sorted by votes
+2025-11-09 21:00:03 - export_service - INFO - Exporting 2 movie entries to data/test_top_movies.csv
+2025-11-09 21:00:03 - export_service - INFO - Successfully exported movies to data/test_top_movies.csv
+2025-11-09 21:00:03 - movie_service - DEBUG - Appended 2 movies sorted by name (with articles)
+2025-11-09 21:00:03 - export_service - INFO - Exporting 2 movie entries to data/test_top_movies.csv
+2025-11-09 21:00:03 - export_service - INFO - Successfully exported movies to data/test_top_movies.csv
+2025-11-09 21:00:03 - movie_service - DEBUG - Appended 2 movies sorted by name (without articles)
+2025-11-09 21:00:03 - movie_service - INFO - Successfully exported 2 movies with 3 sort methods to data/test_top_movies.csv
+2025-11-09 21:00:03 - recommendation_service - INFO - Finding 2 similar movies for: The Matrix
+2025-11-09 21:00:03 - recommendation_service - DEBUG - Getting similar movies from TMDB for movie ID 1
+2025-11-09 21:00:03 - recommendation_service - INFO - Found 0 similar movies for The Matrix (scores: [])
+2025-11-09 21:00:04 - recommendation_service - INFO - Finding 2 similar movies for: The Matrix
+2025-11-09 21:00:04 - recommendation_service - DEBUG - Getting similar movies from TMDB for movie ID 1
+2025-11-09 21:00:04 - recommendation_service - INFO - Found 0 similar movies for The Matrix (scores: [])
+2025-11-09 21:00:05 - export_service - INFO - Export service initialized with output directory: data
+2025-11-09 21:00:05 - movie_service - INFO - Movie service initialized
+2025-11-09 21:00:05 - recommendation_service - INFO - Recommendation service initialized
+2025-11-09 21:00:05 - export_service - INFO - Export service initialized with output directory: /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-1/test_workflow_sorting_verifica0/test_data
+2025-11-09 21:00:05 - movie_service - INFO - Processing top 3 movies from year 1999 for export
+2025-11-09 21:00:05 - movie_service - INFO - Retrieving top 3 movies from year 1999 (min_votes: 100, min_rating: 6.0)
+2025-11-09 21:00:05 - movie_service - DEBUG - Retrieved 3 movies from page 1
+2025-11-09 21:00:05 - movie_service - INFO - Selected top 3 movies from year 1999
+2025-11-09 21:00:05 - export_service - INFO - Exporting 3 movie entries to data/test_sorting.csv
+2025-11-09 21:00:05 - export_service - INFO - Successfully exported movies to data/test_sorting.csv
+2025-11-09 21:00:05 - movie_service - DEBUG - Exported 3 movies sorted by votes
+2025-11-09 21:00:05 - export_service - INFO - Exporting 3 movie entries to data/test_sorting.csv
+2025-11-09 21:00:05 - export_service - INFO - Successfully exported movies to data/test_sorting.csv
+2025-11-09 21:00:05 - movie_service - DEBUG - Appended 3 movies sorted by name (with articles)
+2025-11-09 21:00:05 - export_service - INFO - Exporting 3 movie entries to data/test_sorting.csv
+2025-11-09 21:00:05 - export_service - INFO - Successfully exported movies to data/test_sorting.csv
+2025-11-09 21:00:05 - movie_service - DEBUG - Appended 3 movies sorted by name (without articles)
+2025-11-09 21:00:05 - movie_service - INFO - Successfully exported 3 movies with 3 sort methods to data/test_sorting.csv
+2025-11-09 21:00:05 - export_service - INFO - Export service initialized with output directory: data
+2025-11-09 21:00:05 - movie_service - INFO - Movie service initialized
+2025-11-09 21:00:05 - recommendation_service - INFO - Recommendation service initialized
+2025-11-09 21:00:05 - export_service - INFO - Export service initialized with output directory: /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-1/test_workflow_error_handling0/test_data
+2025-11-09 21:00:05 - movie_service - INFO - Retrieving top 10 movies from year 1999 (min_votes: 100, min_rating: 6.0)
+2025-11-09 21:00:05 - export_service - INFO - Export service initialized with output directory: data
+2025-11-09 21:00:05 - movie_service - INFO - Movie service initialized
+2025-11-09 21:00:05 - recommendation_service - INFO - Recommendation service initialized
+2025-11-09 21:00:05 - export_service - INFO - Export service initialized with output directory: /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-1/test_workflow_empty_results0/test_data
+2025-11-09 21:00:05 - movie_service - INFO - Retrieving top 10 movies from year 1999 (min_votes: 100, min_rating: 6.0)
+2025-11-09 21:00:05 - export_service - INFO - Export service initialized with output directory: /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-1/test_movie_to_csv_row0/test_data
+2025-11-09 21:00:05 - export_service - INFO - Export service initialized with output directory: /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-1/test_export_movies_to_csv0/test_data
+2025-11-09 21:00:05 - export_service - INFO - Exporting 3 movie entries to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-1/test_export_movies_to_csv0/test_data/test_movies.csv
+2025-11-09 21:00:05 - export_service - INFO - Successfully exported movies to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-1/test_export_movies_to_csv0/test_data/test_movies.csv
+2025-11-09 21:00:05 - export_service - INFO - Export service initialized with output directory: /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-1/test_export_movies_to_csv_appe0/test_data
+2025-11-09 21:00:05 - export_service - INFO - Exporting 1 movie entries to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-1/test_export_movies_to_csv_appe0/test_data/test_append.csv
+2025-11-09 21:00:05 - export_service - INFO - Successfully exported movies to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-1/test_export_movies_to_csv_appe0/test_data/test_append.csv
+2025-11-09 21:00:05 - export_service - INFO - Exporting 1 movie entries to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-1/test_export_movies_to_csv_appe0/test_data/test_append.csv
+2025-11-09 21:00:05 - export_service - INFO - Successfully exported movies to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-1/test_export_movies_to_csv_appe0/test_data/test_append.csv
+2025-11-09 21:00:05 - export_service - INFO - Export service initialized with output directory: /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-1/test_export_similar_movies_to_0/test_data
+2025-11-09 21:00:05 - export_service - INFO - Exporting 1 similar movie entries to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-1/test_export_similar_movies_to_0/test_data/test_similar.csv
+2025-11-09 21:00:05 - export_service - INFO - Successfully exported similar movies to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-1/test_export_similar_movies_to_0/test_data/test_similar.csv
+2025-11-09 21:00:05 - export_service - INFO - Export service initialized with output directory: /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-1/test_export_movies_to_csv_empt0/test_data
+2025-11-09 21:00:05 - export_service - INFO - Export service initialized with output directory: /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-1/test_export_similar_movies_to_1/test_data
+2025-11-09 21:00:05 - export_service - INFO - Export service initialized with output directory: data
+2025-11-09 21:00:05 - movie_service - INFO - Movie service initialized
+2025-11-09 21:00:05 - export_service - INFO - Export service initialized with output directory: data
+2025-11-09 21:00:05 - movie_service - INFO - Movie service initialized
+2025-11-09 21:00:05 - export_service - INFO - Export service initialized with output directory: data
+2025-11-09 21:00:05 - movie_service - INFO - Movie service initialized
+2025-11-09 21:00:05 - export_service - INFO - Export service initialized with output directory: data
+2025-11-09 21:00:05 - movie_service - INFO - Movie service initialized
+2025-11-09 21:00:05 - movie_service - INFO - Retrieving top 2 movies from year 1999 (min_votes: 100, min_rating: 6.0)
+2025-11-09 21:00:05 - movie_service - DEBUG - Retrieved 3 movies from page 1
+2025-11-09 21:00:05 - movie_service - INFO - Selected top 2 movies from year 1999
+2025-11-09 21:00:05 - export_service - INFO - Export service initialized with output directory: data
+2025-11-09 21:00:05 - movie_service - INFO - Movie service initialized
+2025-11-09 21:00:05 - export_service - INFO - Export service initialized with output directory: data
+2025-11-09 21:00:05 - movie_service - INFO - Movie service initialized
+2025-11-09 21:00:05 - export_service - INFO - Export service initialized with output directory: data
+2025-11-09 21:00:05 - movie_service - INFO - Movie service initialized
+2025-11-09 21:00:05 - export_service - INFO - Export service initialized with output directory: data
+2025-11-09 21:00:05 - movie_service - INFO - Movie service initialized
+2025-11-09 21:00:05 - recommendation_service - INFO - Recommendation service initialized
+2025-11-09 21:00:05 - recommendation_service - INFO - Recommendation service initialized
+2025-11-09 21:00:05 - recommendation_service - INFO - Recommendation service initialized
+2025-11-09 21:00:05 - recommendation_service - INFO - Recommendation service initialized
+2025-11-09 21:00:05 - recommendation_service - INFO - Recommendation service initialized
+2025-11-09 21:00:05 - recommendation_service - INFO - Recommendation service initialized
+2025-11-09 21:00:05 - recommendation_service - INFO - Recommendation service initialized
+2025-11-09 21:00:05 - recommendation_service - INFO - Recommendation service initialized
+2025-11-09 21:00:05 - recommendation_service - INFO - Recommendation service initialized
+2025-11-09 21:00:05 - recommendation_service - INFO - Recommendation service initialized
+2025-11-09 21:00:05 - recommendation_service - INFO - Finding 2 similar movies for: The Matrix
+2025-11-09 21:00:05 - recommendation_service - DEBUG - Getting similar movies from TMDB for movie ID 1
+2025-11-09 21:00:05 - recommendation_service - INFO - Found 0 similar movies for The Matrix (scores: [])
+2025-11-09 21:00:05 - recommendation_service - INFO - Recommendation service initialized

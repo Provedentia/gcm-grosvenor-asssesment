@@ -1,0 +1,31 @@
+sort_method,id,title,release_date,release_year,vote_count,vote_average,popularity,overview,poster_path,backdrop_path,genres,keywords,runtime,tagline,imdb_id
+votes,100,Movie 1,2020-01-15,2020,30000,8.5,90.0,Overview for Movie 1,/poster1.jpg,/backdrop1.jpg,"Action, Science Fiction","action, thriller",120,Tagline for Movie 1,tt0000100
+votes,101,Movie 2,2020-02-15,2020,29500,8.4,88.0,Overview for Movie 2,/poster2.jpg,/backdrop2.jpg,"Drama, History","action, thriller",121,Tagline for Movie 2,tt0000101
+votes,102,Movie 3,2020-03-15,2020,29000,8.3,86.0,Overview for Movie 3,/poster3.jpg,/backdrop3.jpg,"Action, Science Fiction","action, thriller",122,Tagline for Movie 3,tt0000102
+votes,103,Movie 4,2020-04-15,2020,28500,8.2,84.0,Overview for Movie 4,/poster4.jpg,/backdrop4.jpg,"Drama, History","action, thriller",123,Tagline for Movie 4,tt0000103
+votes,104,Movie 5,2020-05-15,2020,28000,8.1,82.0,Overview for Movie 5,/poster5.jpg,/backdrop5.jpg,"Action, Science Fiction","action, thriller",124,Tagline for Movie 5,tt0000104
+votes,105,Movie 6,2020-06-15,2020,27500,8.0,80.0,Overview for Movie 6,/poster6.jpg,/backdrop6.jpg,"Drama, History","action, thriller",125,Tagline for Movie 6,tt0000105
+votes,106,Movie 7,2020-07-15,2020,27000,7.9,78.0,Overview for Movie 7,/poster7.jpg,/backdrop7.jpg,"Action, Science Fiction","action, thriller",126,Tagline for Movie 7,tt0000106
+votes,107,Movie 8,2020-08-15,2020,26500,7.8,76.0,Overview for Movie 8,/poster8.jpg,/backdrop8.jpg,"Drama, History","action, thriller",127,Tagline for Movie 8,tt0000107
+votes,108,Movie 9,2020-09-15,2020,26000,7.7,74.0,Overview for Movie 9,/poster9.jpg,/backdrop9.jpg,"Action, Science Fiction","action, thriller",128,Tagline for Movie 9,tt0000108
+votes,109,Movie 10,2020-10-15,2020,25500,7.6,72.0,Overview for Movie 10,/poster10.jpg,/backdrop10.jpg,"Drama, History","action, thriller",129,Tagline for Movie 10,tt0000109
+name,100,Movie 1,2020-01-15,2020,30000,8.5,90.0,Overview for Movie 1,/poster1.jpg,/backdrop1.jpg,"Action, Science Fiction","action, thriller",120,Tagline for Movie 1,tt0000100
+name,109,Movie 10,2020-10-15,2020,25500,7.6,72.0,Overview for Movie 10,/poster10.jpg,/backdrop10.jpg,"Drama, History","action, thriller",129,Tagline for Movie 10,tt0000109
+name,101,Movie 2,2020-02-15,2020,29500,8.4,88.0,Overview for Movie 2,/poster2.jpg,/backdrop2.jpg,"Drama, History","action, thriller",121,Tagline for Movie 2,tt0000101
+name,102,Movie 3,2020-03-15,2020,29000,8.3,86.0,Overview for Movie 3,/poster3.jpg,/backdrop3.jpg,"Action, Science Fiction","action, thriller",122,Tagline for Movie 3,tt0000102
+name,103,Movie 4,2020-04-15,2020,28500,8.2,84.0,Overview for Movie 4,/poster4.jpg,/backdrop4.jpg,"Drama, History","action, thriller",123,Tagline for Movie 4,tt0000103
+name,104,Movie 5,2020-05-15,2020,28000,8.1,82.0,Overview for Movie 5,/poster5.jpg,/backdrop5.jpg,"Action, Science Fiction","action, thriller",124,Tagline for Movie 5,tt0000104
+name,105,Movie 6,2020-06-15,2020,27500,8.0,80.0,Overview for Movie 6,/poster6.jpg,/backdrop6.jpg,"Drama, History","action, thriller",125,Tagline for Movie 6,tt0000105
+name,106,Movie 7,2020-07-15,2020,27000,7.9,78.0,Overview for Movie 7,/poster7.jpg,/backdrop7.jpg,"Action, Science Fiction","action, thriller",126,Tagline for Movie 7,tt0000106
+name,107,Movie 8,2020-08-15,2020,26500,7.8,76.0,Overview for Movie 8,/poster8.jpg,/backdrop8.jpg,"Drama, History","action, thriller",127,Tagline for Movie 8,tt0000107
+name,108,Movie 9,2020-09-15,2020,26000,7.7,74.0,Overview for Movie 9,/poster9.jpg,/backdrop9.jpg,"Action, Science Fiction","action, thriller",128,Tagline for Movie 9,tt0000108
+name_no_articles,100,Movie 1,2020-01-15,2020,30000,8.5,90.0,Overview for Movie 1,/poster1.jpg,/backdrop1.jpg,"Action, Science Fiction","action, thriller",120,Tagline for Movie 1,tt0000100
+name_no_articles,109,Movie 10,2020-10-15,2020,25500,7.6,72.0,Overview for Movie 10,/poster10.jpg,/backdrop10.jpg,"Drama, History","action, thriller",129,Tagline for Movie 10,tt0000109
+name_no_articles,101,Movie 2,2020-02-15,2020,29500,8.4,88.0,Overview for Movie 2,/poster2.jpg,/backdrop2.jpg,"Drama, History","action, thriller",121,Tagline for Movie 2,tt0000101
+name_no_articles,102,Movie 3,2020-03-15,2020,29000,8.3,86.0,Overview for Movie 3,/poster3.jpg,/backdrop3.jpg,"Action, Science Fiction","action, thriller",122,Tagline for Movie 3,tt0000102
+name_no_articles,103,Movie 4,2020-04-15,2020,28500,8.2,84.0,Overview for Movie 4,/poster4.jpg,/backdrop4.jpg,"Drama, History","action, thriller",123,Tagline for Movie 4,tt0000103
+name_no_articles,104,Movie 5,2020-05-15,2020,28000,8.1,82.0,Overview for Movie 5,/poster5.jpg,/backdrop5.jpg,"Action, Science Fiction","action, thriller",124,Tagline for Movie 5,tt0000104
+name_no_articles,105,Movie 6,2020-06-15,2020,27500,8.0,80.0,Overview for Movie 6,/poster6.jpg,/backdrop6.jpg,"Drama, History","action, thriller",125,Tagline for Movie 6,tt0000105
+name_no_articles,106,Movie 7,2020-07-15,2020,27000,7.9,78.0,Overview for Movie 7,/poster7.jpg,/backdrop7.jpg,"Action, Science Fiction","action, thriller",126,Tagline for Movie 7,tt0000106
+name_no_articles,107,Movie 8,2020-08-15,2020,26500,7.8,76.0,Overview for Movie 8,/poster8.jpg,/backdrop8.jpg,"Drama, History","action, thriller",127,Tagline for Movie 8,tt0000107
+name_no_articles,108,Movie 9,2020-09-15,2020,26000,7.7,74.0,Overview for Movie 9,/poster9.jpg,/backdrop9.jpg,"Action, Science Fiction","action, thriller",128,Tagline for Movie 9,tt0000108
