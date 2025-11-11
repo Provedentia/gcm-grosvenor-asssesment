@@ -1,2 +1,6 @@
 .env
-.env.example
+data/
+pycache/
+.pytest_cache/
+
+.env.production.local

@@ -37,10 +37,9 @@ class TMDBClient:
         self.language = self.config.get("data.language", "en-US")
         self.region = self.config.get("data.region", "US")
         
-        # Setup session with authentication
+        # Setup session
         self.session = requests.Session()
         self.session.headers.update({
-            "Authorization": f"Bearer {self.api_key}",
             "Content-Type": "application/json;charset=utf-8"
         })
         
@@ -66,8 +65,9 @@ class TMDBClient:
         url = f"{self.base_url}/{endpoint.lstrip('/')}"
         params = params or {}
         
-        # Add default parameters
+        # Add default parameters including API key (TMDB v3 uses query parameter auth)
         default_params = {
+            "api_key": self.api_key,
             "language": self.language,
             "region": self.region
         }

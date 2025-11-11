@@ -32,8 +32,8 @@ def main():
     parser.add_argument(
         "--output",
         type=str,
-        default="top_movies.csv",
-        help="Output CSV filename (default: top_movies.csv)",
+        default=None,
+        help="Output CSV filename (default: top_movies_{year}.csv, year is automatically added)",
     )
     parser.add_argument(
         "--min-votes",
@@ -66,6 +66,18 @@ def main():
     try:
         logger.info(f"Starting movie service for year {args.year}")
         
+        # Generate output filename with year
+        if args.output is None:
+            # Default filename with year
+            output_filename = f"top_movies_{args.year}.csv"
+        else:
+            # Insert year before file extension if user provided custom filename
+            output_path = Path(args.output)
+            if output_path.suffix:
+                output_filename = f"{output_path.stem}_{args.year}{output_path.suffix}"
+            else:
+                output_filename = f"{args.output}_{args.year}.csv"
+        
         # Initialize service
         movie_service = MovieService()
 
@@ -73,7 +85,7 @@ def main():
         movies, csv_path = movie_service.get_and_export_top_movies(
             year=args.year,
             top_n=args.top_n,
-            filename=args.output,
+            filename=output_filename,
             min_vote_count=args.min_votes,
             min_vote_average=args.min_rating,
         )
@@ -102,10 +114,11 @@ def main():
                     similar_movies_data
                 )
 
-                # Export similar movies
+                # Export similar movies with year in filename
+                similar_filename = f"similar_movies_{args.year}.csv"
                 similar_csv_path = export_service.export_similar_movies_to_csv(
                     similar_movies_data=export_data,
-                    filename="similar_movies.csv",
+                    filename=similar_filename,
                 )
 
                 total_similar = sum(

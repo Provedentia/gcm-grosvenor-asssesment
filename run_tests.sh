@@ -6,6 +6,12 @@ echo "🧪 Running Tests for TMDB Movie Recommendation Application"
 echo "=========================================================="
 echo ""
 
+# Load .env file if it exists (for API key)
+if [ -f .env ]; then
+    echo "📝 Loading .env file..."
+    export $(cat .env | grep -v '^#' | xargs)
+fi
+
 # Check if pytest is installed
 if ! command -v pytest &> /dev/null; then
     echo "❌ pytest is not installed. Installing..."
@@ -31,13 +37,14 @@ case "${1:-all}" in
         pytest tests/integration/test_complete_timeline.py -v
         ;;
     api)
-        echo "🌐 Running Real API Tests (requires TMDB_API_KEY)..."
+        echo "🌐 Running Real API Tests..."
         if [ -z "$TMDB_API_KEY" ]; then
-            echo "❌ Error: TMDB_API_KEY environment variable not set"
-            echo "   Set it with: export TMDB_API_KEY=your_api_key"
+            echo "❌ Error: TMDB_API_KEY not found in .env file or environment"
+            echo "   Make sure your .env file contains: TMDB_API_KEY=your_api_key"
+            echo "   Or set it with: export TMDB_API_KEY=your_api_key"
             exit 1
         fi
-        pytest tests/api/ -v -m api
+        pytest tests/api/ -v -m api -o addopts=""
         ;;
     mocked)
         echo "🎭 Running All Mocked Tests (unit + integration)..."
