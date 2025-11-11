@@ -104,3 +104,966 @@
 2025-11-11 00:25:10 - export_service - INFO - Successfully exported movies to data/top_movies_2020.csv
 2025-11-11 00:25:10 - movie_service - INFO - Successfully exported 10 movies with 3 sort methods to data/top_movies_2020.csv
 2025-11-11 00:25:10 - main - INFO - Successfully processed 10 movies
+2025-11-11 00:32:12 - main - INFO - Starting movie service for year 2020
+2025-11-11 00:32:12 - tmdb_client - INFO - TMDB client initialized
+2025-11-11 00:32:12 - export_service - INFO - Export service initialized with output directory: data
+2025-11-11 00:32:12 - movie_service - INFO - Movie service initialized
+2025-11-11 00:32:12 - movie_service - INFO - Processing top 2 movies from year 2020 for export
+2025-11-11 00:32:12 - movie_service - INFO - Retrieving top 2 movies from year 2020 (min_votes: 100, min_rating: 6.0)
+2025-11-11 00:32:12 - tmdb_client - INFO - Retrieving movies from year 2020 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:32:12 - movie_service - INFO - Selected top 2 movies from year 2020
+2025-11-11 00:32:12 - export_service - INFO - Exporting 2 movie entries to data/top_movies_2020.csv
+2025-11-11 00:32:12 - export_service - INFO - Successfully exported movies to data/top_movies_2020.csv
+2025-11-11 00:32:12 - export_service - INFO - Exporting 2 movie entries to data/top_movies_2020.csv
+2025-11-11 00:32:12 - export_service - INFO - Successfully exported movies to data/top_movies_2020.csv
+2025-11-11 00:32:12 - export_service - INFO - Exporting 2 movie entries to data/top_movies_2020.csv
+2025-11-11 00:32:12 - export_service - INFO - Successfully exported movies to data/top_movies_2020.csv
+2025-11-11 00:32:12 - movie_service - INFO - Successfully exported 2 movies with 3 sort methods to data/top_movies_2020.csv
+2025-11-11 00:32:12 - main - INFO - Successfully processed 2 movies
+2025-11-11 00:32:12 - main - INFO - Using recommendation strategy: tmdb_api
+2025-11-11 00:32:12 - tmdb_client - INFO - TMDB client initialized
+2025-11-11 00:32:12 - recommendation_service - INFO - Recommendation service initialized
+2025-11-11 00:32:12 - export_service - INFO - Export service initialized with output directory: data
+2025-11-11 00:32:12 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-11 00:32:12 - movie_recommendation_engine - INFO - Finding 2 similar movies for 2 movies using strategy: tmdb_api
+2025-11-11 00:32:12 - movie_recommendation_engine - INFO - Processing movie 1/2: Soul (ID: 508442)
+2025-11-11 00:32:19 - movie_recommendation_engine - INFO - Found 2 similar movies for Soul
+2025-11-11 00:32:19 - movie_recommendation_engine - INFO - Processing movie 2/2: Tenet (ID: 577922)
+2025-11-11 00:32:27 - movie_recommendation_engine - INFO - Found 2 similar movies for Tenet
+2025-11-11 00:32:27 - movie_recommendation_engine - INFO - Completed processing. Total API calls made: 150. Found similar movies for 2/2 movies
+2025-11-11 00:32:27 - movie_recommendation_engine - INFO - Exporting recommendations to CSV: 2 original movies
+2025-11-11 00:32:27 - movie_recommendation_engine - INFO - Flattened 2 original movies into 4 recommendation entries
+2025-11-11 00:32:27 - export_service - INFO - Exporting 4 similar movie entries to data/similar_movies_2020.csv
+2025-11-11 00:32:27 - export_service - INFO - Successfully exported similar movies to data/similar_movies_2020.csv
+2025-11-11 00:32:27 - main - INFO - Exported 4 similar movies to data/similar_movies_2020.csv using strategy tmdb_api (150 API calls)
+2025-11-11 00:32:35 - main - INFO - Starting movie service for year 2019
+2025-11-11 00:32:35 - tmdb_client - INFO - TMDB client initialized
+2025-11-11 00:32:35 - export_service - INFO - Export service initialized with output directory: data
+2025-11-11 00:32:35 - movie_service - INFO - Movie service initialized
+2025-11-11 00:32:35 - movie_service - INFO - Processing top 3 movies from year 2019 for export
+2025-11-11 00:32:35 - movie_service - INFO - Retrieving top 3 movies from year 2019 (min_votes: 100, min_rating: 6.0)
+2025-11-11 00:32:35 - tmdb_client - INFO - Retrieving movies from year 2019 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:32:35 - movie_service - INFO - Selected top 3 movies from year 2019
+2025-11-11 00:32:35 - export_service - INFO - Exporting 3 movie entries to data/top_movies_2019.csv
+2025-11-11 00:32:35 - export_service - INFO - Successfully exported movies to data/top_movies_2019.csv
+2025-11-11 00:32:35 - export_service - INFO - Exporting 3 movie entries to data/top_movies_2019.csv
+2025-11-11 00:32:35 - export_service - INFO - Successfully exported movies to data/top_movies_2019.csv
+2025-11-11 00:32:35 - export_service - INFO - Exporting 3 movie entries to data/top_movies_2019.csv
+2025-11-11 00:32:35 - export_service - INFO - Successfully exported movies to data/top_movies_2019.csv
+2025-11-11 00:32:35 - movie_service - INFO - Successfully exported 3 movies with 3 sort methods to data/top_movies_2019.csv
+2025-11-11 00:32:35 - main - INFO - Successfully processed 3 movies
+2025-11-11 00:32:35 - main - INFO - Using recommendation strategy: hybrid
+2025-11-11 00:32:35 - tmdb_client - INFO - TMDB client initialized
+2025-11-11 00:32:35 - recommendation_service - INFO - Recommendation service initialized
+2025-11-11 00:32:35 - export_service - INFO - Export service initialized with output directory: data
+2025-11-11 00:32:35 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-11 00:32:35 - movie_recommendation_engine - INFO - Finding 2 similar movies for 3 movies using strategy: hybrid
+2025-11-11 00:32:35 - movie_recommendation_engine - INFO - Processing movie 1/3: Joker (ID: 475557)
+2025-11-11 00:32:35 - tmdb_client - INFO - Retrieving movies from year 2019 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:32:35 - tmdb_client - INFO - Retrieving movies from year 2017 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:32:36 - tmdb_client - INFO - Retrieving movies from year 2018 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:32:36 - tmdb_client - INFO - Retrieving movies from year 2020 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:32:36 - tmdb_client - INFO - Retrieving movies from year 2021 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:32:55 - movie_recommendation_engine - INFO - Found 2 similar movies for Joker
+2025-11-11 00:32:55 - movie_recommendation_engine - INFO - Processing movie 2/3: Avengers: Endgame (ID: 299534)
+2025-11-11 00:32:55 - tmdb_client - INFO - Retrieving movies from year 2019 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:32:55 - tmdb_client - INFO - Retrieving movies from year 2017 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:32:56 - tmdb_client - INFO - Retrieving movies from year 2018 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:32:56 - tmdb_client - INFO - Retrieving movies from year 2020 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:32:56 - tmdb_client - INFO - Retrieving movies from year 2021 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:33:14 - movie_recommendation_engine - INFO - Found 2 similar movies for Avengers: Endgame
+2025-11-11 00:33:14 - movie_recommendation_engine - INFO - Processing movie 3/3: Parasite (ID: 496243)
+2025-11-11 00:33:14 - tmdb_client - INFO - Retrieving movies from year 2019 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:33:14 - tmdb_client - INFO - Retrieving movies from year 2017 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:33:14 - tmdb_client - INFO - Retrieving movies from year 2018 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:33:14 - tmdb_client - INFO - Retrieving movies from year 2020 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:33:15 - tmdb_client - INFO - Retrieving movies from year 2021 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:33:29 - movie_recommendation_engine - INFO - Found 2 similar movies for Parasite
+2025-11-11 00:33:29 - movie_recommendation_engine - INFO - Completed processing. Total API calls made: 569. Found similar movies for 3/3 movies
+2025-11-11 00:33:29 - movie_recommendation_engine - INFO - Exporting recommendations to CSV: 3 original movies
+2025-11-11 00:33:29 - movie_recommendation_engine - INFO - Flattened 3 original movies into 6 recommendation entries
+2025-11-11 00:33:29 - export_service - INFO - Exporting 6 similar movie entries to data/similar_movies_2019.csv
+2025-11-11 00:33:29 - export_service - INFO - Successfully exported similar movies to data/similar_movies_2019.csv
+2025-11-11 00:33:29 - main - INFO - Exported 6 similar movies to data/similar_movies_2019.csv using strategy hybrid (569 API calls)
+2025-11-11 00:34:11 - main - INFO - Starting movie service for year 2020
+2025-11-11 00:34:11 - tmdb_client - INFO - TMDB client initialized
+2025-11-11 00:34:11 - export_service - INFO - Export service initialized with output directory: data
+2025-11-11 00:34:11 - movie_service - INFO - Movie service initialized
+2025-11-11 00:34:11 - movie_service - INFO - Processing top 10 movies from year 2020 for export
+2025-11-11 00:34:11 - movie_service - INFO - Retrieving top 10 movies from year 2020 (min_votes: 100, min_rating: 6.0)
+2025-11-11 00:34:11 - tmdb_client - INFO - Retrieving movies from year 2020 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:34:11 - movie_service - INFO - Selected top 10 movies from year 2020
+2025-11-11 00:34:11 - export_service - INFO - Exporting 10 movie entries to data/top_movies_2020.csv
+2025-11-11 00:34:11 - export_service - INFO - Successfully exported movies to data/top_movies_2020.csv
+2025-11-11 00:34:11 - export_service - INFO - Exporting 10 movie entries to data/top_movies_2020.csv
+2025-11-11 00:34:11 - export_service - INFO - Successfully exported movies to data/top_movies_2020.csv
+2025-11-11 00:34:11 - export_service - INFO - Exporting 10 movie entries to data/top_movies_2020.csv
+2025-11-11 00:34:11 - export_service - INFO - Successfully exported movies to data/top_movies_2020.csv
+2025-11-11 00:34:11 - movie_service - INFO - Successfully exported 10 movies with 3 sort methods to data/top_movies_2020.csv
+2025-11-11 00:34:11 - main - INFO - Successfully processed 10 movies
+2025-11-11 00:35:49 - main - INFO - Starting movie service for year 2020
+2025-11-11 00:35:49 - tmdb_client - INFO - TMDB client initialized
+2025-11-11 00:35:49 - export_service - INFO - Export service initialized with output directory: data
+2025-11-11 00:35:49 - movie_service - INFO - Movie service initialized
+2025-11-11 00:35:49 - movie_service - INFO - Processing top 10 movies from year 2020 for export
+2025-11-11 00:35:49 - movie_service - INFO - Retrieving top 10 movies from year 2020 (min_votes: 100, min_rating: 6.0)
+2025-11-11 00:35:49 - tmdb_client - INFO - Retrieving movies from year 2020 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:35:49 - movie_service - INFO - Selected top 10 movies from year 2020
+2025-11-11 00:35:49 - export_service - INFO - Exporting 10 movie entries to data/top_movies_2020.csv
+2025-11-11 00:35:49 - export_service - INFO - Successfully exported movies to data/top_movies_2020.csv
+2025-11-11 00:35:49 - export_service - INFO - Exporting 10 movie entries to data/top_movies_2020.csv
+2025-11-11 00:35:49 - export_service - INFO - Successfully exported movies to data/top_movies_2020.csv
+2025-11-11 00:35:49 - export_service - INFO - Exporting 10 movie entries to data/top_movies_2020.csv
+2025-11-11 00:35:49 - export_service - INFO - Successfully exported movies to data/top_movies_2020.csv
+2025-11-11 00:35:49 - movie_service - INFO - Successfully exported 10 movies with 3 sort methods to data/top_movies_2020.csv
+2025-11-11 00:35:49 - main - INFO - Successfully processed 10 movies
+2025-11-11 00:35:56 - main - INFO - Starting movie service for year 2020
+2025-11-11 00:35:56 - tmdb_client - INFO - TMDB client initialized
+2025-11-11 00:35:56 - export_service - INFO - Export service initialized with output directory: data
+2025-11-11 00:35:56 - movie_service - INFO - Movie service initialized
+2025-11-11 00:35:56 - movie_service - INFO - Processing top 3 movies from year 2020 for export
+2025-11-11 00:35:56 - movie_service - INFO - Retrieving top 3 movies from year 2020 (min_votes: 100, min_rating: 6.0)
+2025-11-11 00:35:56 - tmdb_client - INFO - Retrieving movies from year 2020 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:35:56 - movie_service - INFO - Selected top 3 movies from year 2020
+2025-11-11 00:35:56 - export_service - INFO - Exporting 3 movie entries to data/top_movies_2020.csv
+2025-11-11 00:35:56 - export_service - INFO - Successfully exported movies to data/top_movies_2020.csv
+2025-11-11 00:35:56 - export_service - INFO - Exporting 3 movie entries to data/top_movies_2020.csv
+2025-11-11 00:35:56 - export_service - INFO - Successfully exported movies to data/top_movies_2020.csv
+2025-11-11 00:35:56 - export_service - INFO - Exporting 3 movie entries to data/top_movies_2020.csv
+2025-11-11 00:35:56 - export_service - INFO - Successfully exported movies to data/top_movies_2020.csv
+2025-11-11 00:35:56 - movie_service - INFO - Successfully exported 3 movies with 3 sort methods to data/top_movies_2020.csv
+2025-11-11 00:35:56 - main - INFO - Successfully processed 3 movies
+2025-11-11 00:35:56 - main - INFO - Using recommendation strategy: hybrid
+2025-11-11 00:35:56 - tmdb_client - INFO - TMDB client initialized
+2025-11-11 00:35:56 - recommendation_service - INFO - Recommendation service initialized
+2025-11-11 00:35:56 - export_service - INFO - Export service initialized with output directory: data
+2025-11-11 00:35:56 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-11 00:35:56 - movie_recommendation_engine - INFO - Finding 3 similar movies for 3 movies using strategy: hybrid
+2025-11-11 00:35:56 - movie_recommendation_engine - INFO - Processing movie 1/3: Soul (ID: 508442)
+2025-11-11 00:35:56 - tmdb_client - INFO - Retrieving movies from year 2020 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:35:56 - tmdb_client - INFO - Retrieving movies from year 2018 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:35:56 - tmdb_client - INFO - Retrieving movies from year 2019 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:35:56 - tmdb_client - INFO - Retrieving movies from year 2021 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:35:56 - tmdb_client - INFO - Retrieving movies from year 2022 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:36:13 - movie_recommendation_engine - INFO - Found 3 similar movies for Soul
+2025-11-11 00:36:13 - movie_recommendation_engine - INFO - Processing movie 2/3: Tenet (ID: 577922)
+2025-11-11 00:36:13 - tmdb_client - INFO - Retrieving movies from year 2020 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:36:13 - tmdb_client - INFO - Retrieving movies from year 2018 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:36:13 - tmdb_client - INFO - Retrieving movies from year 2019 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:36:13 - tmdb_client - INFO - Retrieving movies from year 2021 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:36:14 - tmdb_client - INFO - Retrieving movies from year 2022 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:36:27 - movie_recommendation_engine - INFO - Found 3 similar movies for Tenet
+2025-11-11 00:36:28 - movie_recommendation_engine - INFO - Processing movie 3/3: Birds of Prey (and the Fantabulous Emancipation of One Harley Quinn) (ID: 495764)
+2025-11-11 00:36:28 - tmdb_client - INFO - Retrieving movies from year 2020 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:36:28 - tmdb_client - INFO - Retrieving movies from year 2018 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:36:28 - tmdb_client - INFO - Retrieving movies from year 2019 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:36:28 - tmdb_client - INFO - Retrieving movies from year 2021 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:36:28 - tmdb_client - INFO - Retrieving movies from year 2022 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:36:43 - movie_recommendation_engine - INFO - Found 3 similar movies for Birds of Prey (and the Fantabulous Emancipation of One Harley Quinn)
+2025-11-11 00:36:43 - movie_recommendation_engine - INFO - Completed processing. Total API calls made: 595. Found similar movies for 3/3 movies
+2025-11-11 00:36:43 - movie_recommendation_engine - INFO - Exporting recommendations to CSV: 3 original movies
+2025-11-11 00:36:43 - movie_recommendation_engine - INFO - Flattened 3 original movies into 9 recommendation entries
+2025-11-11 00:36:43 - export_service - INFO - Exporting 9 similar movie entries to data/similar_movies_2020.csv
+2025-11-11 00:36:43 - export_service - INFO - Successfully exported similar movies to data/similar_movies_2020.csv
+2025-11-11 00:36:43 - main - INFO - Exported 9 similar movies to data/similar_movies_2020.csv using strategy hybrid (595 API calls)
+2025-11-11 00:36:49 - main - INFO - Starting movie service for year 2020
+2025-11-11 00:36:49 - tmdb_client - INFO - TMDB client initialized
+2025-11-11 00:36:49 - export_service - INFO - Export service initialized with output directory: data
+2025-11-11 00:36:49 - movie_service - INFO - Movie service initialized
+2025-11-11 00:36:49 - movie_service - INFO - Processing top 3 movies from year 2020 for export
+2025-11-11 00:36:49 - movie_service - INFO - Retrieving top 3 movies from year 2020 (min_votes: 100, min_rating: 6.0)
+2025-11-11 00:36:49 - tmdb_client - INFO - Retrieving movies from year 2020 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:36:49 - movie_service - INFO - Selected top 3 movies from year 2020
+2025-11-11 00:36:49 - export_service - INFO - Exporting 3 movie entries to data/top_movies_2020.csv
+2025-11-11 00:36:49 - export_service - INFO - Successfully exported movies to data/top_movies_2020.csv
+2025-11-11 00:36:49 - export_service - INFO - Exporting 3 movie entries to data/top_movies_2020.csv
+2025-11-11 00:36:49 - export_service - INFO - Successfully exported movies to data/top_movies_2020.csv
+2025-11-11 00:36:49 - export_service - INFO - Exporting 3 movie entries to data/top_movies_2020.csv
+2025-11-11 00:36:49 - export_service - INFO - Successfully exported movies to data/top_movies_2020.csv
+2025-11-11 00:36:49 - movie_service - INFO - Successfully exported 3 movies with 3 sort methods to data/top_movies_2020.csv
+2025-11-11 00:36:49 - main - INFO - Successfully processed 3 movies
+2025-11-11 00:36:49 - main - INFO - Using recommendation strategy: hybrid
+2025-11-11 00:36:49 - tmdb_client - INFO - TMDB client initialized
+2025-11-11 00:36:49 - recommendation_service - INFO - Recommendation service initialized
+2025-11-11 00:36:49 - export_service - INFO - Export service initialized with output directory: data
+2025-11-11 00:36:49 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-11 00:36:49 - movie_recommendation_engine - INFO - Finding 3 similar movies for 3 movies using strategy: hybrid
+2025-11-11 00:36:49 - movie_recommendation_engine - INFO - Processing movie 1/3: Soul (ID: 508442)
+2025-11-11 00:36:49 - tmdb_client - INFO - Retrieving movies from year 2020 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:36:49 - tmdb_client - INFO - Retrieving movies from year 2018 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:36:50 - tmdb_client - INFO - Retrieving movies from year 2019 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:36:50 - tmdb_client - INFO - Retrieving movies from year 2021 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:36:50 - tmdb_client - INFO - Retrieving movies from year 2022 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:37:07 - movie_recommendation_engine - INFO - Found 3 similar movies for Soul
+2025-11-11 00:37:07 - movie_recommendation_engine - INFO - Processing movie 2/3: Tenet (ID: 577922)
+2025-11-11 00:37:07 - tmdb_client - INFO - Retrieving movies from year 2020 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:37:07 - tmdb_client - INFO - Retrieving movies from year 2018 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:37:07 - tmdb_client - INFO - Retrieving movies from year 2019 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:37:07 - tmdb_client - INFO - Retrieving movies from year 2021 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:37:07 - tmdb_client - INFO - Retrieving movies from year 2022 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:37:24 - movie_recommendation_engine - INFO - Found 3 similar movies for Tenet
+2025-11-11 00:37:24 - movie_recommendation_engine - INFO - Processing movie 3/3: Birds of Prey (and the Fantabulous Emancipation of One Harley Quinn) (ID: 495764)
+2025-11-11 00:37:24 - tmdb_client - INFO - Retrieving movies from year 2020 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:37:24 - tmdb_client - INFO - Retrieving movies from year 2018 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:37:24 - tmdb_client - INFO - Retrieving movies from year 2019 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:37:24 - tmdb_client - INFO - Retrieving movies from year 2021 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:37:24 - tmdb_client - INFO - Retrieving movies from year 2022 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:37:38 - movie_recommendation_engine - INFO - Found 3 similar movies for Birds of Prey (and the Fantabulous Emancipation of One Harley Quinn)
+2025-11-11 00:37:38 - movie_recommendation_engine - INFO - Completed processing. Total API calls made: 595. Found similar movies for 3/3 movies
+2025-11-11 00:37:38 - movie_recommendation_engine - INFO - Exporting recommendations to CSV: 3 original movies
+2025-11-11 00:37:38 - movie_recommendation_engine - INFO - Flattened 3 original movies into 9 recommendation entries
+2025-11-11 00:37:38 - export_service - INFO - Exporting 9 similar movie entries to data/similar_movies_2020.csv
+2025-11-11 00:37:38 - export_service - INFO - Successfully exported similar movies to data/similar_movies_2020.csv
+2025-11-11 00:37:38 - main - INFO - Exported 9 similar movies to data/similar_movies_2020.csv using strategy hybrid (595 API calls)
+2025-11-11 00:37:46 - main - INFO - Starting movie service for year 2020
+2025-11-11 00:37:46 - tmdb_client - INFO - TMDB client initialized
+2025-11-11 00:37:46 - export_service - INFO - Export service initialized with output directory: data
+2025-11-11 00:37:46 - movie_service - INFO - Movie service initialized
+2025-11-11 00:37:46 - movie_service - INFO - Processing top 10 movies from year 2020 for export
+2025-11-11 00:37:46 - movie_service - INFO - Retrieving top 10 movies from year 2020 (min_votes: 100, min_rating: 6.0)
+2025-11-11 00:37:46 - tmdb_client - INFO - Retrieving movies from year 2020 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:37:46 - movie_service - INFO - Selected top 10 movies from year 2020
+2025-11-11 00:37:46 - export_service - INFO - Exporting 10 movie entries to data/top_movies_2020.csv
+2025-11-11 00:37:46 - export_service - INFO - Successfully exported movies to data/top_movies_2020.csv
+2025-11-11 00:37:46 - export_service - INFO - Exporting 10 movie entries to data/top_movies_2020.csv
+2025-11-11 00:37:46 - export_service - INFO - Successfully exported movies to data/top_movies_2020.csv
+2025-11-11 00:37:46 - export_service - INFO - Exporting 10 movie entries to data/top_movies_2020.csv
+2025-11-11 00:37:46 - export_service - INFO - Successfully exported movies to data/top_movies_2020.csv
+2025-11-11 00:37:46 - movie_service - INFO - Successfully exported 10 movies with 3 sort methods to data/top_movies_2020.csv
+2025-11-11 00:37:46 - main - INFO - Successfully processed 10 movies
+2025-11-11 00:37:46 - main - INFO - Using recommendation strategy: hybrid
+2025-11-11 00:37:46 - tmdb_client - INFO - TMDB client initialized
+2025-11-11 00:37:46 - recommendation_service - INFO - Recommendation service initialized
+2025-11-11 00:37:46 - export_service - INFO - Export service initialized with output directory: data
+2025-11-11 00:37:46 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-11 00:37:46 - movie_recommendation_engine - INFO - Finding 3 similar movies for 10 movies using strategy: hybrid
+2025-11-11 00:37:46 - movie_recommendation_engine - INFO - Processing movie 1/10: Soul (ID: 508442)
+2025-11-11 00:37:46 - tmdb_client - INFO - Retrieving movies from year 2020 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:37:46 - tmdb_client - INFO - Retrieving movies from year 2018 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:37:46 - tmdb_client - INFO - Retrieving movies from year 2019 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:37:46 - tmdb_client - INFO - Retrieving movies from year 2021 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:37:46 - tmdb_client - INFO - Retrieving movies from year 2022 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:37:59 - movie_recommendation_engine - INFO - Found 3 similar movies for Soul
+2025-11-11 00:37:59 - movie_recommendation_engine - INFO - Processing movie 2/10: Tenet (ID: 577922)
+2025-11-11 00:37:59 - tmdb_client - INFO - Retrieving movies from year 2020 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:37:59 - tmdb_client - INFO - Retrieving movies from year 2018 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:38:00 - tmdb_client - INFO - Retrieving movies from year 2019 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:38:00 - tmdb_client - INFO - Retrieving movies from year 2021 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:38:00 - tmdb_client - INFO - Retrieving movies from year 2022 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:38:13 - movie_recommendation_engine - INFO - Found 3 similar movies for Tenet
+2025-11-11 00:38:13 - movie_recommendation_engine - INFO - Processing movie 3/10: Birds of Prey (and the Fantabulous Emancipation of One Harley Quinn) (ID: 495764)
+2025-11-11 00:38:13 - tmdb_client - INFO - Retrieving movies from year 2020 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:38:13 - tmdb_client - INFO - Retrieving movies from year 2018 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:38:13 - tmdb_client - INFO - Retrieving movies from year 2019 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:38:13 - tmdb_client - INFO - Retrieving movies from year 2021 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:38:13 - tmdb_client - INFO - Retrieving movies from year 2022 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:38:27 - movie_recommendation_engine - INFO - Found 3 similar movies for Birds of Prey (and the Fantabulous Emancipation of One Harley Quinn)
+2025-11-11 00:38:27 - movie_recommendation_engine - INFO - Processing movie 4/10: Sonic the Hedgehog (ID: 454626)
+2025-11-11 00:38:27 - tmdb_client - INFO - Retrieving movies from year 2020 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:38:27 - tmdb_client - INFO - Retrieving movies from year 2018 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:38:27 - tmdb_client - INFO - Retrieving movies from year 2019 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:38:27 - tmdb_client - INFO - Retrieving movies from year 2021 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:38:27 - tmdb_client - INFO - Retrieving movies from year 2022 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:38:41 - movie_recommendation_engine - INFO - Found 3 similar movies for Sonic the Hedgehog
+2025-11-11 00:38:41 - movie_recommendation_engine - INFO - Processing movie 5/10: 365 Days (ID: 664413)
+2025-11-11 00:38:41 - tmdb_client - INFO - Retrieving movies from year 2020 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:38:41 - tmdb_client - INFO - Retrieving movies from year 2018 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:38:42 - tmdb_client - INFO - Retrieving movies from year 2019 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:38:42 - tmdb_client - INFO - Retrieving movies from year 2021 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:38:42 - tmdb_client - INFO - Retrieving movies from year 2022 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:38:57 - movie_recommendation_engine - INFO - Found 3 similar movies for 365 Days
+2025-11-11 00:38:58 - movie_recommendation_engine - INFO - Processing movie 6/10: Wonder Woman 1984 (ID: 464052)
+2025-11-11 00:38:58 - tmdb_client - INFO - Retrieving movies from year 2020 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:38:58 - tmdb_client - INFO - Retrieving movies from year 2018 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:38:58 - tmdb_client - INFO - Retrieving movies from year 2019 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:38:58 - tmdb_client - INFO - Retrieving movies from year 2021 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:38:58 - tmdb_client - INFO - Retrieving movies from year 2022 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:39:13 - movie_recommendation_engine - INFO - Found 3 similar movies for Wonder Woman 1984
+2025-11-11 00:39:13 - movie_recommendation_engine - INFO - Processing movie 7/10: Bad Boys for Life (ID: 38700)
+2025-11-11 00:39:14 - tmdb_client - INFO - Retrieving movies from year 2020 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:39:14 - tmdb_client - INFO - Retrieving movies from year 2018 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:39:14 - tmdb_client - INFO - Retrieving movies from year 2019 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:39:14 - tmdb_client - INFO - Retrieving movies from year 2021 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:39:14 - tmdb_client - INFO - Retrieving movies from year 2022 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:39:29 - movie_recommendation_engine - INFO - Found 3 similar movies for Bad Boys for Life
+2025-11-11 00:39:29 - movie_recommendation_engine - INFO - Processing movie 8/10: Mulan (ID: 337401)
+2025-11-11 00:39:29 - tmdb_client - INFO - Retrieving movies from year 2020 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:39:29 - tmdb_client - INFO - Retrieving movies from year 2018 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:39:29 - tmdb_client - INFO - Retrieving movies from year 2019 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:39:30 - tmdb_client - INFO - Retrieving movies from year 2021 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:39:30 - tmdb_client - INFO - Retrieving movies from year 2022 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:39:45 - movie_recommendation_engine - INFO - Found 3 similar movies for Mulan
+2025-11-11 00:39:45 - movie_recommendation_engine - INFO - Processing movie 9/10: Onward (ID: 508439)
+2025-11-11 00:39:45 - tmdb_client - INFO - Retrieving movies from year 2020 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:39:45 - tmdb_client - INFO - Retrieving movies from year 2018 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:39:45 - tmdb_client - INFO - Retrieving movies from year 2019 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:39:46 - tmdb_client - INFO - Retrieving movies from year 2021 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:39:46 - tmdb_client - INFO - Retrieving movies from year 2022 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:40:01 - movie_recommendation_engine - INFO - Found 3 similar movies for Onward
+2025-11-11 00:40:01 - movie_recommendation_engine - INFO - Processing movie 10/10: Extraction (ID: 545609)
+2025-11-11 00:40:01 - tmdb_client - INFO - Retrieving movies from year 2020 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:40:01 - tmdb_client - INFO - Retrieving movies from year 2018 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:40:01 - tmdb_client - INFO - Retrieving movies from year 2019 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:40:01 - tmdb_client - INFO - Retrieving movies from year 2021 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:40:01 - tmdb_client - INFO - Retrieving movies from year 2022 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:40:16 - movie_recommendation_engine - INFO - Found 3 similar movies for Extraction
+2025-11-11 00:40:16 - movie_recommendation_engine - INFO - Completed processing. Total API calls made: 1986. Found similar movies for 10/10 movies
+2025-11-11 00:40:16 - movie_recommendation_engine - INFO - Exporting recommendations to CSV: 10 original movies
+2025-11-11 00:40:16 - movie_recommendation_engine - INFO - Flattened 10 original movies into 30 recommendation entries
+2025-11-11 00:40:16 - export_service - INFO - Exporting 30 similar movie entries to data/similar_movies_2020.csv
+2025-11-11 00:40:16 - export_service - INFO - Successfully exported similar movies to data/similar_movies_2020.csv
+2025-11-11 00:40:16 - main - INFO - Exported 30 similar movies to data/similar_movies_2020.csv using strategy hybrid (1986 API calls)
+2025-11-11 00:40:25 - main - INFO - Starting movie service for year 2020
+2025-11-11 00:40:25 - tmdb_client - INFO - TMDB client initialized
+2025-11-11 00:40:25 - export_service - INFO - Export service initialized with output directory: data
+2025-11-11 00:40:25 - movie_service - INFO - Movie service initialized
+2025-11-11 00:40:25 - movie_service - INFO - Processing top 10 movies from year 2020 for export
+2025-11-11 00:40:25 - movie_service - INFO - Retrieving top 10 movies from year 2020 (min_votes: 100, min_rating: 6.0)
+2025-11-11 00:40:25 - tmdb_client - INFO - Retrieving movies from year 2020 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:40:25 - movie_service - INFO - Selected top 10 movies from year 2020
+2025-11-11 00:40:25 - export_service - INFO - Exporting 10 movie entries to data/top_movies_2020.csv
+2025-11-11 00:40:25 - export_service - INFO - Successfully exported movies to data/top_movies_2020.csv
+2025-11-11 00:40:25 - export_service - INFO - Exporting 10 movie entries to data/top_movies_2020.csv
+2025-11-11 00:40:25 - export_service - INFO - Successfully exported movies to data/top_movies_2020.csv
+2025-11-11 00:40:25 - export_service - INFO - Exporting 10 movie entries to data/top_movies_2020.csv
+2025-11-11 00:40:25 - export_service - INFO - Successfully exported movies to data/top_movies_2020.csv
+2025-11-11 00:40:25 - movie_service - INFO - Successfully exported 10 movies with 3 sort methods to data/top_movies_2020.csv
+2025-11-11 00:40:25 - main - INFO - Successfully processed 10 movies
+2025-11-11 00:40:25 - main - INFO - Using recommendation strategy: hybrid
+2025-11-11 00:40:25 - tmdb_client - INFO - TMDB client initialized
+2025-11-11 00:40:25 - recommendation_service - INFO - Recommendation service initialized
+2025-11-11 00:40:25 - export_service - INFO - Export service initialized with output directory: data
+2025-11-11 00:40:25 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-11 00:40:25 - movie_recommendation_engine - INFO - Finding 3 similar movies for 10 movies using strategy: hybrid
+2025-11-11 00:40:25 - movie_recommendation_engine - INFO - Processing movie 1/10: Soul (ID: 508442)
+2025-11-11 00:40:25 - tmdb_client - INFO - Retrieving movies from year 2020 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:40:25 - tmdb_client - INFO - Retrieving movies from year 2018 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:40:25 - tmdb_client - INFO - Retrieving movies from year 2019 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:40:25 - tmdb_client - INFO - Retrieving movies from year 2021 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:40:25 - tmdb_client - INFO - Retrieving movies from year 2022 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:40:38 - movie_recommendation_engine - INFO - Found 3 similar movies for Soul
+2025-11-11 00:40:38 - movie_recommendation_engine - INFO - Processing movie 2/10: Tenet (ID: 577922)
+2025-11-11 00:40:38 - tmdb_client - INFO - Retrieving movies from year 2020 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:40:38 - tmdb_client - INFO - Retrieving movies from year 2018 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:40:39 - tmdb_client - INFO - Retrieving movies from year 2019 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:40:39 - tmdb_client - INFO - Retrieving movies from year 2021 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:40:39 - tmdb_client - INFO - Retrieving movies from year 2022 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:40:51 - movie_recommendation_engine - INFO - Found 3 similar movies for Tenet
+2025-11-11 00:40:51 - movie_recommendation_engine - INFO - Processing movie 3/10: Birds of Prey (and the Fantabulous Emancipation of One Harley Quinn) (ID: 495764)
+2025-11-11 00:40:51 - tmdb_client - INFO - Retrieving movies from year 2020 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:40:51 - tmdb_client - INFO - Retrieving movies from year 2018 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:40:52 - tmdb_client - INFO - Retrieving movies from year 2019 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:40:52 - tmdb_client - INFO - Retrieving movies from year 2021 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:40:52 - tmdb_client - INFO - Retrieving movies from year 2022 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:41:05 - movie_recommendation_engine - INFO - Found 3 similar movies for Birds of Prey (and the Fantabulous Emancipation of One Harley Quinn)
+2025-11-11 00:41:05 - movie_recommendation_engine - INFO - Processing movie 4/10: Sonic the Hedgehog (ID: 454626)
+2025-11-11 00:41:05 - tmdb_client - INFO - Retrieving movies from year 2020 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:41:05 - tmdb_client - INFO - Retrieving movies from year 2018 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:41:05 - tmdb_client - INFO - Retrieving movies from year 2019 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:41:05 - tmdb_client - INFO - Retrieving movies from year 2021 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:41:05 - tmdb_client - INFO - Retrieving movies from year 2022 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:41:19 - movie_recommendation_engine - INFO - Found 3 similar movies for Sonic the Hedgehog
+2025-11-11 00:41:19 - movie_recommendation_engine - INFO - Processing movie 5/10: 365 Days (ID: 664413)
+2025-11-11 00:41:19 - tmdb_client - INFO - Retrieving movies from year 2020 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:41:19 - tmdb_client - INFO - Retrieving movies from year 2018 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:41:19 - tmdb_client - INFO - Retrieving movies from year 2019 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:41:19 - tmdb_client - INFO - Retrieving movies from year 2021 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:41:19 - tmdb_client - INFO - Retrieving movies from year 2022 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:41:33 - movie_recommendation_engine - INFO - Found 3 similar movies for 365 Days
+2025-11-11 00:41:33 - movie_recommendation_engine - INFO - Processing movie 6/10: Wonder Woman 1984 (ID: 464052)
+2025-11-11 00:41:34 - tmdb_client - INFO - Retrieving movies from year 2020 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:41:34 - tmdb_client - INFO - Retrieving movies from year 2018 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:41:34 - tmdb_client - INFO - Retrieving movies from year 2019 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:41:34 - tmdb_client - INFO - Retrieving movies from year 2021 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:41:34 - tmdb_client - INFO - Retrieving movies from year 2022 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:41:47 - movie_recommendation_engine - INFO - Found 3 similar movies for Wonder Woman 1984
+2025-11-11 00:41:47 - movie_recommendation_engine - INFO - Processing movie 7/10: Bad Boys for Life (ID: 38700)
+2025-11-11 00:41:48 - tmdb_client - INFO - Retrieving movies from year 2020 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:41:48 - tmdb_client - INFO - Retrieving movies from year 2018 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:41:48 - tmdb_client - INFO - Retrieving movies from year 2019 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:41:48 - tmdb_client - INFO - Retrieving movies from year 2021 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:41:48 - tmdb_client - INFO - Retrieving movies from year 2022 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:42:02 - movie_recommendation_engine - INFO - Found 3 similar movies for Bad Boys for Life
+2025-11-11 00:42:02 - movie_recommendation_engine - INFO - Processing movie 8/10: Mulan (ID: 337401)
+2025-11-11 00:42:02 - tmdb_client - INFO - Retrieving movies from year 2020 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:42:02 - tmdb_client - INFO - Retrieving movies from year 2018 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:42:02 - tmdb_client - INFO - Retrieving movies from year 2019 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:42:02 - tmdb_client - INFO - Retrieving movies from year 2021 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:42:02 - tmdb_client - INFO - Retrieving movies from year 2022 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:42:16 - movie_recommendation_engine - INFO - Found 3 similar movies for Mulan
+2025-11-11 00:42:16 - movie_recommendation_engine - INFO - Processing movie 9/10: Onward (ID: 508439)
+2025-11-11 00:42:16 - tmdb_client - INFO - Retrieving movies from year 2020 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:42:16 - tmdb_client - INFO - Retrieving movies from year 2018 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:42:17 - tmdb_client - INFO - Retrieving movies from year 2019 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:42:17 - tmdb_client - INFO - Retrieving movies from year 2021 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:42:17 - tmdb_client - INFO - Retrieving movies from year 2022 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:42:31 - movie_recommendation_engine - INFO - Found 3 similar movies for Onward
+2025-11-11 00:42:31 - movie_recommendation_engine - INFO - Processing movie 10/10: Extraction (ID: 545609)
+2025-11-11 00:42:31 - tmdb_client - INFO - Retrieving movies from year 2020 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:42:31 - tmdb_client - INFO - Retrieving movies from year 2018 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:42:31 - tmdb_client - INFO - Retrieving movies from year 2019 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:42:31 - tmdb_client - INFO - Retrieving movies from year 2021 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:42:31 - tmdb_client - INFO - Retrieving movies from year 2022 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 00:42:45 - movie_recommendation_engine - INFO - Found 3 similar movies for Extraction
+2025-11-11 00:42:45 - movie_recommendation_engine - INFO - Completed processing. Total API calls made: 1986. Found similar movies for 10/10 movies
+2025-11-11 00:42:45 - movie_recommendation_engine - INFO - Exporting recommendations to CSV: 10 original movies
+2025-11-11 00:42:45 - movie_recommendation_engine - INFO - Flattened 10 original movies into 30 recommendation entries
+2025-11-11 00:42:45 - export_service - INFO - Exporting 30 similar movie entries to data/similar_movies_2020.csv
+2025-11-11 00:42:45 - export_service - INFO - Successfully exported similar movies to data/similar_movies_2020.csv
+2025-11-11 00:42:45 - main - INFO - Exported 30 similar movies to data/similar_movies_2020.csv using strategy hybrid (1986 API calls)
+2025-11-11 01:13:19 - main - INFO - Starting movie service for year 2013
+2025-11-11 01:13:19 - tmdb_client - INFO - TMDB client initialized
+2025-11-11 01:13:19 - export_service - INFO - Export service initialized with output directory: data
+2025-11-11 01:13:19 - movie_service - INFO - Movie service initialized
+2025-11-11 01:13:19 - movie_service - INFO - Processing top 10 movies from year 2013 for export
+2025-11-11 01:13:19 - movie_service - INFO - Retrieving top 10 movies from year 2013 (min_votes: 100, min_rating: 6.0)
+2025-11-11 01:13:19 - tmdb_client - INFO - Retrieving movies from year 2013 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:13:20 - movie_service - INFO - Selected top 10 movies from year 2013
+2025-11-11 01:13:20 - export_service - INFO - Exporting 10 movie entries to data/top_movies_2013.csv
+2025-11-11 01:13:20 - export_service - INFO - Successfully exported movies to data/top_movies_2013.csv
+2025-11-11 01:13:20 - export_service - INFO - Exporting 10 movie entries to data/top_movies_2013.csv
+2025-11-11 01:13:20 - export_service - INFO - Successfully exported movies to data/top_movies_2013.csv
+2025-11-11 01:13:20 - export_service - INFO - Exporting 10 movie entries to data/top_movies_2013.csv
+2025-11-11 01:13:20 - export_service - INFO - Successfully exported movies to data/top_movies_2013.csv
+2025-11-11 01:13:20 - movie_service - INFO - Successfully exported 10 movies with 3 sort methods to data/top_movies_2013.csv
+2025-11-11 01:13:20 - main - INFO - Successfully processed 10 movies
+2025-11-11 01:13:20 - main - INFO - Using recommendation strategy: hybrid
+2025-11-11 01:13:20 - tmdb_client - INFO - TMDB client initialized
+2025-11-11 01:13:20 - recommendation_service - INFO - Recommendation service initialized
+2025-11-11 01:13:20 - export_service - INFO - Export service initialized with output directory: data
+2025-11-11 01:13:20 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-11 01:13:20 - movie_recommendation_engine - INFO - Finding 3 similar movies for 10 movies using strategy: hybrid
+2025-11-11 01:13:20 - movie_recommendation_engine - INFO - Processing movie 1/10: The Wolf of Wall Street (ID: 106646)
+2025-11-11 01:13:21 - tmdb_client - INFO - Retrieving movies from year 2013 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:13:21 - tmdb_client - INFO - Retrieving movies from year 2011 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:13:21 - tmdb_client - INFO - Retrieving movies from year 2012 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:13:21 - tmdb_client - INFO - Retrieving movies from year 2014 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:13:21 - tmdb_client - INFO - Retrieving movies from year 2015 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:13:41 - movie_recommendation_engine - INFO - Found 3 similar movies for The Wolf of Wall Street
+2025-11-11 01:13:41 - movie_recommendation_engine - INFO - Processing movie 2/10: Iron Man 3 (ID: 68721)
+2025-11-11 01:13:41 - tmdb_client - INFO - Retrieving movies from year 2013 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:13:41 - tmdb_client - INFO - Retrieving movies from year 2011 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:13:41 - tmdb_client - INFO - Retrieving movies from year 2012 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:13:42 - tmdb_client - INFO - Retrieving movies from year 2014 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:13:42 - tmdb_client - INFO - Retrieving movies from year 2015 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:13:58 - movie_recommendation_engine - INFO - Found 3 similar movies for Iron Man 3
+2025-11-11 01:13:58 - movie_recommendation_engine - INFO - Processing movie 3/10: The Hunger Games: Catching Fire (ID: 101299)
+2025-11-11 01:13:59 - tmdb_client - INFO - Retrieving movies from year 2013 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:13:59 - tmdb_client - INFO - Retrieving movies from year 2011 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:13:59 - tmdb_client - INFO - Retrieving movies from year 2012 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:13:59 - tmdb_client - INFO - Retrieving movies from year 2014 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:13:59 - tmdb_client - INFO - Retrieving movies from year 2015 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:14:14 - movie_recommendation_engine - INFO - Found 3 similar movies for The Hunger Games: Catching Fire
+2025-11-11 01:14:14 - movie_recommendation_engine - INFO - Processing movie 4/10: Thor: The Dark World (ID: 76338)
+2025-11-11 01:14:14 - tmdb_client - INFO - Retrieving movies from year 2013 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:14:14 - tmdb_client - INFO - Retrieving movies from year 2011 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:14:14 - tmdb_client - INFO - Retrieving movies from year 2012 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:14:15 - tmdb_client - INFO - Retrieving movies from year 2014 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:14:15 - tmdb_client - INFO - Retrieving movies from year 2015 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:14:29 - movie_recommendation_engine - INFO - Found 3 similar movies for Thor: The Dark World
+2025-11-11 01:14:29 - movie_recommendation_engine - INFO - Processing movie 5/10: Frozen (ID: 109445)
+2025-11-11 01:14:29 - tmdb_client - INFO - Retrieving movies from year 2013 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:14:29 - tmdb_client - INFO - Retrieving movies from year 2011 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:14:29 - tmdb_client - INFO - Retrieving movies from year 2012 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:14:29 - tmdb_client - INFO - Retrieving movies from year 2014 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:14:29 - tmdb_client - INFO - Retrieving movies from year 2015 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:14:43 - movie_recommendation_engine - INFO - Found 3 similar movies for Frozen
+2025-11-11 01:14:43 - movie_recommendation_engine - INFO - Processing movie 6/10: Now You See Me (ID: 75656)
+2025-11-11 01:14:43 - tmdb_client - INFO - Retrieving movies from year 2013 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:14:43 - tmdb_client - INFO - Retrieving movies from year 2011 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:14:44 - tmdb_client - INFO - Retrieving movies from year 2012 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:14:44 - tmdb_client - INFO - Retrieving movies from year 2014 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:14:44 - tmdb_client - INFO - Retrieving movies from year 2015 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:14:58 - movie_recommendation_engine - INFO - Found 3 similar movies for Now You See Me
+2025-11-11 01:14:59 - movie_recommendation_engine - INFO - Processing movie 7/10: World War Z (ID: 72190)
+2025-11-11 01:14:59 - tmdb_client - INFO - Retrieving movies from year 2013 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:14:59 - tmdb_client - INFO - Retrieving movies from year 2011 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:14:59 - tmdb_client - INFO - Retrieving movies from year 2012 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:14:59 - tmdb_client - INFO - Retrieving movies from year 2014 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:14:59 - tmdb_client - INFO - Retrieving movies from year 2015 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:15:13 - movie_recommendation_engine - INFO - Found 3 similar movies for World War Z
+2025-11-11 01:15:14 - movie_recommendation_engine - INFO - Processing movie 8/10: Gravity (ID: 49047)
+2025-11-11 01:15:14 - tmdb_client - INFO - Retrieving movies from year 2013 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:15:14 - tmdb_client - INFO - Retrieving movies from year 2011 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:15:14 - tmdb_client - INFO - Retrieving movies from year 2012 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:15:14 - tmdb_client - INFO - Retrieving movies from year 2014 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:15:14 - tmdb_client - INFO - Retrieving movies from year 2015 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:15:29 - movie_recommendation_engine - INFO - Found 3 similar movies for Gravity
+2025-11-11 01:15:29 - movie_recommendation_engine - INFO - Processing movie 9/10: Man of Steel (ID: 49521)
+2025-11-11 01:15:29 - tmdb_client - INFO - Retrieving movies from year 2013 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:15:29 - tmdb_client - INFO - Retrieving movies from year 2011 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:15:29 - tmdb_client - INFO - Retrieving movies from year 2012 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:15:30 - tmdb_client - INFO - Retrieving movies from year 2014 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:15:30 - tmdb_client - INFO - Retrieving movies from year 2015 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:15:43 - movie_recommendation_engine - INFO - Found 3 similar movies for Man of Steel
+2025-11-11 01:15:43 - movie_recommendation_engine - INFO - Processing movie 10/10: Her (ID: 152601)
+2025-11-11 01:15:44 - tmdb_client - INFO - Retrieving movies from year 2013 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:15:44 - tmdb_client - INFO - Retrieving movies from year 2011 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:15:44 - tmdb_client - INFO - Retrieving movies from year 2012 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:15:44 - tmdb_client - INFO - Retrieving movies from year 2014 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:15:44 - tmdb_client - INFO - Retrieving movies from year 2015 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:15:59 - movie_recommendation_engine - INFO - Found 3 similar movies for Her
+2025-11-11 01:15:59 - movie_recommendation_engine - INFO - Completed processing. Total API calls made: 1948. Found similar movies for 10/10 movies
+2025-11-11 01:15:59 - movie_recommendation_engine - INFO - Exporting recommendations to CSV: 10 original movies
+2025-11-11 01:15:59 - movie_recommendation_engine - INFO - Flattened 10 original movies into 30 recommendation entries
+2025-11-11 01:15:59 - export_service - INFO - Exporting 30 similar movie entries to data/similar_movies_2013.csv
+2025-11-11 01:15:59 - export_service - INFO - Successfully exported similar movies to data/similar_movies_2013.csv
+2025-11-11 01:15:59 - main - INFO - Exported 30 similar movies to data/similar_movies_2013.csv using strategy hybrid (1948 API calls)
+2025-11-11 01:30:21 - main - INFO - Starting movie service for year 2020
+2025-11-11 01:30:21 - tmdb_client - INFO - TMDB client initialized
+2025-11-11 01:30:21 - export_service - INFO - Export service initialized with output directory: data
+2025-11-11 01:30:21 - movie_service - INFO - Movie service initialized
+2025-11-11 01:30:21 - movie_service - INFO - Processing top 3 movies from year 2020 for export
+2025-11-11 01:30:21 - movie_service - INFO - Retrieving top 3 movies from year 2020 (min_votes: 100, min_rating: 6.0) sorted by vote average (TMDB rating)
+2025-11-11 01:30:21 - tmdb_client - INFO - Retrieving movies from year 2020 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:30:22 - movie_service - INFO - Selected top 3 movies from year 2020
+2025-11-11 01:30:22 - export_service - INFO - Exporting 3 movie entries to data/top_movies_2020.csv
+2025-11-11 01:30:22 - export_service - INFO - Successfully exported movies to data/top_movies_2020.csv
+2025-11-11 01:30:22 - export_service - INFO - Exporting 3 movie entries to data/top_movies_2020.csv
+2025-11-11 01:30:22 - export_service - INFO - Successfully exported movies to data/top_movies_2020.csv
+2025-11-11 01:30:22 - export_service - INFO - Exporting 3 movie entries to data/top_movies_2020.csv
+2025-11-11 01:30:22 - export_service - INFO - Successfully exported movies to data/top_movies_2020.csv
+2025-11-11 01:30:22 - movie_service - INFO - Successfully exported 3 movies with 3 sort methods to data/top_movies_2020.csv
+2025-11-11 01:30:22 - main - INFO - Successfully processed 3 movies
+2025-11-11 01:30:22 - main - INFO - Using recommendation strategy: hybrid
+2025-11-11 01:30:22 - tmdb_client - INFO - TMDB client initialized
+2025-11-11 01:30:22 - recommendation_service - INFO - Recommendation service initialized
+2025-11-11 01:30:22 - export_service - INFO - Export service initialized with output directory: data
+2025-11-11 01:30:22 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-11 01:30:22 - movie_recommendation_engine - INFO - Finding 3 similar movies for 3 movies using strategy: hybrid
+2025-11-11 01:30:22 - movie_recommendation_engine - INFO - Processing movie 1/3: Break the Silence: The Movie (ID: 730647)
+2025-11-11 01:30:22 - tmdb_client - INFO - Retrieving movies from year 2020 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:30:22 - tmdb_client - INFO - Retrieving movies from year 2018 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:30:22 - tmdb_client - INFO - Retrieving movies from year 2019 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:30:22 - tmdb_client - INFO - Retrieving movies from year 2021 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:30:22 - tmdb_client - INFO - Retrieving movies from year 2022 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:30:35 - movie_recommendation_engine - INFO - Found 3 similar movies for Break the Silence: The Movie
+2025-11-11 01:30:35 - movie_recommendation_engine - INFO - Processing movie 2/3: The Three Deaths of Marisela Escobedo (ID: 753230)
+2025-11-11 01:30:36 - tmdb_client - INFO - Retrieving movies from year 2020 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:30:36 - tmdb_client - INFO - Retrieving movies from year 2018 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:30:36 - tmdb_client - INFO - Retrieving movies from year 2019 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:30:36 - tmdb_client - INFO - Retrieving movies from year 2021 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:30:36 - tmdb_client - INFO - Retrieving movies from year 2022 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:30:51 - movie_recommendation_engine - INFO - Found 3 similar movies for The Three Deaths of Marisela Escobedo
+2025-11-11 01:30:51 - movie_recommendation_engine - INFO - Processing movie 3/3: Folklore: The Long Pond Studio Sessions (ID: 768141)
+2025-11-11 01:30:51 - tmdb_client - INFO - Retrieving movies from year 2020 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:30:51 - tmdb_client - INFO - Retrieving movies from year 2018 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:30:52 - tmdb_client - INFO - Retrieving movies from year 2019 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:30:52 - tmdb_client - INFO - Retrieving movies from year 2021 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:30:52 - tmdb_client - INFO - Retrieving movies from year 2022 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:31:04 - movie_recommendation_engine - INFO - Found 3 similar movies for Folklore: The Long Pond Studio Sessions
+2025-11-11 01:31:04 - movie_recommendation_engine - INFO - Completed processing. Total API calls made: 517. Found similar movies for 3/3 movies
+2025-11-11 01:31:04 - movie_recommendation_engine - INFO - Exporting recommendations to CSV: 3 original movies
+2025-11-11 01:31:04 - movie_recommendation_engine - INFO - Flattened 3 original movies into 9 recommendation entries
+2025-11-11 01:31:04 - export_service - INFO - Exporting 9 similar movie entries to data/similar_movies_2020.csv
+2025-11-11 01:31:04 - export_service - INFO - Successfully exported similar movies to data/similar_movies_2020.csv
+2025-11-11 01:31:04 - main - INFO - Exported 9 similar movies to data/similar_movies_2020.csv using strategy hybrid (517 API calls)
+2025-11-11 01:31:28 - main - INFO - Starting movie service for year 2020
+2025-11-11 01:31:28 - tmdb_client - INFO - TMDB client initialized
+2025-11-11 01:31:28 - export_service - INFO - Export service initialized with output directory: data
+2025-11-11 01:31:28 - movie_service - INFO - Movie service initialized
+2025-11-11 01:31:28 - movie_service - INFO - Processing top 5 movies from year 2020 for export
+2025-11-11 01:31:28 - movie_service - INFO - Retrieving top 5 movies from year 2020 (min_votes: 100, min_rating: 6.0) sorted by vote average (TMDB rating)
+2025-11-11 01:31:28 - tmdb_client - INFO - Retrieving movies from year 2020 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:31:28 - movie_service - INFO - Selected top 5 movies from year 2020
+2025-11-11 01:31:28 - export_service - INFO - Exporting 5 movie entries to data/top_movies_2020.csv
+2025-11-11 01:31:28 - export_service - INFO - Successfully exported movies to data/top_movies_2020.csv
+2025-11-11 01:31:28 - export_service - INFO - Exporting 5 movie entries to data/top_movies_2020.csv
+2025-11-11 01:31:28 - export_service - INFO - Successfully exported movies to data/top_movies_2020.csv
+2025-11-11 01:31:28 - export_service - INFO - Exporting 5 movie entries to data/top_movies_2020.csv
+2025-11-11 01:31:28 - export_service - INFO - Successfully exported movies to data/top_movies_2020.csv
+2025-11-11 01:31:28 - movie_service - INFO - Successfully exported 5 movies with 3 sort methods to data/top_movies_2020.csv
+2025-11-11 01:31:28 - main - INFO - Successfully processed 5 movies
+2025-11-11 01:31:28 - main - INFO - Using recommendation strategy: hybrid
+2025-11-11 01:31:28 - tmdb_client - INFO - TMDB client initialized
+2025-11-11 01:31:28 - recommendation_service - INFO - Recommendation service initialized
+2025-11-11 01:31:28 - export_service - INFO - Export service initialized with output directory: data
+2025-11-11 01:31:28 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-11 01:31:28 - movie_recommendation_engine - INFO - Finding 3 similar movies for 5 movies using strategy: hybrid
+2025-11-11 01:31:28 - movie_recommendation_engine - INFO - Processing movie 1/5: Break the Silence: The Movie (ID: 730647)
+2025-11-11 01:31:28 - tmdb_client - INFO - Retrieving movies from year 2020 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:31:28 - tmdb_client - INFO - Retrieving movies from year 2018 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:31:28 - tmdb_client - INFO - Retrieving movies from year 2019 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:31:29 - tmdb_client - INFO - Retrieving movies from year 2021 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:31:29 - tmdb_client - INFO - Retrieving movies from year 2022 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:31:40 - movie_recommendation_engine - INFO - Found 3 similar movies for Break the Silence: The Movie
+2025-11-11 01:31:40 - movie_recommendation_engine - INFO - Processing movie 2/5: The Three Deaths of Marisela Escobedo (ID: 753230)
+2025-11-11 01:31:40 - tmdb_client - INFO - Retrieving movies from year 2020 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:31:40 - tmdb_client - INFO - Retrieving movies from year 2018 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:31:40 - tmdb_client - INFO - Retrieving movies from year 2019 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:31:40 - tmdb_client - INFO - Retrieving movies from year 2021 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:31:40 - tmdb_client - INFO - Retrieving movies from year 2022 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:31:54 - movie_recommendation_engine - INFO - Found 3 similar movies for The Three Deaths of Marisela Escobedo
+2025-11-11 01:31:54 - movie_recommendation_engine - INFO - Processing movie 3/5: Folklore: The Long Pond Studio Sessions (ID: 768141)
+2025-11-11 01:31:54 - tmdb_client - INFO - Retrieving movies from year 2020 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:31:54 - tmdb_client - INFO - Retrieving movies from year 2018 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:31:54 - tmdb_client - INFO - Retrieving movies from year 2019 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:31:54 - tmdb_client - INFO - Retrieving movies from year 2021 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:31:55 - tmdb_client - INFO - Retrieving movies from year 2022 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:32:06 - movie_recommendation_engine - INFO - Found 3 similar movies for Folklore: The Long Pond Studio Sessions
+2025-11-11 01:32:06 - movie_recommendation_engine - INFO - Processing movie 4/5: David Attenborough: A Life on Our Planet (ID: 664280)
+2025-11-11 01:32:06 - tmdb_client - INFO - Retrieving movies from year 2020 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:32:06 - tmdb_client - INFO - Retrieving movies from year 2018 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:32:06 - tmdb_client - INFO - Retrieving movies from year 2019 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:32:06 - tmdb_client - INFO - Retrieving movies from year 2021 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:32:06 - tmdb_client - INFO - Retrieving movies from year 2022 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:32:19 - movie_recommendation_engine - INFO - Found 3 similar movies for David Attenborough: A Life on Our Planet
+2025-11-11 01:32:19 - movie_recommendation_engine - INFO - Processing movie 5/5: Gabriel's Inferno (ID: 696374)
+2025-11-11 01:32:19 - tmdb_client - INFO - Retrieving movies from year 2020 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:32:19 - tmdb_client - INFO - Retrieving movies from year 2018 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:32:19 - tmdb_client - INFO - Retrieving movies from year 2019 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:32:19 - tmdb_client - INFO - Retrieving movies from year 2021 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:32:20 - tmdb_client - INFO - Retrieving movies from year 2022 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:32:32 - movie_recommendation_engine - INFO - Found 3 similar movies for Gabriel's Inferno
+2025-11-11 01:32:32 - movie_recommendation_engine - INFO - Completed processing. Total API calls made: 847. Found similar movies for 5/5 movies
+2025-11-11 01:32:32 - movie_recommendation_engine - INFO - Exporting recommendations to CSV: 5 original movies
+2025-11-11 01:32:32 - movie_recommendation_engine - INFO - Flattened 5 original movies into 15 recommendation entries
+2025-11-11 01:32:32 - export_service - INFO - Exporting 15 similar movie entries to data/similar_movies_2020.csv
+2025-11-11 01:32:32 - export_service - INFO - Successfully exported similar movies to data/similar_movies_2020.csv
+2025-11-11 01:32:32 - main - INFO - Exported 15 similar movies to data/similar_movies_2020.csv using strategy hybrid (847 API calls)
+2025-11-11 01:34:17 - main - INFO - Starting movie service for year 2013
+2025-11-11 01:34:17 - tmdb_client - INFO - TMDB client initialized
+2025-11-11 01:34:17 - export_service - INFO - Export service initialized with output directory: data
+2025-11-11 01:34:17 - movie_service - INFO - Movie service initialized
+2025-11-11 01:34:17 - movie_service - INFO - Processing top 10 movies from year 2013 for export
+2025-11-11 01:34:17 - movie_service - INFO - Retrieving top 10 movies from year 2013 (min_votes: 100, min_rating: 6.0) sorted by vote average (TMDB rating)
+2025-11-11 01:34:17 - tmdb_client - INFO - Retrieving movies from year 2013 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:34:18 - movie_service - INFO - Selected top 10 movies from year 2013
+2025-11-11 01:34:18 - export_service - INFO - Exporting 10 movie entries to data/top_movies_2013.csv
+2025-11-11 01:34:18 - export_service - INFO - Successfully exported movies to data/top_movies_2013.csv
+2025-11-11 01:34:18 - export_service - INFO - Exporting 10 movie entries to data/top_movies_2013.csv
+2025-11-11 01:34:18 - export_service - INFO - Successfully exported movies to data/top_movies_2013.csv
+2025-11-11 01:34:18 - export_service - INFO - Exporting 10 movie entries to data/top_movies_2013.csv
+2025-11-11 01:34:18 - export_service - INFO - Successfully exported movies to data/top_movies_2013.csv
+2025-11-11 01:34:18 - movie_service - INFO - Successfully exported 10 movies with 3 sort methods to data/top_movies_2013.csv
+2025-11-11 01:34:18 - main - INFO - Successfully processed 10 movies
+2025-11-11 01:34:18 - main - INFO - Using recommendation strategy: hybrid
+2025-11-11 01:34:18 - tmdb_client - INFO - TMDB client initialized
+2025-11-11 01:34:18 - recommendation_service - INFO - Recommendation service initialized
+2025-11-11 01:34:18 - export_service - INFO - Export service initialized with output directory: data
+2025-11-11 01:34:18 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-11 01:34:18 - movie_recommendation_engine - INFO - Finding 3 similar movies for 10 movies using strategy: hybrid
+2025-11-11 01:34:18 - movie_recommendation_engine - INFO - Processing movie 1/10: Hope (ID: 255709)
+2025-11-11 01:34:19 - tmdb_client - INFO - Retrieving movies from year 2013 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:34:19 - tmdb_client - INFO - Retrieving movies from year 2011 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:34:19 - tmdb_client - INFO - Retrieving movies from year 2012 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:34:19 - tmdb_client - INFO - Retrieving movies from year 2014 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:34:19 - tmdb_client - INFO - Retrieving movies from year 2015 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:34:32 - movie_recommendation_engine - INFO - Found 3 similar movies for Hope
+2025-11-11 01:34:33 - movie_recommendation_engine - INFO - Processing movie 2/10: No Half Measures: Creating the Final Season of Breaking Bad (ID: 239459)
+2025-11-11 01:34:33 - tmdb_client - INFO - Retrieving movies from year 2013 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:34:33 - tmdb_client - INFO - Retrieving movies from year 2011 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:34:33 - tmdb_client - INFO - Retrieving movies from year 2012 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:34:33 - tmdb_client - INFO - Retrieving movies from year 2014 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:34:33 - tmdb_client - INFO - Retrieving movies from year 2015 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:34:45 - movie_recommendation_engine - INFO - Found 3 similar movies for No Half Measures: Creating the Final Season of Breaking Bad
+2025-11-11 01:34:45 - movie_recommendation_engine - INFO - Processing movie 3/10: One Direction: This Is Us (ID: 164558)
+2025-11-11 01:34:45 - tmdb_client - INFO - Retrieving movies from year 2013 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:34:45 - tmdb_client - INFO - Retrieving movies from year 2011 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:34:46 - tmdb_client - INFO - Retrieving movies from year 2012 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:34:46 - tmdb_client - INFO - Retrieving movies from year 2014 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:34:46 - tmdb_client - INFO - Retrieving movies from year 2015 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:34:55 - movie_recommendation_engine - INFO - Found 3 similar movies for One Direction: This Is Us
+2025-11-11 01:34:56 - movie_recommendation_engine - INFO - Processing movie 4/10: Scooby-Doo! Adventures: The Mystery Map (ID: 210769)
+2025-11-11 01:34:56 - tmdb_client - INFO - Retrieving movies from year 2013 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:34:56 - tmdb_client - INFO - Retrieving movies from year 2011 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:34:56 - tmdb_client - INFO - Retrieving movies from year 2012 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:34:56 - tmdb_client - INFO - Retrieving movies from year 2014 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:34:56 - tmdb_client - INFO - Retrieving movies from year 2015 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:35:09 - movie_recommendation_engine - INFO - Found 3 similar movies for Scooby-Doo! Adventures: The Mystery Map
+2025-11-11 01:35:10 - movie_recommendation_engine - INFO - Processing movie 5/10: Cem Yılmaz: CM101MMXI Fundamentals (ID: 161803)
+2025-11-11 01:35:10 - tmdb_client - INFO - Retrieving movies from year 2013 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:35:10 - tmdb_client - INFO - Retrieving movies from year 2011 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:35:10 - tmdb_client - INFO - Retrieving movies from year 2012 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:35:10 - tmdb_client - INFO - Retrieving movies from year 2014 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:35:10 - tmdb_client - INFO - Retrieving movies from year 2015 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:35:21 - movie_recommendation_engine - INFO - Found 3 similar movies for Cem Yılmaz: CM101MMXI Fundamentals
+2025-11-11 01:35:21 - movie_recommendation_engine - INFO - Processing movie 6/10: Doctor Who: The Day of the Doctor (ID: 313106)
+2025-11-11 01:35:21 - tmdb_client - INFO - Retrieving movies from year 2013 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:35:21 - tmdb_client - INFO - Retrieving movies from year 2011 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:35:22 - tmdb_client - INFO - Retrieving movies from year 2012 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:35:22 - tmdb_client - INFO - Retrieving movies from year 2014 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:35:22 - tmdb_client - INFO - Retrieving movies from year 2015 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:35:37 - movie_recommendation_engine - INFO - Found 3 similar movies for Doctor Who: The Day of the Doctor
+2025-11-11 01:35:37 - movie_recommendation_engine - INFO - Processing movie 7/10: Cinco de Mayo: The Battle (ID: 184374)
+2025-11-11 01:35:37 - tmdb_client - INFO - Retrieving movies from year 2013 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:35:37 - tmdb_client - INFO - Retrieving movies from year 2011 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:35:37 - tmdb_client - INFO - Retrieving movies from year 2012 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:35:37 - tmdb_client - INFO - Retrieving movies from year 2014 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:35:37 - tmdb_client - INFO - Retrieving movies from year 2015 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:35:48 - movie_recommendation_engine - INFO - Found 3 similar movies for Cinco de Mayo: The Battle
+2025-11-11 01:35:49 - movie_recommendation_engine - INFO - Processing movie 8/10: Doctor Who: The Time of the Doctor (ID: 282848)
+2025-11-11 01:35:49 - tmdb_client - INFO - Retrieving movies from year 2013 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:35:49 - tmdb_client - INFO - Retrieving movies from year 2011 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:35:49 - tmdb_client - INFO - Retrieving movies from year 2012 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:35:49 - tmdb_client - INFO - Retrieving movies from year 2014 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:35:49 - tmdb_client - INFO - Retrieving movies from year 2015 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:36:03 - movie_recommendation_engine - INFO - Found 3 similar movies for Doctor Who: The Time of the Doctor
+2025-11-11 01:36:03 - movie_recommendation_engine - INFO - Processing movie 9/10: The Art of Happiness (ID: 238923)
+2025-11-11 01:36:03 - tmdb_client - INFO - Retrieving movies from year 2013 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:36:03 - tmdb_client - INFO - Retrieving movies from year 2011 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:36:03 - tmdb_client - INFO - Retrieving movies from year 2012 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:36:03 - tmdb_client - INFO - Retrieving movies from year 2014 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:36:03 - tmdb_client - INFO - Retrieving movies from year 2015 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:36:17 - movie_recommendation_engine - INFO - Found 3 similar movies for The Art of Happiness
+2025-11-11 01:36:17 - movie_recommendation_engine - INFO - Processing movie 10/10: Prisoners (ID: 146233)
+2025-11-11 01:36:18 - tmdb_client - INFO - Retrieving movies from year 2013 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:36:18 - tmdb_client - INFO - Retrieving movies from year 2011 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:36:18 - tmdb_client - INFO - Retrieving movies from year 2012 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:36:18 - tmdb_client - INFO - Retrieving movies from year 2014 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:36:18 - tmdb_client - INFO - Retrieving movies from year 2015 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:36:33 - movie_recommendation_engine - INFO - Found 3 similar movies for Prisoners
+2025-11-11 01:36:33 - movie_recommendation_engine - INFO - Completed processing. Total API calls made: 1730. Found similar movies for 10/10 movies
+2025-11-11 01:36:33 - movie_recommendation_engine - INFO - Exporting recommendations to CSV: 10 original movies
+2025-11-11 01:36:33 - movie_recommendation_engine - INFO - Flattened 10 original movies into 30 recommendation entries
+2025-11-11 01:36:33 - export_service - INFO - Exporting 30 similar movie entries to data/similar_movies_2013.csv
+2025-11-11 01:36:33 - export_service - INFO - Successfully exported similar movies to data/similar_movies_2013.csv
+2025-11-11 01:36:33 - main - INFO - Exported 30 similar movies to data/similar_movies_2013.csv using strategy hybrid (1730 API calls)
+2025-11-11 01:39:44 - main - INFO - Starting movie service for year 2013
+2025-11-11 01:39:44 - tmdb_client - INFO - TMDB client initialized
+2025-11-11 01:39:44 - export_service - INFO - Export service initialized with output directory: data
+2025-11-11 01:39:44 - movie_service - INFO - Movie service initialized
+2025-11-11 01:39:44 - movie_service - INFO - Processing top 10 movies from year 2013 for export
+2025-11-11 01:39:44 - movie_service - INFO - Retrieving top 10 movies from year 2013 (min_votes: 100, min_rating: 6.0)
+2025-11-11 01:39:44 - tmdb_client - INFO - Retrieving movies from year 2013 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:39:45 - movie_service - INFO - Selected top 10 movies from year 2013
+2025-11-11 01:39:45 - export_service - INFO - Exporting 10 movie entries to data/top_movies_2013.csv
+2025-11-11 01:39:45 - export_service - INFO - Successfully exported movies to data/top_movies_2013.csv
+2025-11-11 01:39:45 - export_service - INFO - Exporting 10 movie entries to data/top_movies_2013.csv
+2025-11-11 01:39:45 - export_service - INFO - Successfully exported movies to data/top_movies_2013.csv
+2025-11-11 01:39:45 - export_service - INFO - Exporting 10 movie entries to data/top_movies_2013.csv
+2025-11-11 01:39:45 - export_service - INFO - Successfully exported movies to data/top_movies_2013.csv
+2025-11-11 01:39:45 - movie_service - INFO - Successfully exported 10 movies with 3 sort methods to data/top_movies_2013.csv
+2025-11-11 01:39:45 - main - INFO - Successfully processed 10 movies
+2025-11-11 01:44:24 - main - INFO - Starting movie service for year 2013
+2025-11-11 01:44:24 - tmdb_client - INFO - TMDB client initialized
+2025-11-11 01:44:24 - export_service - INFO - Export service initialized with output directory: data
+2025-11-11 01:44:24 - movie_service - INFO - Movie service initialized
+2025-11-11 01:44:24 - movie_service - INFO - Processing top 10 movies from year 2013 for export
+2025-11-11 01:44:24 - movie_service - INFO - Retrieving top 10 movies from year 2013 (min_votes: 100, min_rating: 6.0)
+2025-11-11 01:44:24 - tmdb_client - INFO - Retrieving movies from year 2013 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:44:25 - movie_service - INFO - Selected top 10 movies from year 2013
+2025-11-11 01:44:25 - export_service - INFO - Exporting 10 movie entries to data/top_movies_2013.csv
+2025-11-11 01:44:25 - export_service - INFO - Successfully exported movies to data/top_movies_2013.csv
+2025-11-11 01:44:25 - export_service - INFO - Exporting 10 movie entries to data/top_movies_2013.csv
+2025-11-11 01:44:25 - export_service - INFO - Successfully exported movies to data/top_movies_2013.csv
+2025-11-11 01:44:25 - export_service - INFO - Exporting 10 movie entries to data/top_movies_2013.csv
+2025-11-11 01:44:25 - export_service - INFO - Successfully exported movies to data/top_movies_2013.csv
+2025-11-11 01:44:25 - movie_service - INFO - Successfully exported 10 movies with 3 sort methods to data/top_movies_2013.csv
+2025-11-11 01:44:25 - main - INFO - Successfully processed 10 movies
+2025-11-11 01:44:40 - main - INFO - Starting movie service for year 2013
+2025-11-11 01:44:40 - tmdb_client - INFO - TMDB client initialized
+2025-11-11 01:44:40 - export_service - INFO - Export service initialized with output directory: data
+2025-11-11 01:44:40 - movie_service - INFO - Movie service initialized
+2025-11-11 01:44:40 - movie_service - INFO - Processing top 10 movies from year 2013 for export
+2025-11-11 01:44:40 - movie_service - INFO - Retrieving top 10 movies from year 2013 (min_votes: 100, min_rating: 6.0)
+2025-11-11 01:44:40 - tmdb_client - INFO - Retrieving movies from year 2013 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:44:41 - movie_service - INFO - Selected top 10 movies from year 2013
+2025-11-11 01:44:41 - export_service - INFO - Exporting 10 movie entries to data/top_movies_2013.csv
+2025-11-11 01:44:41 - export_service - INFO - Successfully exported movies to data/top_movies_2013.csv
+2025-11-11 01:44:41 - export_service - INFO - Exporting 10 movie entries to data/top_movies_2013.csv
+2025-11-11 01:44:41 - export_service - INFO - Successfully exported movies to data/top_movies_2013.csv
+2025-11-11 01:44:41 - export_service - INFO - Exporting 10 movie entries to data/top_movies_2013.csv
+2025-11-11 01:44:41 - export_service - INFO - Successfully exported movies to data/top_movies_2013.csv
+2025-11-11 01:44:41 - movie_service - INFO - Successfully exported 10 movies with 3 sort methods to data/top_movies_2013.csv
+2025-11-11 01:44:41 - main - INFO - Successfully processed 10 movies
+2025-11-11 01:45:31 - main - INFO - Starting movie service for year 2013
+2025-11-11 01:45:31 - tmdb_client - INFO - TMDB client initialized
+2025-11-11 01:45:31 - export_service - INFO - Export service initialized with output directory: data
+2025-11-11 01:45:31 - movie_service - INFO - Movie service initialized
+2025-11-11 01:45:31 - movie_service - INFO - Processing top 10 movies from year 2013 for export
+2025-11-11 01:45:31 - movie_service - INFO - Retrieving top 10 movies from year 2013 (min_votes: 100, min_rating: 6.0)
+2025-11-11 01:45:31 - tmdb_client - INFO - Retrieving movies from year 2013 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:45:32 - movie_service - INFO - Selected top 10 movies from year 2013
+2025-11-11 01:45:32 - export_service - INFO - Exporting 10 movie entries to data/top_movies_2013.csv
+2025-11-11 01:45:32 - export_service - INFO - Successfully exported movies to data/top_movies_2013.csv
+2025-11-11 01:45:32 - export_service - INFO - Exporting 10 movie entries to data/top_movies_2013.csv
+2025-11-11 01:45:32 - export_service - INFO - Successfully exported movies to data/top_movies_2013.csv
+2025-11-11 01:45:32 - export_service - INFO - Exporting 10 movie entries to data/top_movies_2013.csv
+2025-11-11 01:45:32 - export_service - INFO - Successfully exported movies to data/top_movies_2013.csv
+2025-11-11 01:45:32 - movie_service - INFO - Successfully exported 10 movies with 3 sort methods to data/top_movies_2013.csv
+2025-11-11 01:45:32 - main - INFO - Successfully processed 10 movies
+2025-11-11 01:45:32 - tmdb_client - INFO - TMDB client initialized
+2025-11-11 01:45:32 - recommendation_service - INFO - Recommendation service initialized
+2025-11-11 01:45:32 - export_service - INFO - Export service initialized with output directory: data
+2025-11-11 01:45:32 - recommendation_service - INFO - Finding 3 similar movies for: The Wolf of Wall Street
+2025-11-11 01:45:35 - recommendation_service - INFO - Found 3 similar movies for The Wolf of Wall Street (scores: [0.4501, 0.4306, 0.4288])
+2025-11-11 01:45:35 - recommendation_service - INFO - Finding 3 similar movies for: Iron Man 3
+2025-11-11 01:45:39 - recommendation_service - INFO - Found 3 similar movies for Iron Man 3 (scores: [0.5077, 0.4975, 0.4754])
+2025-11-11 01:45:39 - recommendation_service - INFO - Finding 3 similar movies for: The Hunger Games: Catching Fire
+2025-11-11 01:45:43 - recommendation_service - INFO - Found 3 similar movies for The Hunger Games: Catching Fire (scores: [0.4881, 0.3911, 0.3892])
+2025-11-11 01:45:43 - recommendation_service - INFO - Finding 3 similar movies for: Thor: The Dark World
+2025-11-11 01:45:47 - recommendation_service - INFO - Found 3 similar movies for Thor: The Dark World (scores: [0.6415, 0.5315, 0.4796])
+2025-11-11 01:45:48 - recommendation_service - INFO - Finding 3 similar movies for: Frozen
+2025-11-11 01:45:51 - recommendation_service - INFO - Found 3 similar movies for Frozen (scores: [0.4999, 0.4844, 0.4645])
+2025-11-11 01:45:51 - recommendation_service - INFO - Finding 3 similar movies for: Now You See Me
+2025-11-11 01:45:55 - recommendation_service - INFO - Found 3 similar movies for Now You See Me (scores: [0.4366, 0.3764, 0.3584])
+2025-11-11 01:45:55 - recommendation_service - INFO - Finding 3 similar movies for: World War Z
+2025-11-11 01:45:59 - recommendation_service - INFO - Found 3 similar movies for World War Z (scores: [0.5113, 0.4459, 0.4374])
+2025-11-11 01:45:59 - recommendation_service - INFO - Finding 3 similar movies for: Gravity
+2025-11-11 01:46:03 - recommendation_service - INFO - Found 3 similar movies for Gravity (scores: [0.4651, 0.4394, 0.3928])
+2025-11-11 01:46:04 - recommendation_service - INFO - Finding 3 similar movies for: Man of Steel
+2025-11-11 01:46:07 - recommendation_service - INFO - Found 3 similar movies for Man of Steel (scores: [0.4716, 0.4442, 0.4063])
+2025-11-11 01:46:07 - recommendation_service - INFO - Finding 3 similar movies for: Her
+2025-11-11 01:46:10 - recommendation_service - INFO - Found 3 similar movies for Her (scores: [0.4646, 0.4392, 0.4389])
+2025-11-11 01:46:11 - export_service - INFO - Exporting 30 similar movie entries to data/similar_movies_2013.csv
+2025-11-11 01:46:11 - export_service - INFO - Successfully exported similar movies to data/similar_movies_2013.csv
+2025-11-11 01:46:11 - main - INFO - Exported 30 similar movies to data/similar_movies_2013.csv
+2025-11-11 01:46:56 - main - INFO - Starting movie service for year 2013
+2025-11-11 01:46:56 - tmdb_client - INFO - TMDB client initialized
+2025-11-11 01:46:56 - export_service - INFO - Export service initialized with output directory: data
+2025-11-11 01:46:56 - movie_service - INFO - Movie service initialized
+2025-11-11 01:46:56 - movie_service - INFO - Processing top 10 movies from year 2013 for export
+2025-11-11 01:46:56 - movie_service - INFO - Retrieving top 10 movies from year 2013 (min_votes: 100, min_rating: 6.0)
+2025-11-11 01:46:56 - tmdb_client - INFO - Retrieving movies from year 2013 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:46:57 - movie_service - INFO - Selected top 10 movies from year 2013
+2025-11-11 01:46:57 - export_service - INFO - Exporting 10 movie entries to data/top_movies_2013.csv
+2025-11-11 01:46:57 - export_service - INFO - Successfully exported movies to data/top_movies_2013.csv
+2025-11-11 01:46:57 - export_service - INFO - Exporting 10 movie entries to data/top_movies_2013.csv
+2025-11-11 01:46:57 - export_service - INFO - Successfully exported movies to data/top_movies_2013.csv
+2025-11-11 01:46:57 - export_service - INFO - Exporting 10 movie entries to data/top_movies_2013.csv
+2025-11-11 01:46:57 - export_service - INFO - Successfully exported movies to data/top_movies_2013.csv
+2025-11-11 01:46:57 - movie_service - INFO - Successfully exported 10 movies with 3 sort methods to data/top_movies_2013.csv
+2025-11-11 01:46:57 - main - INFO - Successfully processed 10 movies
+2025-11-11 01:46:57 - tmdb_client - INFO - TMDB client initialized
+2025-11-11 01:46:57 - recommendation_service - INFO - Recommendation service initialized
+2025-11-11 01:46:57 - export_service - INFO - Export service initialized with output directory: data
+2025-11-11 01:46:57 - recommendation_service - INFO - Finding 3 similar movies for: The Wolf of Wall Street
+2025-11-11 01:46:59 - recommendation_service - INFO - Found 3 similar movies for The Wolf of Wall Street (scores: [0.4501, 0.4306, 0.4288])
+2025-11-11 01:46:59 - recommendation_service - INFO - Finding 3 similar movies for: Iron Man 3
+2025-11-11 01:47:03 - recommendation_service - INFO - Found 3 similar movies for Iron Man 3 (scores: [0.5077, 0.4975, 0.4754])
+2025-11-11 01:47:03 - recommendation_service - INFO - Finding 3 similar movies for: The Hunger Games: Catching Fire
+2025-11-11 01:47:06 - recommendation_service - INFO - Found 3 similar movies for The Hunger Games: Catching Fire (scores: [0.4881, 0.3911, 0.3892])
+2025-11-11 01:47:07 - recommendation_service - INFO - Finding 3 similar movies for: Thor: The Dark World
+2025-11-11 01:47:10 - recommendation_service - INFO - Found 3 similar movies for Thor: The Dark World (scores: [0.6415, 0.5315, 0.4796])
+2025-11-11 01:47:10 - recommendation_service - INFO - Finding 3 similar movies for: Frozen
+2025-11-11 01:47:13 - recommendation_service - INFO - Found 3 similar movies for Frozen (scores: [0.4999, 0.4844, 0.4645])
+2025-11-11 01:47:14 - recommendation_service - INFO - Finding 3 similar movies for: Now You See Me
+2025-11-11 01:47:17 - recommendation_service - INFO - Found 3 similar movies for Now You See Me (scores: [0.4366, 0.3764, 0.3584])
+2025-11-11 01:47:17 - recommendation_service - INFO - Finding 3 similar movies for: World War Z
+2025-11-11 01:47:20 - recommendation_service - INFO - Found 3 similar movies for World War Z (scores: [0.5113, 0.4459, 0.4374])
+2025-11-11 01:47:21 - recommendation_service - INFO - Finding 3 similar movies for: Gravity
+2025-11-11 01:47:25 - recommendation_service - INFO - Found 3 similar movies for Gravity (scores: [0.4651, 0.4394, 0.3928])
+2025-11-11 01:47:26 - recommendation_service - INFO - Finding 3 similar movies for: Man of Steel
+2025-11-11 01:47:28 - recommendation_service - INFO - Found 3 similar movies for Man of Steel (scores: [0.4716, 0.4442, 0.4063])
+2025-11-11 01:47:29 - recommendation_service - INFO - Finding 3 similar movies for: Her
+2025-11-11 01:47:32 - recommendation_service - INFO - Found 3 similar movies for Her (scores: [0.4646, 0.4392, 0.4389])
+2025-11-11 01:47:32 - export_service - INFO - Exporting 30 similar movie entries to data/similar_movies_2013.csv
+2025-11-11 01:47:32 - export_service - INFO - Successfully exported similar movies to data/similar_movies_2013.csv
+2025-11-11 01:47:32 - main - INFO - Exported 30 similar movies to data/similar_movies_2013.csv
+2025-11-11 01:50:55 - main - INFO - Starting movie service for year 2013
+2025-11-11 01:50:55 - tmdb_client - INFO - TMDB client initialized
+2025-11-11 01:50:55 - export_service - INFO - Export service initialized with output directory: data
+2025-11-11 01:50:55 - movie_service - INFO - Movie service initialized
+2025-11-11 01:50:55 - movie_service - INFO - Processing top 5 movies from year 2013 for export
+2025-11-11 01:50:55 - movie_service - INFO - Retrieving top 5 movies from year 2013 (min_votes: 100, min_rating: 6.0)
+2025-11-11 01:50:55 - tmdb_client - INFO - Retrieving movies from year 2013 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:50:55 - movie_service - INFO - Selected top 5 movies from year 2013
+2025-11-11 01:50:55 - export_service - INFO - Exporting 5 movie entries to data/top_movies_2013.csv
+2025-11-11 01:50:55 - export_service - INFO - Successfully exported movies to data/top_movies_2013.csv
+2025-11-11 01:50:55 - export_service - INFO - Exporting 5 movie entries to data/top_movies_2013.csv
+2025-11-11 01:50:55 - export_service - INFO - Successfully exported movies to data/top_movies_2013.csv
+2025-11-11 01:50:55 - export_service - INFO - Exporting 5 movie entries to data/top_movies_2013.csv
+2025-11-11 01:50:55 - export_service - INFO - Successfully exported movies to data/top_movies_2013.csv
+2025-11-11 01:50:55 - movie_service - INFO - Successfully exported 5 movies with 3 sort methods to data/top_movies_2013.csv
+2025-11-11 01:50:55 - main - INFO - Successfully processed 5 movies
+2025-11-11 01:50:55 - main - INFO - Using recommendation strategy: tmdb_api
+2025-11-11 01:50:55 - tmdb_client - INFO - TMDB client initialized
+2025-11-11 01:50:55 - recommendation_service - INFO - Recommendation service initialized
+2025-11-11 01:50:55 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-11 01:50:55 - movie_recommendation_engine - INFO - Finding 3 similar movies for 5 movies using strategy: tmdb_api
+2025-11-11 01:50:55 - movie_recommendation_engine - INFO - Processing movie 1/5: The Wolf of Wall Street (ID: 106646)
+2025-11-11 01:51:01 - movie_recommendation_engine - INFO - Found 3 similar movies for The Wolf of Wall Street
+2025-11-11 01:51:01 - movie_recommendation_engine - INFO - Processing movie 2/5: Iron Man 3 (ID: 68721)
+2025-11-11 01:51:08 - movie_recommendation_engine - INFO - Found 3 similar movies for Iron Man 3
+2025-11-11 01:51:08 - movie_recommendation_engine - INFO - Processing movie 3/5: The Hunger Games: Catching Fire (ID: 101299)
+2025-11-11 01:51:16 - movie_recommendation_engine - INFO - Found 3 similar movies for The Hunger Games: Catching Fire
+2025-11-11 01:51:16 - movie_recommendation_engine - INFO - Processing movie 4/5: Thor: The Dark World (ID: 76338)
+2025-11-11 01:51:23 - movie_recommendation_engine - INFO - Found 3 similar movies for Thor: The Dark World
+2025-11-11 01:51:23 - movie_recommendation_engine - INFO - Processing movie 5/5: Frozen (ID: 109445)
+2025-11-11 01:51:30 - movie_recommendation_engine - INFO - Found 3 similar movies for Frozen
+2025-11-11 01:51:30 - movie_recommendation_engine - INFO - Completed processing. Total API calls made: 368. Found similar movies for 5/5 movies
+2025-11-11 01:51:30 - main - ERROR - Unexpected error: 'MovieRecommendationEngine' object has no attribute 'export_recommendations_to_csv'
+Traceback (most recent call last):
+  File "/Users/suhaibaden/Documents/gcm-grosvenor-asssesment/main.py", line 130, in main
+    similar_csv_path = recommendation_engine.export_recommendations_to_csv(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MovieRecommendationEngine' object has no attribute 'export_recommendations_to_csv'
+2025-11-11 01:52:01 - main - INFO - Starting movie service for year 2013
+2025-11-11 01:52:01 - tmdb_client - INFO - TMDB client initialized
+2025-11-11 01:52:01 - export_service - INFO - Export service initialized with output directory: data
+2025-11-11 01:52:01 - movie_service - INFO - Movie service initialized
+2025-11-11 01:52:01 - movie_service - INFO - Processing top 3 movies from year 2013 for export
+2025-11-11 01:52:01 - movie_service - INFO - Retrieving top 3 movies from year 2013 (min_votes: 100, min_rating: 6.0)
+2025-11-11 01:52:01 - tmdb_client - INFO - Retrieving movies from year 2013 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:52:01 - movie_service - INFO - Selected top 3 movies from year 2013
+2025-11-11 01:52:01 - export_service - INFO - Exporting 3 movie entries to data/top_movies_2013.csv
+2025-11-11 01:52:01 - export_service - INFO - Successfully exported movies to data/top_movies_2013.csv
+2025-11-11 01:52:01 - export_service - INFO - Exporting 3 movie entries to data/top_movies_2013.csv
+2025-11-11 01:52:01 - export_service - INFO - Successfully exported movies to data/top_movies_2013.csv
+2025-11-11 01:52:01 - export_service - INFO - Exporting 3 movie entries to data/top_movies_2013.csv
+2025-11-11 01:52:01 - export_service - INFO - Successfully exported movies to data/top_movies_2013.csv
+2025-11-11 01:52:01 - movie_service - INFO - Successfully exported 3 movies with 3 sort methods to data/top_movies_2013.csv
+2025-11-11 01:52:01 - main - INFO - Successfully processed 3 movies
+2025-11-11 01:52:01 - main - INFO - Using recommendation strategy: tmdb_api
+2025-11-11 01:52:01 - tmdb_client - INFO - TMDB client initialized
+2025-11-11 01:52:01 - recommendation_service - INFO - Recommendation service initialized
+2025-11-11 01:52:01 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-11 01:52:01 - movie_recommendation_engine - INFO - Finding 3 similar movies for 3 movies using strategy: tmdb_api
+2025-11-11 01:52:01 - movie_recommendation_engine - INFO - Processing movie 1/3: The Wolf of Wall Street (ID: 106646)
+2025-11-11 01:52:07 - movie_recommendation_engine - INFO - Found 3 similar movies for The Wolf of Wall Street
+2025-11-11 01:52:07 - movie_recommendation_engine - INFO - Processing movie 2/3: Iron Man 3 (ID: 68721)
+2025-11-11 01:52:14 - movie_recommendation_engine - INFO - Found 3 similar movies for Iron Man 3
+2025-11-11 01:52:14 - movie_recommendation_engine - INFO - Processing movie 3/3: The Hunger Games: Catching Fire (ID: 101299)
+2025-11-11 01:52:21 - movie_recommendation_engine - INFO - Found 3 similar movies for The Hunger Games: Catching Fire
+2025-11-11 01:52:21 - movie_recommendation_engine - INFO - Completed processing. Total API calls made: 218. Found similar movies for 3/3 movies
+2025-11-11 01:52:21 - export_service - INFO - Export service initialized with output directory: data
+2025-11-11 01:52:21 - export_service - INFO - Exporting 9 similar movie entries to data/similar_movies_2013.csv
+2025-11-11 01:52:21 - export_service - INFO - Successfully exported similar movies to data/similar_movies_2013.csv
+2025-11-11 01:52:21 - main - INFO - Exported 9 similar movies to data/similar_movies_2013.csv using strategy tmdb_api (218 API calls)
+2025-11-11 01:52:50 - main - INFO - Starting movie service for year 2013
+2025-11-11 01:52:50 - tmdb_client - INFO - TMDB client initialized
+2025-11-11 01:52:50 - export_service - INFO - Export service initialized with output directory: data
+2025-11-11 01:52:50 - movie_service - INFO - Movie service initialized
+2025-11-11 01:52:50 - movie_service - INFO - Processing top 10 movies from year 2013 for export
+2025-11-11 01:52:50 - movie_service - INFO - Retrieving top 10 movies from year 2013 (min_votes: 100, min_rating: 6.0)
+2025-11-11 01:52:50 - tmdb_client - INFO - Retrieving movies from year 2013 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-11 01:52:51 - movie_service - INFO - Selected top 10 movies from year 2013
+2025-11-11 01:52:51 - export_service - INFO - Exporting 10 movie entries to data/top_movies_2013.csv
+2025-11-11 01:52:51 - export_service - INFO - Successfully exported movies to data/top_movies_2013.csv
+2025-11-11 01:52:51 - export_service - INFO - Exporting 10 movie entries to data/top_movies_2013.csv
+2025-11-11 01:52:51 - export_service - INFO - Successfully exported movies to data/top_movies_2013.csv
+2025-11-11 01:52:51 - export_service - INFO - Exporting 10 movie entries to data/top_movies_2013.csv
+2025-11-11 01:52:51 - export_service - INFO - Successfully exported movies to data/top_movies_2013.csv
+2025-11-11 01:52:51 - movie_service - INFO - Successfully exported 10 movies with 3 sort methods to data/top_movies_2013.csv
+2025-11-11 01:52:51 - main - INFO - Successfully processed 10 movies
+2025-11-11 01:52:51 - main - INFO - Using recommendation strategy: tmdb_api
+2025-11-11 01:52:51 - tmdb_client - INFO - TMDB client initialized
+2025-11-11 01:52:51 - recommendation_service - INFO - Recommendation service initialized
+2025-11-11 01:52:51 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-11 01:52:51 - movie_recommendation_engine - INFO - Finding 3 similar movies for 10 movies using strategy: tmdb_api
+2025-11-11 01:52:51 - movie_recommendation_engine - INFO - Processing movie 1/10: The Wolf of Wall Street (ID: 106646)
+2025-11-11 01:52:57 - movie_recommendation_engine - INFO - Found 3 similar movies for The Wolf of Wall Street
+2025-11-11 01:52:57 - movie_recommendation_engine - INFO - Processing movie 2/10: Iron Man 3 (ID: 68721)
+2025-11-11 01:53:03 - movie_recommendation_engine - INFO - Found 3 similar movies for Iron Man 3
+2025-11-11 01:53:03 - movie_recommendation_engine - INFO - Processing movie 3/10: The Hunger Games: Catching Fire (ID: 101299)
+2025-11-11 01:53:10 - movie_recommendation_engine - INFO - Found 3 similar movies for The Hunger Games: Catching Fire
+2025-11-11 01:53:11 - movie_recommendation_engine - INFO - Processing movie 4/10: Thor: The Dark World (ID: 76338)
+2025-11-11 01:53:17 - movie_recommendation_engine - INFO - Found 3 similar movies for Thor: The Dark World
+2025-11-11 01:53:17 - movie_recommendation_engine - INFO - Processing movie 5/10: Frozen (ID: 109445)
+2025-11-11 01:53:25 - movie_recommendation_engine - INFO - Found 3 similar movies for Frozen
+2025-11-11 01:53:25 - movie_recommendation_engine - INFO - Processing movie 6/10: Now You See Me (ID: 75656)
+2025-11-11 01:53:32 - movie_recommendation_engine - INFO - Found 3 similar movies for Now You See Me
+2025-11-11 01:53:32 - movie_recommendation_engine - INFO - Processing movie 7/10: World War Z (ID: 72190)
+2025-11-11 01:53:40 - movie_recommendation_engine - INFO - Found 3 similar movies for World War Z
+2025-11-11 01:53:40 - movie_recommendation_engine - INFO - Processing movie 8/10: Gravity (ID: 49047)
+2025-11-11 01:53:47 - movie_recommendation_engine - INFO - Found 3 similar movies for Gravity
+2025-11-11 01:53:48 - movie_recommendation_engine - INFO - Processing movie 9/10: Man of Steel (ID: 49521)
+2025-11-11 01:53:54 - movie_recommendation_engine - INFO - Found 3 similar movies for Man of Steel
+2025-11-11 01:53:54 - movie_recommendation_engine - INFO - Processing movie 10/10: Her (ID: 152601)
+2025-11-11 01:54:01 - movie_recommendation_engine - INFO - Found 3 similar movies for Her
+2025-11-11 01:54:01 - movie_recommendation_engine - INFO - Completed processing. Total API calls made: 760. Found similar movies for 10/10 movies
+2025-11-11 01:54:01 - export_service - INFO - Export service initialized with output directory: data
+2025-11-11 01:54:01 - export_service - INFO - Exporting 30 similar movie entries to data/similar_movies_2013.csv
+2025-11-11 01:54:01 - export_service - INFO - Successfully exported similar movies to data/similar_movies_2013.csv
+2025-11-11 01:54:01 - main - INFO - Exported 30 similar movies to data/similar_movies_2013.csv using strategy tmdb_api (760 API calls)

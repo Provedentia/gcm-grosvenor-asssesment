@@ -7,8 +7,7 @@ import sys
 from pathlib import Path
 
 from src.services.movie_service import MovieService
-from src.services.recommendation_service import RecommendationService
-from src.services.export_service import ExportService
+from src.services.movie_recommendation_engine import MovieRecommendationEngine
 from src.utils.logger import get_logger
 
 
@@ -48,15 +47,29 @@ def main():
         help="Minimum vote average (uses config default if not specified)",
     )
     parser.add_argument(
-        "--similar-movies",
-        action="store_true",
-        help="Also find and export similar movies for each top movie",
+        "--no-similar-movies",
+        action="store_false",
+        dest="similar_movies",
+        default=True,
+        help="Disable finding and exporting similar movies (enabled by default)",
     )
     parser.add_argument(
         "--similar-limit",
         type=int,
         default=3,
         help="Number of similar movies to find per movie (default: 3)",
+    )
+    parser.add_argument(
+        "--strategy",
+        type=str,
+        default="tmdb_api",
+        choices=["tmdb_api", "same_year", "same_genre", "hybrid"],
+        help=(
+            "Candidate selection strategy for recommendations (default: tmdb_api). "
+            "Options: tmdb_api (fast, uses TMDB's algorithm), "
+            "same_year (movies from same year), same_genre (overlapping genres), "
+            "hybrid (best quality, slowest)"
+        ),
     )
 
     args = parser.parse_args()
@@ -98,34 +111,50 @@ def main():
 
         # Find similar movies if requested
         if args.similar_movies:
-            print(f"\n🔍 Finding similar movies for each movie...")
-            recommendation_service = RecommendationService()
-            export_service = ExportService()
+            print(f"\n🔍 Finding similar movies for each movie using '{args.strategy}' strategy...")
+            logger.info(f"Using recommendation strategy: {args.strategy}")
 
-            # Get similar movies for all top movies
-            similar_movies_data = recommendation_service.get_similar_movies_for_multiple(
-                movies=movies,
-                limit=args.similar_limit,
+            # Initialize recommendation engine
+            recommendation_engine = MovieRecommendationEngine()
+
+            # Find similar movies using the recommendation engine
+            recommendations_data = recommendation_engine.find_similar_movies_for_each(
+                top_movies=movies,
+                similar_per_movie=args.similar_limit,
+                strategy=args.strategy,
             )
 
-            if similar_movies_data:
-                # Prepare data for export
-                export_data = recommendation_service.prepare_similar_movies_for_export(
-                    similar_movies_data
-                )
+            if recommendations_data:
+                # Flatten for export
+                flattened: list[dict] = []
+                for entry in recommendations_data:
+                    original = entry.get("original_movie")
+                    for sim in entry.get("similar_movies", []):
+                        flattened.append({
+                            "original_movie": original,
+                            "similar_movie": sim.get("similar_movie"),
+                            "similarity_score": sim.get("similarity_score"),
+                            "similarity_reason": sim.get("similarity_reason"),
+                            "similarity_metrics": sim.get("similarity_metrics", {}),
+                        })
 
                 # Export similar movies with year in filename
+                from src.services.export_service import ExportService
+                export_service = ExportService()
                 similar_filename = f"similar_movies_{args.year}.csv"
                 similar_csv_path = export_service.export_similar_movies_to_csv(
-                    similar_movies_data=export_data,
+                    similar_movies_data=flattened,
                     filename=similar_filename,
                 )
 
-                total_similar = sum(
-                    len(item.get("similar_movies", [])) for item in similar_movies_data
-                )
+                total_similar = sum(len(item.get("similar_movies", [])) for item in recommendations_data)
                 print(f"\n✅ Success! Exported {total_similar} similar movies to: {similar_csv_path}")
-                logger.info(f"Exported {total_similar} similar movies to {similar_csv_path}")
+                print(f"   Strategy used: {args.strategy}")
+                print(f"   API calls made: {recommendation_engine.api_calls_made}")
+                logger.info(
+                    f"Exported {total_similar} similar movies to {similar_csv_path} "
+                    f"using strategy {args.strategy} ({recommendation_engine.api_calls_made} API calls)"
+                )
             else:
                 print("\n⚠️  No similar movies found")
                 logger.warning("No similar movies found")
