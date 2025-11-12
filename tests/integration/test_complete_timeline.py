@@ -11,7 +11,26 @@ import pytest
 
 from src.services.export_service import ExportService
 from src.services.movie_service import MovieService
-from src.services.recommendation_service import RecommendationService
+from src.services.movie_recommendation_engine import RecommendationService
+
+
+def flatten_similar_movies_for_export(similar_movies_data):
+    """Helper function to flatten similar movies data for export."""
+    export_data = []
+    for item in similar_movies_data:
+        original_movie = item.get("original_movie")
+        similar_movies = item.get("similar_movies", [])
+
+        for similar_entry in similar_movies:
+            export_data.append({
+                "original_movie": original_movie,
+                "similar_movie": similar_entry.get("similar_movie"),
+                "similarity_score": similar_entry.get("similarity_score"),
+                "similarity_reason": similar_entry.get("similarity_reason"),
+                "similarity_metrics": similar_entry.get("similarity_metrics", {}),
+            })
+
+    return export_data
 
 
 @pytest.mark.integration
@@ -127,7 +146,7 @@ class TestCompleteTimeline:
         mock_tmdb_client.get_similar_movies.side_effect = get_similar_movies_side_effect
 
         with patch("src.services.movie_service.TMDBClient", return_value=mock_tmdb_client), \
-             patch("src.services.recommendation_service.TMDBClient", return_value=mock_tmdb_client):
+             patch("src.services.movie_recommendation_engine.TMDBClient", return_value=mock_tmdb_client):
             
             movie_service = MovieService(tmdb_client=mock_tmdb_client)
             recommendation_service = RecommendationService(tmdb_client=mock_tmdb_client)
@@ -201,14 +220,15 @@ class TestCompleteTimeline:
 
         # Step 2: Find 3 similar movies for each of the top 10 movies
         print(f"\n🔍 Step 2: Finding {similar_limit} similar movies for each movie...")
-        similar_movies_data = recommendation_service.get_similar_movies_for_multiple(
-            movies=movies,
-            limit=similar_limit,
+        similar_movies_data = recommendation_service.find_similar_movies_for_each(
+            top_movies=movies,
+            similar_per_movie=similar_limit,
+            strategy="tmdb_api"
         )
 
         # Verify Step 2
         assert len(similar_movies_data) == top_n, f"Expected {top_n} entries, got {len(similar_movies_data)}"
-        
+
         total_similar_movies = sum(len(item.get("similar_movies", [])) for item in similar_movies_data)
         expected_similar = top_n * similar_limit  # 10 movies * 3 similar = 30
         assert total_similar_movies >= similar_limit, f"Expected at least {similar_limit} similar movies per movie"
@@ -217,9 +237,7 @@ class TestCompleteTimeline:
 
         # Step 3: Prepare similar movies for export
         print(f"\n📊 Step 3: Preparing similar movies data for export...")
-        export_data = recommendation_service.prepare_similar_movies_for_export(
-            similar_movies_data
-        )
+        export_data = flatten_similar_movies_for_export(similar_movies_data)
 
         # Verify Step 3
         assert len(export_data) > 0, "Export data should not be empty"
@@ -340,17 +358,16 @@ class TestCompleteTimeline:
         assert Path(movies_csv_path).exists()
 
         # Find similar movies
-        similar_movies_data = recommendation_service.get_similar_movies_for_multiple(
-            movies=movies,
-            limit=2,
+        similar_movies_data = recommendation_service.find_similar_movies_for_each(
+            top_movies=movies,
+            similar_per_movie=2,
+            strategy="tmdb_api"
         )
 
         assert len(similar_movies_data) == 5
 
         # Export similar movies
-        export_data = recommendation_service.prepare_similar_movies_for_export(
-            similar_movies_data
-        )
+        export_data = flatten_similar_movies_for_export(similar_movies_data)
         similar_csv_path = export_service.export_similar_movies_to_csv(
             similar_movies_data=export_data,
             filename="similar_movies_2019.csv",

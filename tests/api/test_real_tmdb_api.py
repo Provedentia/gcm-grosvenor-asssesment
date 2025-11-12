@@ -1,10 +1,24 @@
 """
 Real TMDB API integration tests.
-These tests make actual API calls to TMDB and require a valid API key.
 
-To run these tests:
-1. Set TMDB_API_KEY environment variable
-2. Run: pytest tests/api/ -v -m api
+IMPORTANT: These tests make actual API calls to TMDB and require a valid API key.
+
+Setup:
+    1. Create a .env file in the project root with: TMDB_API_KEY=your_actual_key
+    2. Or set the environment variable: export TMDB_API_KEY=your_actual_key
+
+Usage:
+    # Run only API tests
+    pytest -m api
+
+    # Run all tests including API tests
+    pytest -m ""
+
+Note:
+    - These tests are excluded by default (see pytest.ini)
+    - They are slower due to network requests
+    - They may fail if TMDB API changes or is down
+    - Rate limits may apply
 """
 
 import csv
@@ -15,13 +29,13 @@ import pytest
 from src.api.TMDB import TMDBClient
 from src.services.export_service import ExportService
 from src.services.movie_service import MovieService
-from src.services.recommendation_service import RecommendationService
+from src.services.movie_recommendation_engine import MovieRecommendationEngine
 
 
 @pytest.mark.api
 @pytest.mark.slow
 class TestRealTMDBAPI:
-    """Tests that use the actual TMDB API."""
+    """Integration tests using the actual TMDB API."""
 
     def test_real_api_client_initialization(self, real_tmdb_client):
         """Test that the real TMDB client can be initialized."""
@@ -253,26 +267,27 @@ class TestRealRecommendationService:
         original_movie = movies[0]
         
         # Find similar movies
-        similar_movies = real_recommendation_service.find_similar_movies(
-            original_movie=original_movie,
-            limit=3,
-            min_vote_count=50
+        results = real_recommendation_service.find_similar_movies_for_each(
+            top_movies=[original_movie],
+            similar_per_movie=3,
+            strategy="tmdb_api"
         )
-        
+
         # Should find at least some similar movies (may be 0 if API returns none)
-        assert isinstance(similar_movies, list)
-        
-        if len(similar_movies) > 0:
+        assert isinstance(results, list)
+
+        if results and len(results) > 0:
+            similar_movies = results[0].get("similar_movies", [])
             # Verify structure
             for similar in similar_movies:
                 assert "similar_movie" in similar
                 assert "similarity_score" in similar
                 assert "similarity_reason" in similar
                 assert "similarity_metrics" in similar
-                
+
                 # Verify similarity score is valid
                 assert 0.0 <= similar["similarity_score"] <= 1.0
-                
+
                 # Verify similar movie is different from original
                 assert similar["similar_movie"].id != original_movie.id
 
@@ -291,10 +306,10 @@ class TestRealRecommendationService:
             pytest.skip("Not enough movies found for testing")
         
         # Find similar movies for each
-        similar_movies_data = real_recommendation_service.get_similar_movies_for_multiple(
-            movies=movies,
-            limit=2,
-            min_vote_count=50
+        similar_movies_data = real_recommendation_service.find_similar_movies_for_each(
+            top_movies=movies,
+            similar_per_movie=2,
+            strategy="tmdb_api"
         )
         
         # Should have results for at least some movies
@@ -378,18 +393,27 @@ class TestRealCompleteWorkflow:
         assert Path(movies_csv_path).exists()
         
         # Find similar movies
-        similar_movies_data = real_recommendation_service.get_similar_movies_for_multiple(
-            movies=movies[:2],  # Use first 2 movies to save API calls
-            limit=2,
-            min_vote_count=50
+        similar_movies_data = real_recommendation_service.find_similar_movies_for_each(
+            top_movies=movies[:2],  # Use first 2 movies to save API calls
+            similar_per_movie=2,
+            strategy="tmdb_api"
         )
-        
+
         # May have 0 results if API doesn't return similar movies
         if len(similar_movies_data) > 0:
-            # Prepare for export
-            export_data = real_recommendation_service.prepare_similar_movies_for_export(
-                similar_movies_data
-            )
+            # Prepare for export (flatten the data)
+            export_data = []
+            for item in similar_movies_data:
+                original_movie = item.get("original_movie")
+                similar_movies = item.get("similar_movies", [])
+                for similar_entry in similar_movies:
+                    export_data.append({
+                        "original_movie": original_movie,
+                        "similar_movie": similar_entry.get("similar_movie"),
+                        "similarity_score": similar_entry.get("similarity_score"),
+                        "similarity_reason": similar_entry.get("similarity_reason"),
+                        "similarity_metrics": similar_entry.get("similarity_metrics", {}),
+                    })
             
             if len(export_data) > 0:
                 # Export similar movies

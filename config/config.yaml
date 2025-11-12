@@ -11,12 +11,13 @@ recommendation:
   # Minimum vote average (rating) for recommendations
   min_vote_average: 6.0
 
-  # Weight factors for recommendation algorithm
+  # Weight factors for recommendation algorithm (focus on actual similarity)
   weights:
-    genre_similarity: 0.4
-    rating: 0.3
-    popularity: 0.2
-    release_year: 0.1
+    genre_similarity: 0.2    # Genre overlap (Jaccard similarity)
+    keyword_similarity: 0.1  # Keyword/thematic overlap (Jaccard similarity)
+    director_similarity: 0 # Same director (binary: 1.0 if same, 0.0 otherwise)
+    collection_similarity: 0.35 # Same franchise/collection (binary: 1.0 if same, 0.0 otherwise)
+    production_company_similarity: 0.35 # Same studio/production company (Jaccard similarity, e.g., Pixar, Disney, Marvel)
 
 # API Settings
 api:

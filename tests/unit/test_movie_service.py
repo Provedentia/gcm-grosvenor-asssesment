@@ -1,5 +1,10 @@
 """
 Unit tests for MovieService.
+
+Tests the MovieService class which handles:
+- Fetching top movies by year from TMDB API
+- Sorting movies by different criteria (votes, name, name without articles)
+- Preparing movie data for export
 """
 
 from unittest.mock import MagicMock, patch
@@ -11,7 +16,7 @@ from src.services.movie_service import MovieService
 
 
 class TestMovieService:
-    """Test cases for MovieService."""
+    """Test suite for MovieService functionality."""
 
     @pytest.fixture
     def mock_tmdb_client(self):

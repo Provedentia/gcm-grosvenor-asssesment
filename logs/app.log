@@ -1067,3 +1067,1362 @@ AttributeError: 'MovieRecommendationEngine' object has no attribute 'export_reco
 2025-11-11 01:54:01 - export_service - INFO - Exporting 30 similar movie entries to data/similar_movies_2013.csv
 2025-11-11 01:54:01 - export_service - INFO - Successfully exported similar movies to data/similar_movies_2013.csv
 2025-11-11 01:54:01 - main - INFO - Exported 30 similar movies to data/similar_movies_2013.csv using strategy tmdb_api (760 API calls)
+2025-11-12 14:53:01 - main - INFO - Starting movie service for year 2020
+2025-11-12 14:53:01 - main - ERROR - Value error: TMDB_API_KEY not found in environment variables
+2025-11-12 14:53:15 - main - INFO - Starting movie service for year 2020
+2025-11-12 14:53:15 - tmdb_client - INFO - TMDB client initialized
+2025-11-12 14:53:15 - export_service - INFO - Export service initialized with output directory: data
+2025-11-12 14:53:15 - movie_service - INFO - Movie service initialized
+2025-11-12 14:53:15 - movie_service - INFO - Processing top 10 movies from year 2020 for export
+2025-11-12 14:53:15 - movie_service - INFO - Retrieving top 10 movies from year 2020 (min_votes: 100, min_rating: 6.0)
+2025-11-12 14:53:15 - tmdb_client - INFO - Retrieving movies from year 2020 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-12 14:53:17 - movie_service - INFO - Selected top 10 movies from year 2020
+2025-11-12 14:53:17 - export_service - INFO - Exporting 10 movie entries to data/top_movies_2020.csv
+2025-11-12 14:53:17 - export_service - INFO - Successfully exported movies to data/top_movies_2020.csv
+2025-11-12 14:53:17 - export_service - INFO - Exporting 10 movie entries to data/top_movies_2020.csv
+2025-11-12 14:53:17 - export_service - INFO - Successfully exported movies to data/top_movies_2020.csv
+2025-11-12 14:53:17 - export_service - INFO - Exporting 10 movie entries to data/top_movies_2020.csv
+2025-11-12 14:53:17 - export_service - INFO - Successfully exported movies to data/top_movies_2020.csv
+2025-11-12 14:53:17 - movie_service - INFO - Successfully exported 10 movies with 3 sort methods to data/top_movies_2020.csv
+2025-11-12 14:53:17 - main - INFO - Successfully processed 10 movies
+2025-11-12 14:53:17 - main - INFO - Using recommendation strategy: tmdb_api
+2025-11-12 14:53:17 - tmdb_client - INFO - TMDB client initialized
+2025-11-12 14:53:17 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 14:53:17 - movie_recommendation_engine - INFO - Finding 3 similar movies for 10 movies using strategy: tmdb_api
+2025-11-12 14:53:17 - movie_recommendation_engine - INFO - Processing movie 1/10: Soul (ID: 508442)
+2025-11-12 14:53:23 - movie_recommendation_engine - INFO - Found 3 similar movies for Soul
+2025-11-12 14:53:23 - movie_recommendation_engine - INFO - Processing movie 2/10: Tenet (ID: 577922)
+2025-11-12 14:53:30 - movie_recommendation_engine - INFO - Found 3 similar movies for Tenet
+2025-11-12 14:53:30 - movie_recommendation_engine - INFO - Processing movie 3/10: Birds of Prey (and the Fantabulous Emancipation of One Harley Quinn) (ID: 495764)
+2025-11-12 14:53:38 - movie_recommendation_engine - INFO - Found 3 similar movies for Birds of Prey (and the Fantabulous Emancipation of One Harley Quinn)
+2025-11-12 14:53:38 - movie_recommendation_engine - INFO - Processing movie 4/10: Sonic the Hedgehog (ID: 454626)
+2025-11-12 14:53:45 - movie_recommendation_engine - INFO - Found 3 similar movies for Sonic the Hedgehog
+2025-11-12 14:53:46 - movie_recommendation_engine - INFO - Processing movie 5/10: 365 Days (ID: 664413)
+2025-11-12 14:53:51 - movie_recommendation_engine - INFO - Found 3 similar movies for 365 Days
+2025-11-12 14:53:51 - movie_recommendation_engine - INFO - Processing movie 6/10: Wonder Woman 1984 (ID: 464052)
+2025-11-12 14:53:58 - movie_recommendation_engine - INFO - Found 3 similar movies for Wonder Woman 1984
+2025-11-12 14:53:58 - movie_recommendation_engine - INFO - Processing movie 7/10: Bad Boys for Life (ID: 38700)
+2025-11-12 14:54:06 - movie_recommendation_engine - INFO - Found 3 similar movies for Bad Boys for Life
+2025-11-12 14:54:06 - movie_recommendation_engine - INFO - Processing movie 8/10: Mulan (ID: 337401)
+2025-11-12 14:54:13 - movie_recommendation_engine - INFO - Found 3 similar movies for Mulan
+2025-11-12 14:54:13 - movie_recommendation_engine - INFO - Processing movie 9/10: Onward (ID: 508439)
+2025-11-12 14:54:20 - movie_recommendation_engine - INFO - Found 3 similar movies for Onward
+2025-11-12 14:54:20 - movie_recommendation_engine - INFO - Processing movie 10/10: Extraction (ID: 545609)
+2025-11-12 14:54:28 - movie_recommendation_engine - INFO - Found 3 similar movies for Extraction
+2025-11-12 14:54:28 - movie_recommendation_engine - INFO - Completed processing. Total API calls made: 742. Found similar movies for 10/10 movies
+2025-11-12 14:54:28 - export_service - INFO - Export service initialized with output directory: data
+2025-11-12 14:54:28 - export_service - INFO - Exporting 30 similar movie entries to data/similar_movies_2020.csv
+2025-11-12 14:54:28 - export_service - INFO - Successfully exported similar movies to data/similar_movies_2020.csv
+2025-11-12 14:54:28 - main - INFO - Exported 30 similar movies to data/similar_movies_2020.csv using strategy tmdb_api (742 API calls)
+2025-11-12 15:02:00 - main - INFO - Starting movie service for year 2020
+2025-11-12 15:02:00 - tmdb_client - INFO - TMDB client initialized
+2025-11-12 15:02:00 - export_service - INFO - Export service initialized with output directory: data
+2025-11-12 15:02:00 - movie_service - INFO - Movie service initialized
+2025-11-12 15:02:00 - movie_service - INFO - Processing top 10 movies from year 2020 for export
+2025-11-12 15:02:00 - movie_service - INFO - Retrieving top 10 movies from year 2020 (min_votes: 100, min_rating: 6.0)
+2025-11-12 15:02:00 - tmdb_client - INFO - Retrieving movies from year 2020 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-12 15:02:01 - movie_service - INFO - Selected top 10 movies from year 2020
+2025-11-12 15:02:01 - export_service - INFO - Exporting 10 movie entries to data/top_movies_2020.csv
+2025-11-12 15:02:01 - export_service - INFO - Successfully exported movies to data/top_movies_2020.csv
+2025-11-12 15:02:01 - export_service - INFO - Exporting 10 movie entries to data/top_movies_2020.csv
+2025-11-12 15:02:01 - export_service - INFO - Successfully exported movies to data/top_movies_2020.csv
+2025-11-12 15:02:01 - export_service - INFO - Exporting 10 movie entries to data/top_movies_2020.csv
+2025-11-12 15:02:01 - export_service - INFO - Successfully exported movies to data/top_movies_2020.csv
+2025-11-12 15:02:01 - movie_service - INFO - Successfully exported 10 movies with 3 sort methods to data/top_movies_2020.csv
+2025-11-12 15:02:01 - main - INFO - Successfully processed 10 movies
+2025-11-12 15:02:01 - main - INFO - Using recommendation strategy: tmdb_api
+2025-11-12 15:02:01 - tmdb_client - INFO - TMDB client initialized
+2025-11-12 15:02:01 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 15:02:01 - movie_recommendation_engine - INFO - Finding 3 similar movies for 10 movies using strategy: tmdb_api
+2025-11-12 15:02:01 - movie_recommendation_engine - INFO - Processing movie 1/10: Soul (ID: 508442)
+2025-11-12 15:02:07 - movie_recommendation_engine - INFO - Found 3 similar movies for Soul
+2025-11-12 15:02:07 - movie_recommendation_engine - INFO - Processing movie 2/10: Tenet (ID: 577922)
+2025-11-12 15:02:14 - movie_recommendation_engine - INFO - Found 3 similar movies for Tenet
+2025-11-12 15:02:14 - movie_recommendation_engine - INFO - Processing movie 3/10: Birds of Prey (and the Fantabulous Emancipation of One Harley Quinn) (ID: 495764)
+2025-11-12 15:02:21 - movie_recommendation_engine - INFO - Found 3 similar movies for Birds of Prey (and the Fantabulous Emancipation of One Harley Quinn)
+2025-11-12 15:02:21 - movie_recommendation_engine - INFO - Processing movie 4/10: Sonic the Hedgehog (ID: 454626)
+2025-11-12 15:02:28 - movie_recommendation_engine - INFO - Found 3 similar movies for Sonic the Hedgehog
+2025-11-12 15:02:28 - movie_recommendation_engine - INFO - Processing movie 5/10: 365 Days (ID: 664413)
+2025-11-12 15:02:33 - movie_recommendation_engine - INFO - Found 3 similar movies for 365 Days
+2025-11-12 15:02:33 - movie_recommendation_engine - INFO - Processing movie 6/10: Wonder Woman 1984 (ID: 464052)
+2025-11-12 15:02:40 - movie_recommendation_engine - INFO - Found 3 similar movies for Wonder Woman 1984
+2025-11-12 15:02:40 - movie_recommendation_engine - INFO - Processing movie 7/10: Bad Boys for Life (ID: 38700)
+2025-11-12 15:02:48 - movie_recommendation_engine - INFO - Found 3 similar movies for Bad Boys for Life
+2025-11-12 15:02:48 - movie_recommendation_engine - INFO - Processing movie 8/10: Mulan (ID: 337401)
+2025-11-12 15:02:56 - movie_recommendation_engine - INFO - Found 3 similar movies for Mulan
+2025-11-12 15:02:56 - movie_recommendation_engine - INFO - Processing movie 9/10: Onward (ID: 508439)
+2025-11-12 15:03:03 - movie_recommendation_engine - INFO - Found 3 similar movies for Onward
+2025-11-12 15:03:03 - movie_recommendation_engine - INFO - Processing movie 10/10: Extraction (ID: 545609)
+2025-11-12 15:03:11 - movie_recommendation_engine - INFO - Found 3 similar movies for Extraction
+2025-11-12 15:03:11 - movie_recommendation_engine - INFO - Completed processing. Total API calls made: 1103. Found similar movies for 10/10 movies
+2025-11-12 15:03:11 - export_service - INFO - Export service initialized with output directory: data
+2025-11-12 15:03:11 - export_service - INFO - Exporting 30 similar movie entries to data/similar_movies_2020.csv
+2025-11-12 15:03:11 - export_service - INFO - Successfully exported similar movies to data/similar_movies_2020.csv
+2025-11-12 15:03:11 - main - INFO - Exported 30 similar movies to data/similar_movies_2020.csv using strategy tmdb_api (1103 API calls)
+2025-11-12 15:04:58 - main - INFO - Starting movie service for year 2020
+2025-11-12 15:04:58 - tmdb_client - INFO - TMDB client initialized
+2025-11-12 15:04:58 - export_service - INFO - Export service initialized with output directory: data
+2025-11-12 15:04:58 - movie_service - INFO - Movie service initialized
+2025-11-12 15:04:58 - movie_service - INFO - Processing top 10 movies from year 2020 for export
+2025-11-12 15:04:58 - movie_service - INFO - Retrieving top 10 movies from year 2020 (min_votes: 100, min_rating: 6.0)
+2025-11-12 15:04:58 - tmdb_client - INFO - Retrieving movies from year 2020 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-12 15:04:58 - movie_service - INFO - Selected top 10 movies from year 2020
+2025-11-12 15:04:58 - export_service - INFO - Exporting 10 movie entries to data/top_movies_2020.csv
+2025-11-12 15:04:58 - export_service - INFO - Successfully exported movies to data/top_movies_2020.csv
+2025-11-12 15:04:58 - export_service - INFO - Exporting 10 movie entries to data/top_movies_2020.csv
+2025-11-12 15:04:58 - export_service - INFO - Successfully exported movies to data/top_movies_2020.csv
+2025-11-12 15:04:58 - export_service - INFO - Exporting 10 movie entries to data/top_movies_2020.csv
+2025-11-12 15:04:58 - export_service - INFO - Successfully exported movies to data/top_movies_2020.csv
+2025-11-12 15:04:58 - movie_service - INFO - Successfully exported 10 movies with 3 sort methods to data/top_movies_2020.csv
+2025-11-12 15:04:58 - main - INFO - Successfully processed 10 movies
+2025-11-12 15:04:58 - main - INFO - Using recommendation strategy: tmdb_api
+2025-11-12 15:04:58 - tmdb_client - INFO - TMDB client initialized
+2025-11-12 15:04:58 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 15:04:58 - movie_recommendation_engine - INFO - Finding 3 similar movies for 10 movies using strategy: tmdb_api
+2025-11-12 15:04:58 - movie_recommendation_engine - INFO - Processing movie 1/10: Soul (ID: 508442)
+2025-11-12 15:05:03 - movie_recommendation_engine - INFO - Found 3 similar movies for Soul
+2025-11-12 15:05:03 - movie_recommendation_engine - INFO - Processing movie 2/10: Tenet (ID: 577922)
+2025-11-12 15:05:10 - movie_recommendation_engine - INFO - Found 3 similar movies for Tenet
+2025-11-12 15:05:10 - movie_recommendation_engine - INFO - Processing movie 3/10: Birds of Prey (and the Fantabulous Emancipation of One Harley Quinn) (ID: 495764)
+2025-11-12 15:05:16 - movie_recommendation_engine - INFO - Found 3 similar movies for Birds of Prey (and the Fantabulous Emancipation of One Harley Quinn)
+2025-11-12 15:05:17 - movie_recommendation_engine - INFO - Processing movie 4/10: Sonic the Hedgehog (ID: 454626)
+2025-11-12 15:05:23 - movie_recommendation_engine - INFO - Found 3 similar movies for Sonic the Hedgehog
+2025-11-12 15:05:23 - movie_recommendation_engine - INFO - Processing movie 5/10: 365 Days (ID: 664413)
+2025-11-12 15:05:27 - movie_recommendation_engine - INFO - Found 3 similar movies for 365 Days
+2025-11-12 15:05:27 - movie_recommendation_engine - INFO - Processing movie 6/10: Wonder Woman 1984 (ID: 464052)
+2025-11-12 15:05:33 - movie_recommendation_engine - INFO - Found 3 similar movies for Wonder Woman 1984
+2025-11-12 15:05:33 - movie_recommendation_engine - INFO - Processing movie 7/10: Bad Boys for Life (ID: 38700)
+2025-11-12 15:05:40 - movie_recommendation_engine - INFO - Found 3 similar movies for Bad Boys for Life
+2025-11-12 15:05:40 - movie_recommendation_engine - INFO - Processing movie 8/10: Mulan (ID: 337401)
+2025-11-12 15:05:47 - movie_recommendation_engine - INFO - Found 3 similar movies for Mulan
+2025-11-12 15:05:47 - movie_recommendation_engine - INFO - Processing movie 9/10: Onward (ID: 508439)
+2025-11-12 15:05:54 - movie_recommendation_engine - INFO - Found 3 similar movies for Onward
+2025-11-12 15:05:54 - movie_recommendation_engine - INFO - Processing movie 10/10: Extraction (ID: 545609)
+2025-11-12 15:06:01 - movie_recommendation_engine - INFO - Found 3 similar movies for Extraction
+2025-11-12 15:06:01 - movie_recommendation_engine - INFO - Completed processing. Total API calls made: 1103. Found similar movies for 10/10 movies
+2025-11-12 15:06:01 - export_service - INFO - Export service initialized with output directory: data
+2025-11-12 15:06:01 - export_service - INFO - Exporting 30 similar movie entries to data/similar_movies_2020.csv
+2025-11-12 15:06:01 - export_service - INFO - Successfully exported similar movies to data/similar_movies_2020.csv
+2025-11-12 15:06:01 - main - INFO - Exported 30 similar movies to data/similar_movies_2020.csv using strategy tmdb_api (1103 API calls)
+2025-11-12 15:11:03 - tmdb_client - INFO - TMDB client initialized
+2025-11-12 15:11:03 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 15:11:23 - main - INFO - Starting movie service for year 2020
+2025-11-12 15:11:23 - tmdb_client - INFO - TMDB client initialized
+2025-11-12 15:11:23 - export_service - INFO - Export service initialized with output directory: data
+2025-11-12 15:11:23 - movie_service - INFO - Movie service initialized
+2025-11-12 15:11:23 - movie_service - INFO - Processing top 10 movies from year 2020 for export
+2025-11-12 15:11:23 - movie_service - INFO - Retrieving top 10 movies from year 2020 (min_votes: 100, min_rating: 6.0)
+2025-11-12 15:11:23 - tmdb_client - INFO - Retrieving movies from year 2020 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-12 15:11:23 - movie_service - INFO - Selected top 10 movies from year 2020
+2025-11-12 15:11:23 - export_service - INFO - Exporting 10 movie entries to data/top_movies_2020.csv
+2025-11-12 15:11:23 - export_service - INFO - Successfully exported movies to data/top_movies_2020.csv
+2025-11-12 15:11:23 - export_service - INFO - Exporting 10 movie entries to data/top_movies_2020.csv
+2025-11-12 15:11:23 - export_service - INFO - Successfully exported movies to data/top_movies_2020.csv
+2025-11-12 15:11:23 - export_service - INFO - Exporting 10 movie entries to data/top_movies_2020.csv
+2025-11-12 15:11:23 - export_service - INFO - Successfully exported movies to data/top_movies_2020.csv
+2025-11-12 15:11:23 - movie_service - INFO - Successfully exported 10 movies with 3 sort methods to data/top_movies_2020.csv
+2025-11-12 15:11:23 - main - INFO - Successfully processed 10 movies
+2025-11-12 15:11:23 - main - INFO - Using recommendation strategy: tmdb_api
+2025-11-12 15:11:23 - tmdb_client - INFO - TMDB client initialized
+2025-11-12 15:11:23 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 15:11:23 - movie_recommendation_engine - INFO - Finding 3 similar movies for 10 movies using strategy: tmdb_api
+2025-11-12 15:11:23 - movie_recommendation_engine - INFO - Processing movie 1/10: Soul (ID: 508442)
+2025-11-12 15:11:28 - movie_recommendation_engine - INFO - Found 3 similar movies for Soul
+2025-11-12 15:11:28 - movie_recommendation_engine - INFO - Processing movie 2/10: Tenet (ID: 577922)
+2025-11-12 15:11:33 - movie_recommendation_engine - INFO - Found 3 similar movies for Tenet
+2025-11-12 15:11:34 - movie_recommendation_engine - INFO - Processing movie 3/10: Birds of Prey (and the Fantabulous Emancipation of One Harley Quinn) (ID: 495764)
+2025-11-12 15:11:40 - movie_recommendation_engine - INFO - Found 3 similar movies for Birds of Prey (and the Fantabulous Emancipation of One Harley Quinn)
+2025-11-12 15:11:40 - movie_recommendation_engine - INFO - Processing movie 4/10: Sonic the Hedgehog (ID: 454626)
+2025-11-12 15:11:45 - movie_recommendation_engine - INFO - Found 3 similar movies for Sonic the Hedgehog
+2025-11-12 15:11:45 - movie_recommendation_engine - INFO - Processing movie 5/10: 365 Days (ID: 664413)
+2025-11-12 15:11:49 - movie_recommendation_engine - INFO - Found 3 similar movies for 365 Days
+2025-11-12 15:11:49 - movie_recommendation_engine - INFO - Processing movie 6/10: Wonder Woman 1984 (ID: 464052)
+2025-11-12 15:11:55 - movie_recommendation_engine - INFO - Found 3 similar movies for Wonder Woman 1984
+2025-11-12 15:11:55 - movie_recommendation_engine - INFO - Processing movie 7/10: Bad Boys for Life (ID: 38700)
+2025-11-12 15:12:01 - movie_recommendation_engine - INFO - Found 3 similar movies for Bad Boys for Life
+2025-11-12 15:12:02 - movie_recommendation_engine - INFO - Processing movie 8/10: Mulan (ID: 337401)
+2025-11-12 15:12:08 - movie_recommendation_engine - INFO - Found 3 similar movies for Mulan
+2025-11-12 15:12:08 - movie_recommendation_engine - INFO - Processing movie 9/10: Onward (ID: 508439)
+2025-11-12 15:12:14 - movie_recommendation_engine - INFO - Found 3 similar movies for Onward
+2025-11-12 15:12:14 - movie_recommendation_engine - INFO - Processing movie 10/10: Extraction (ID: 545609)
+2025-11-12 15:12:20 - movie_recommendation_engine - INFO - Found 3 similar movies for Extraction
+2025-11-12 15:12:20 - movie_recommendation_engine - INFO - Completed processing. Total API calls made: 1103. Found similar movies for 10/10 movies
+2025-11-12 15:12:20 - export_service - INFO - Export service initialized with output directory: data
+2025-11-12 15:12:20 - export_service - INFO - Exporting 30 similar movie entries to data/similar_movies_2020.csv
+2025-11-12 15:12:20 - export_service - INFO - Successfully exported similar movies to data/similar_movies_2020.csv
+2025-11-12 15:12:20 - main - INFO - Exported 30 similar movies to data/similar_movies_2020.csv using strategy tmdb_api (1103 API calls)
+2025-11-12 15:12:59 - main - INFO - Starting movie service for year 2020
+2025-11-12 15:12:59 - tmdb_client - INFO - TMDB client initialized
+2025-11-12 15:12:59 - export_service - INFO - Export service initialized with output directory: data
+2025-11-12 15:12:59 - movie_service - INFO - Movie service initialized
+2025-11-12 15:12:59 - movie_service - INFO - Processing top 10 movies from year 2020 for export
+2025-11-12 15:12:59 - movie_service - INFO - Retrieving top 10 movies from year 2020 (min_votes: 100, min_rating: 6.0)
+2025-11-12 15:12:59 - tmdb_client - INFO - Retrieving movies from year 2020 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-12 15:12:59 - movie_service - INFO - Selected top 10 movies from year 2020
+2025-11-12 15:12:59 - export_service - INFO - Exporting 10 movie entries to data/top_movies_2020.csv
+2025-11-12 15:12:59 - export_service - INFO - Successfully exported movies to data/top_movies_2020.csv
+2025-11-12 15:12:59 - export_service - INFO - Exporting 10 movie entries to data/top_movies_2020.csv
+2025-11-12 15:12:59 - export_service - INFO - Successfully exported movies to data/top_movies_2020.csv
+2025-11-12 15:12:59 - export_service - INFO - Exporting 10 movie entries to data/top_movies_2020.csv
+2025-11-12 15:12:59 - export_service - INFO - Successfully exported movies to data/top_movies_2020.csv
+2025-11-12 15:12:59 - movie_service - INFO - Successfully exported 10 movies with 3 sort methods to data/top_movies_2020.csv
+2025-11-12 15:12:59 - main - INFO - Successfully processed 10 movies
+2025-11-12 15:12:59 - main - INFO - Using recommendation strategy: tmdb_api
+2025-11-12 15:12:59 - tmdb_client - INFO - TMDB client initialized
+2025-11-12 15:12:59 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 15:12:59 - movie_recommendation_engine - INFO - Finding 3 similar movies for 10 movies using strategy: tmdb_api
+2025-11-12 15:12:59 - movie_recommendation_engine - INFO - Processing movie 1/10: Soul (ID: 508442)
+2025-11-12 15:13:04 - movie_recommendation_engine - INFO - Found 3 similar movies for Soul
+2025-11-12 15:13:04 - movie_recommendation_engine - INFO - Processing movie 2/10: Tenet (ID: 577922)
+2025-11-12 15:13:10 - movie_recommendation_engine - INFO - Found 3 similar movies for Tenet
+2025-11-12 15:13:10 - movie_recommendation_engine - INFO - Processing movie 3/10: Birds of Prey (and the Fantabulous Emancipation of One Harley Quinn) (ID: 495764)
+2025-11-12 15:13:16 - movie_recommendation_engine - INFO - Found 3 similar movies for Birds of Prey (and the Fantabulous Emancipation of One Harley Quinn)
+2025-11-12 15:13:16 - movie_recommendation_engine - INFO - Processing movie 4/10: Sonic the Hedgehog (ID: 454626)
+2025-11-12 15:13:22 - movie_recommendation_engine - INFO - Found 3 similar movies for Sonic the Hedgehog
+2025-11-12 15:13:22 - movie_recommendation_engine - INFO - Processing movie 5/10: 365 Days (ID: 664413)
+2025-11-12 15:13:26 - movie_recommendation_engine - INFO - Found 3 similar movies for 365 Days
+2025-11-12 15:13:26 - movie_recommendation_engine - INFO - Processing movie 6/10: Wonder Woman 1984 (ID: 464052)
+2025-11-12 15:13:32 - movie_recommendation_engine - INFO - Found 3 similar movies for Wonder Woman 1984
+2025-11-12 15:13:32 - movie_recommendation_engine - INFO - Processing movie 7/10: Bad Boys for Life (ID: 38700)
+2025-11-12 15:13:38 - movie_recommendation_engine - INFO - Found 3 similar movies for Bad Boys for Life
+2025-11-12 15:13:39 - movie_recommendation_engine - INFO - Processing movie 8/10: Mulan (ID: 337401)
+2025-11-12 15:13:45 - movie_recommendation_engine - INFO - Found 3 similar movies for Mulan
+2025-11-12 15:13:45 - movie_recommendation_engine - INFO - Processing movie 9/10: Onward (ID: 508439)
+2025-11-12 15:13:51 - movie_recommendation_engine - INFO - Found 3 similar movies for Onward
+2025-11-12 15:13:51 - movie_recommendation_engine - INFO - Processing movie 10/10: Extraction (ID: 545609)
+2025-11-12 15:13:57 - movie_recommendation_engine - INFO - Found 3 similar movies for Extraction
+2025-11-12 15:13:57 - movie_recommendation_engine - INFO - Completed processing. Total API calls made: 1103. Found similar movies for 10/10 movies
+2025-11-12 15:13:57 - export_service - INFO - Export service initialized with output directory: data
+2025-11-12 15:13:57 - export_service - INFO - Exporting 30 similar movie entries to data/similar_movies_2020.csv
+2025-11-12 15:13:57 - export_service - INFO - Successfully exported similar movies to data/similar_movies_2020.csv
+2025-11-12 15:13:57 - main - INFO - Exported 30 similar movies to data/similar_movies_2020.csv using strategy tmdb_api (1103 API calls)
+2025-11-12 15:53:25 - export_service - INFO - Export service initialized with output directory: data
+2025-11-12 15:53:25 - movie_service - INFO - Movie service initialized
+2025-11-12 15:53:25 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 15:53:25 - export_service - INFO - Export service initialized with output directory: /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-8/test_complete_assignment_requi0/test_data
+2025-11-12 15:53:25 - movie_service - INFO - Processing top 10 movies from year 2020 for export
+2025-11-12 15:53:25 - movie_service - INFO - Retrieving top 10 movies from year 2020 (min_votes: 100, min_rating: 6.0)
+2025-11-12 15:53:25 - movie_service - DEBUG - Retrieved 10 movies from page 1
+2025-11-12 15:53:25 - movie_service - INFO - Selected top 10 movies from year 2020
+2025-11-12 15:53:25 - export_service - INFO - Exporting 10 movie entries to data/top_movies_2020.csv
+2025-11-12 15:53:25 - export_service - INFO - Successfully exported movies to data/top_movies_2020.csv
+2025-11-12 15:53:25 - movie_service - DEBUG - Exported 10 movies sorted by votes
+2025-11-12 15:53:25 - export_service - INFO - Exporting 10 movie entries to data/top_movies_2020.csv
+2025-11-12 15:53:25 - export_service - INFO - Successfully exported movies to data/top_movies_2020.csv
+2025-11-12 15:53:25 - movie_service - DEBUG - Appended 10 movies sorted by name (with articles)
+2025-11-12 15:53:25 - export_service - INFO - Exporting 10 movie entries to data/top_movies_2020.csv
+2025-11-12 15:53:25 - export_service - INFO - Successfully exported movies to data/top_movies_2020.csv
+2025-11-12 15:53:25 - movie_service - DEBUG - Appended 10 movies sorted by name (without articles)
+2025-11-12 15:53:25 - movie_service - INFO - Successfully exported 10 movies with 3 sort methods to data/top_movies_2020.csv
+2025-11-12 15:53:25 - movie_recommendation_engine - INFO - Finding 3 similar movies for 10 movies using strategy: tmdb_api
+2025-11-12 15:53:25 - movie_recommendation_engine - INFO - Processing movie 1/10: Movie 1 (ID: 100)
+2025-11-12 15:53:25 - movie_recommendation_engine - DEBUG - Getting candidates from TMDB API for Movie 1
+2025-11-12 15:53:25 - movie_recommendation_engine - DEBUG - Found 5 similar movies from TMDB API
+2025-11-12 15:53:26 - movie_recommendation_engine - DEBUG - TMDB API strategy: 5 raw candidates -> 5 unique candidates (excluding target)
+2025-11-12 15:53:26 - movie_recommendation_engine - DEBUG - Found 5 candidates for Movie 1
+2025-11-12 15:53:26 - movie_recommendation_engine - DEBUG - Calculating similarity scores for 5 candidates for Movie 1
+2025-11-12 15:53:26 - movie_recommendation_engine - DEBUG - Ranked 5 candidates, returning top 3 for Movie 1
+2025-11-12 15:53:26 - movie_recommendation_engine - INFO - Found 3 similar movies for Movie 1
+2025-11-12 15:53:26 - movie_recommendation_engine - INFO - Processing movie 2/10: Movie 2 (ID: 101)
+2025-11-12 15:53:26 - movie_recommendation_engine - DEBUG - Getting candidates from TMDB API for Movie 2
+2025-11-12 15:53:26 - movie_recommendation_engine - DEBUG - Found 5 similar movies from TMDB API
+2025-11-12 15:53:26 - movie_recommendation_engine - DEBUG - TMDB API strategy: 5 raw candidates -> 5 unique candidates (excluding target)
+2025-11-12 15:53:26 - movie_recommendation_engine - DEBUG - Found 5 candidates for Movie 2
+2025-11-12 15:53:26 - movie_recommendation_engine - DEBUG - Calculating similarity scores for 5 candidates for Movie 2
+2025-11-12 15:53:26 - movie_recommendation_engine - DEBUG - Ranked 5 candidates, returning top 3 for Movie 2
+2025-11-12 15:53:26 - movie_recommendation_engine - INFO - Found 3 similar movies for Movie 2
+2025-11-12 15:53:26 - movie_recommendation_engine - INFO - Processing movie 3/10: Movie 3 (ID: 102)
+2025-11-12 15:53:26 - movie_recommendation_engine - DEBUG - Getting candidates from TMDB API for Movie 3
+2025-11-12 15:53:26 - movie_recommendation_engine - DEBUG - Found 5 similar movies from TMDB API
+2025-11-12 15:53:26 - movie_recommendation_engine - DEBUG - TMDB API strategy: 5 raw candidates -> 5 unique candidates (excluding target)
+2025-11-12 15:53:26 - movie_recommendation_engine - DEBUG - Found 5 candidates for Movie 3
+2025-11-12 15:53:26 - movie_recommendation_engine - DEBUG - Calculating similarity scores for 5 candidates for Movie 3
+2025-11-12 15:53:26 - movie_recommendation_engine - DEBUG - Ranked 5 candidates, returning top 3 for Movie 3
+2025-11-12 15:53:26 - movie_recommendation_engine - INFO - Found 3 similar movies for Movie 3
+2025-11-12 15:53:26 - movie_recommendation_engine - INFO - Processing movie 4/10: Movie 4 (ID: 103)
+2025-11-12 15:53:26 - movie_recommendation_engine - DEBUG - Getting candidates from TMDB API for Movie 4
+2025-11-12 15:53:26 - movie_recommendation_engine - DEBUG - Found 5 similar movies from TMDB API
+2025-11-12 15:53:26 - movie_recommendation_engine - DEBUG - TMDB API strategy: 5 raw candidates -> 5 unique candidates (excluding target)
+2025-11-12 15:53:26 - movie_recommendation_engine - DEBUG - Found 5 candidates for Movie 4
+2025-11-12 15:53:26 - movie_recommendation_engine - DEBUG - Calculating similarity scores for 5 candidates for Movie 4
+2025-11-12 15:53:26 - movie_recommendation_engine - DEBUG - Ranked 5 candidates, returning top 3 for Movie 4
+2025-11-12 15:53:26 - movie_recommendation_engine - INFO - Found 3 similar movies for Movie 4
+2025-11-12 15:53:26 - movie_recommendation_engine - INFO - Processing movie 5/10: Movie 5 (ID: 104)
+2025-11-12 15:53:26 - movie_recommendation_engine - DEBUG - Getting candidates from TMDB API for Movie 5
+2025-11-12 15:53:26 - movie_recommendation_engine - DEBUG - Found 5 similar movies from TMDB API
+2025-11-12 15:53:26 - movie_recommendation_engine - DEBUG - TMDB API strategy: 5 raw candidates -> 5 unique candidates (excluding target)
+2025-11-12 15:53:26 - movie_recommendation_engine - DEBUG - Found 5 candidates for Movie 5
+2025-11-12 15:53:26 - movie_recommendation_engine - DEBUG - Calculating similarity scores for 5 candidates for Movie 5
+2025-11-12 15:53:26 - movie_recommendation_engine - DEBUG - Ranked 5 candidates, returning top 3 for Movie 5
+2025-11-12 15:53:26 - movie_recommendation_engine - INFO - Found 3 similar movies for Movie 5
+2025-11-12 15:53:26 - movie_recommendation_engine - INFO - Processing movie 6/10: Movie 6 (ID: 105)
+2025-11-12 15:53:26 - movie_recommendation_engine - DEBUG - Getting candidates from TMDB API for Movie 6
+2025-11-12 15:53:26 - movie_recommendation_engine - DEBUG - Found 5 similar movies from TMDB API
+2025-11-12 15:53:27 - movie_recommendation_engine - DEBUG - TMDB API strategy: 5 raw candidates -> 5 unique candidates (excluding target)
+2025-11-12 15:53:27 - movie_recommendation_engine - DEBUG - Found 5 candidates for Movie 6
+2025-11-12 15:53:27 - movie_recommendation_engine - DEBUG - Calculating similarity scores for 5 candidates for Movie 6
+2025-11-12 15:53:27 - movie_recommendation_engine - DEBUG - Ranked 5 candidates, returning top 3 for Movie 6
+2025-11-12 15:53:27 - movie_recommendation_engine - INFO - Found 3 similar movies for Movie 6
+2025-11-12 15:53:27 - movie_recommendation_engine - INFO - Processing movie 7/10: Movie 7 (ID: 106)
+2025-11-12 15:53:27 - movie_recommendation_engine - DEBUG - Getting candidates from TMDB API for Movie 7
+2025-11-12 15:53:27 - movie_recommendation_engine - DEBUG - Found 5 similar movies from TMDB API
+2025-11-12 15:53:27 - movie_recommendation_engine - DEBUG - TMDB API strategy: 5 raw candidates -> 5 unique candidates (excluding target)
+2025-11-12 15:53:27 - movie_recommendation_engine - DEBUG - Found 5 candidates for Movie 7
+2025-11-12 15:53:27 - movie_recommendation_engine - DEBUG - Calculating similarity scores for 5 candidates for Movie 7
+2025-11-12 15:53:27 - movie_recommendation_engine - DEBUG - Ranked 5 candidates, returning top 3 for Movie 7
+2025-11-12 15:53:27 - movie_recommendation_engine - INFO - Found 3 similar movies for Movie 7
+2025-11-12 15:53:27 - movie_recommendation_engine - INFO - Processing movie 8/10: Movie 8 (ID: 107)
+2025-11-12 15:53:27 - movie_recommendation_engine - DEBUG - Getting candidates from TMDB API for Movie 8
+2025-11-12 15:53:27 - movie_recommendation_engine - DEBUG - Found 5 similar movies from TMDB API
+2025-11-12 15:53:27 - movie_recommendation_engine - DEBUG - TMDB API strategy: 5 raw candidates -> 5 unique candidates (excluding target)
+2025-11-12 15:53:27 - movie_recommendation_engine - DEBUG - Found 5 candidates for Movie 8
+2025-11-12 15:53:27 - movie_recommendation_engine - DEBUG - Calculating similarity scores for 5 candidates for Movie 8
+2025-11-12 15:53:27 - movie_recommendation_engine - DEBUG - Ranked 5 candidates, returning top 3 for Movie 8
+2025-11-12 15:53:27 - movie_recommendation_engine - INFO - Found 3 similar movies for Movie 8
+2025-11-12 15:53:27 - movie_recommendation_engine - INFO - Processing movie 9/10: Movie 9 (ID: 108)
+2025-11-12 15:53:27 - movie_recommendation_engine - DEBUG - Getting candidates from TMDB API for Movie 9
+2025-11-12 15:53:27 - movie_recommendation_engine - DEBUG - Found 5 similar movies from TMDB API
+2025-11-12 15:53:27 - movie_recommendation_engine - DEBUG - TMDB API strategy: 5 raw candidates -> 5 unique candidates (excluding target)
+2025-11-12 15:53:27 - movie_recommendation_engine - DEBUG - Found 5 candidates for Movie 9
+2025-11-12 15:53:27 - movie_recommendation_engine - DEBUG - Calculating similarity scores for 5 candidates for Movie 9
+2025-11-12 15:53:27 - movie_recommendation_engine - DEBUG - Ranked 5 candidates, returning top 3 for Movie 9
+2025-11-12 15:53:27 - movie_recommendation_engine - INFO - Found 3 similar movies for Movie 9
+2025-11-12 15:53:27 - movie_recommendation_engine - INFO - Processing movie 10/10: Movie 10 (ID: 109)
+2025-11-12 15:53:27 - movie_recommendation_engine - DEBUG - Getting candidates from TMDB API for Movie 10
+2025-11-12 15:53:27 - movie_recommendation_engine - DEBUG - Found 5 similar movies from TMDB API
+2025-11-12 15:53:27 - movie_recommendation_engine - DEBUG - TMDB API strategy: 5 raw candidates -> 5 unique candidates (excluding target)
+2025-11-12 15:53:27 - movie_recommendation_engine - DEBUG - Found 5 candidates for Movie 10
+2025-11-12 15:53:27 - movie_recommendation_engine - DEBUG - Calculating similarity scores for 5 candidates for Movie 10
+2025-11-12 15:53:27 - movie_recommendation_engine - DEBUG - Ranked 5 candidates, returning top 3 for Movie 10
+2025-11-12 15:53:27 - movie_recommendation_engine - INFO - Found 3 similar movies for Movie 10
+2025-11-12 15:53:27 - movie_recommendation_engine - INFO - Completed processing. Total API calls made: 70. Found similar movies for 10/10 movies
+2025-11-12 15:53:27 - export_service - INFO - Exporting 30 similar movie entries to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-8/test_complete_assignment_requi0/test_data/similar_movies_2020.csv
+2025-11-12 15:53:27 - export_service - INFO - Successfully exported similar movies to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-8/test_complete_assignment_requi0/test_data/similar_movies_2020.csv
+2025-11-12 15:53:27 - export_service - INFO - Export service initialized with output directory: data
+2025-11-12 15:53:27 - movie_service - INFO - Movie service initialized
+2025-11-12 15:53:27 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 15:53:27 - export_service - INFO - Export service initialized with output directory: /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-8/test_timeline_with_different_y0/test_data
+2025-11-12 15:53:27 - movie_service - INFO - Processing top 5 movies from year 2019 for export
+2025-11-12 15:53:27 - movie_service - INFO - Retrieving top 5 movies from year 2019 (min_votes: 100, min_rating: 6.0)
+2025-11-12 15:53:27 - movie_service - DEBUG - Retrieved 5 movies from page 1
+2025-11-12 15:53:27 - movie_service - INFO - Selected top 5 movies from year 2019
+2025-11-12 15:53:27 - export_service - INFO - Exporting 5 movie entries to data/top_movies_2019.csv
+2025-11-12 15:53:27 - export_service - INFO - Successfully exported movies to data/top_movies_2019.csv
+2025-11-12 15:53:27 - movie_service - DEBUG - Exported 5 movies sorted by votes
+2025-11-12 15:53:27 - export_service - INFO - Exporting 5 movie entries to data/top_movies_2019.csv
+2025-11-12 15:53:27 - export_service - INFO - Successfully exported movies to data/top_movies_2019.csv
+2025-11-12 15:53:27 - movie_service - DEBUG - Appended 5 movies sorted by name (with articles)
+2025-11-12 15:53:27 - export_service - INFO - Exporting 5 movie entries to data/top_movies_2019.csv
+2025-11-12 15:53:27 - export_service - INFO - Successfully exported movies to data/top_movies_2019.csv
+2025-11-12 15:53:27 - movie_service - DEBUG - Appended 5 movies sorted by name (without articles)
+2025-11-12 15:53:27 - movie_service - INFO - Successfully exported 5 movies with 3 sort methods to data/top_movies_2019.csv
+2025-11-12 15:53:27 - movie_recommendation_engine - INFO - Finding 2 similar movies for 5 movies using strategy: tmdb_api
+2025-11-12 15:53:27 - movie_recommendation_engine - INFO - Processing movie 1/5: 2019 Movie 1 (ID: 200)
+2025-11-12 15:53:27 - movie_recommendation_engine - DEBUG - Getting candidates from TMDB API for 2019 Movie 1
+2025-11-12 15:53:27 - movie_recommendation_engine - DEBUG - Found 5 similar movies from TMDB API
+2025-11-12 15:53:28 - movie_recommendation_engine - DEBUG - TMDB API strategy: 5 raw candidates -> 5 unique candidates (excluding target)
+2025-11-12 15:53:28 - movie_recommendation_engine - DEBUG - Found 5 candidates for 2019 Movie 1
+2025-11-12 15:53:28 - movie_recommendation_engine - DEBUG - Calculating similarity scores for 5 candidates for 2019 Movie 1
+2025-11-12 15:53:28 - movie_recommendation_engine - DEBUG - Ranked 5 candidates, returning top 2 for 2019 Movie 1
+2025-11-12 15:53:28 - movie_recommendation_engine - INFO - Found 2 similar movies for 2019 Movie 1
+2025-11-12 15:53:28 - movie_recommendation_engine - INFO - Processing movie 2/5: 2019 Movie 2 (ID: 201)
+2025-11-12 15:53:28 - movie_recommendation_engine - DEBUG - Getting candidates from TMDB API for 2019 Movie 2
+2025-11-12 15:53:28 - movie_recommendation_engine - DEBUG - Found 5 similar movies from TMDB API
+2025-11-12 15:53:28 - movie_recommendation_engine - DEBUG - TMDB API strategy: 5 raw candidates -> 5 unique candidates (excluding target)
+2025-11-12 15:53:28 - movie_recommendation_engine - DEBUG - Found 5 candidates for 2019 Movie 2
+2025-11-12 15:53:28 - movie_recommendation_engine - DEBUG - Calculating similarity scores for 5 candidates for 2019 Movie 2
+2025-11-12 15:53:28 - movie_recommendation_engine - DEBUG - Ranked 5 candidates, returning top 2 for 2019 Movie 2
+2025-11-12 15:53:28 - movie_recommendation_engine - INFO - Found 2 similar movies for 2019 Movie 2
+2025-11-12 15:53:28 - movie_recommendation_engine - INFO - Processing movie 3/5: 2019 Movie 3 (ID: 202)
+2025-11-12 15:53:28 - movie_recommendation_engine - DEBUG - Getting candidates from TMDB API for 2019 Movie 3
+2025-11-12 15:53:28 - movie_recommendation_engine - DEBUG - Found 5 similar movies from TMDB API
+2025-11-12 15:53:28 - movie_recommendation_engine - DEBUG - TMDB API strategy: 5 raw candidates -> 5 unique candidates (excluding target)
+2025-11-12 15:53:28 - movie_recommendation_engine - DEBUG - Found 5 candidates for 2019 Movie 3
+2025-11-12 15:53:28 - movie_recommendation_engine - DEBUG - Calculating similarity scores for 5 candidates for 2019 Movie 3
+2025-11-12 15:53:28 - movie_recommendation_engine - DEBUG - Ranked 5 candidates, returning top 2 for 2019 Movie 3
+2025-11-12 15:53:28 - movie_recommendation_engine - INFO - Found 2 similar movies for 2019 Movie 3
+2025-11-12 15:53:28 - movie_recommendation_engine - INFO - Processing movie 4/5: 2019 Movie 4 (ID: 203)
+2025-11-12 15:53:28 - movie_recommendation_engine - DEBUG - Getting candidates from TMDB API for 2019 Movie 4
+2025-11-12 15:53:28 - movie_recommendation_engine - DEBUG - Found 5 similar movies from TMDB API
+2025-11-12 15:53:28 - movie_recommendation_engine - DEBUG - TMDB API strategy: 5 raw candidates -> 5 unique candidates (excluding target)
+2025-11-12 15:53:28 - movie_recommendation_engine - DEBUG - Found 5 candidates for 2019 Movie 4
+2025-11-12 15:53:28 - movie_recommendation_engine - DEBUG - Calculating similarity scores for 5 candidates for 2019 Movie 4
+2025-11-12 15:53:28 - movie_recommendation_engine - DEBUG - Ranked 5 candidates, returning top 2 for 2019 Movie 4
+2025-11-12 15:53:28 - movie_recommendation_engine - INFO - Found 2 similar movies for 2019 Movie 4
+2025-11-12 15:53:28 - movie_recommendation_engine - INFO - Processing movie 5/5: 2019 Movie 5 (ID: 204)
+2025-11-12 15:53:28 - movie_recommendation_engine - DEBUG - Getting candidates from TMDB API for 2019 Movie 5
+2025-11-12 15:53:28 - movie_recommendation_engine - DEBUG - Found 5 similar movies from TMDB API
+2025-11-12 15:53:28 - movie_recommendation_engine - DEBUG - TMDB API strategy: 5 raw candidates -> 5 unique candidates (excluding target)
+2025-11-12 15:53:28 - movie_recommendation_engine - DEBUG - Found 5 candidates for 2019 Movie 5
+2025-11-12 15:53:28 - movie_recommendation_engine - DEBUG - Calculating similarity scores for 5 candidates for 2019 Movie 5
+2025-11-12 15:53:28 - movie_recommendation_engine - DEBUG - Ranked 5 candidates, returning top 2 for 2019 Movie 5
+2025-11-12 15:53:28 - movie_recommendation_engine - INFO - Found 2 similar movies for 2019 Movie 5
+2025-11-12 15:53:28 - movie_recommendation_engine - INFO - Completed processing. Total API calls made: 35. Found similar movies for 5/5 movies
+2025-11-12 15:53:28 - export_service - INFO - Exporting 10 similar movie entries to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-8/test_timeline_with_different_y0/test_data/similar_movies_2019.csv
+2025-11-12 15:53:28 - export_service - INFO - Successfully exported similar movies to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-8/test_timeline_with_different_y0/test_data/similar_movies_2019.csv
+2025-11-12 15:53:28 - export_service - INFO - Export service initialized with output directory: data
+2025-11-12 15:53:28 - movie_service - INFO - Movie service initialized
+2025-11-12 15:53:28 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 15:53:28 - export_service - INFO - Export service initialized with output directory: /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-8/test_complete_application_work0/test_data
+2025-11-12 15:53:28 - movie_service - INFO - Processing top 2 movies from year 1999 for export
+2025-11-12 15:53:28 - movie_service - INFO - Retrieving top 2 movies from year 1999 (min_votes: 100, min_rating: 6.0)
+2025-11-12 15:53:28 - movie_service - DEBUG - Retrieved 2 movies from page 1
+2025-11-12 15:53:28 - movie_service - INFO - Selected top 2 movies from year 1999
+2025-11-12 15:53:28 - export_service - INFO - Exporting 2 movie entries to data/top_movies_1999.csv
+2025-11-12 15:53:28 - export_service - INFO - Successfully exported movies to data/top_movies_1999.csv
+2025-11-12 15:53:28 - movie_service - DEBUG - Exported 2 movies sorted by votes
+2025-11-12 15:53:28 - export_service - INFO - Exporting 2 movie entries to data/top_movies_1999.csv
+2025-11-12 15:53:28 - export_service - INFO - Successfully exported movies to data/top_movies_1999.csv
+2025-11-12 15:53:28 - movie_service - DEBUG - Appended 2 movies sorted by name (with articles)
+2025-11-12 15:53:28 - export_service - INFO - Exporting 2 movie entries to data/top_movies_1999.csv
+2025-11-12 15:53:28 - export_service - INFO - Successfully exported movies to data/top_movies_1999.csv
+2025-11-12 15:53:28 - movie_service - DEBUG - Appended 2 movies sorted by name (without articles)
+2025-11-12 15:53:28 - movie_service - INFO - Successfully exported 2 movies with 3 sort methods to data/top_movies_1999.csv
+2025-11-12 15:53:28 - movie_recommendation_engine - INFO - Finding 2 similar movies for 2 movies using strategy: tmdb_api
+2025-11-12 15:53:28 - movie_recommendation_engine - INFO - Processing movie 1/2: Inception (ID: 2)
+2025-11-12 15:53:28 - movie_recommendation_engine - DEBUG - Getting candidates from TMDB API for Inception
+2025-11-12 15:53:28 - movie_recommendation_engine - DEBUG - Found 2 similar movies from TMDB API
+2025-11-12 15:53:28 - movie_recommendation_engine - DEBUG - Found 2 recommended movies from TMDB API
+2025-11-12 15:53:28 - movie_recommendation_engine - DEBUG - TMDB API strategy: 4 raw candidates -> 2 unique candidates (excluding target)
+2025-11-12 15:53:28 - movie_recommendation_engine - DEBUG - Found 2 candidates for Inception
+2025-11-12 15:53:28 - movie_recommendation_engine - DEBUG - Calculating similarity scores for 2 candidates for Inception
+2025-11-12 15:53:29 - movie_recommendation_engine - DEBUG - Ranked 2 candidates, returning top 2 for Inception
+2025-11-12 15:53:29 - movie_recommendation_engine - INFO - Found 2 similar movies for Inception
+2025-11-12 15:53:29 - movie_recommendation_engine - INFO - Processing movie 2/2: The Matrix (ID: 1)
+2025-11-12 15:53:29 - movie_recommendation_engine - DEBUG - Getting candidates from TMDB API for The Matrix
+2025-11-12 15:53:29 - movie_recommendation_engine - DEBUG - Found 2 similar movies from TMDB API
+2025-11-12 15:53:29 - movie_recommendation_engine - DEBUG - Found 2 recommended movies from TMDB API
+2025-11-12 15:53:29 - movie_recommendation_engine - DEBUG - TMDB API strategy: 4 raw candidates -> 2 unique candidates (excluding target)
+2025-11-12 15:53:29 - movie_recommendation_engine - DEBUG - Found 2 candidates for The Matrix
+2025-11-12 15:53:29 - movie_recommendation_engine - DEBUG - Calculating similarity scores for 2 candidates for The Matrix
+2025-11-12 15:53:29 - movie_recommendation_engine - DEBUG - Ranked 2 candidates, returning top 2 for The Matrix
+2025-11-12 15:53:29 - movie_recommendation_engine - INFO - Found 2 similar movies for The Matrix
+2025-11-12 15:53:29 - movie_recommendation_engine - INFO - Completed processing. Total API calls made: 16. Found similar movies for 2/2 movies
+2025-11-12 15:53:29 - export_service - INFO - Exporting 4 similar movie entries to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-8/test_complete_application_work0/test_data/similar_movies_1999.csv
+2025-11-12 15:53:29 - export_service - INFO - Successfully exported similar movies to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-8/test_complete_application_work0/test_data/similar_movies_1999.csv
+2025-11-12 15:53:29 - export_service - INFO - Export service initialized with output directory: data
+2025-11-12 15:53:29 - movie_service - INFO - Movie service initialized
+2025-11-12 15:53:29 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 15:53:29 - export_service - INFO - Export service initialized with output directory: /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-8/test_workflow_data_consistency0/test_data
+2025-11-12 15:53:29 - movie_service - INFO - Processing top 2 movies from year 1999 for export
+2025-11-12 15:53:29 - movie_service - INFO - Retrieving top 2 movies from year 1999 (min_votes: 100, min_rating: 6.0)
+2025-11-12 15:53:29 - movie_service - DEBUG - Retrieved 2 movies from page 1
+2025-11-12 15:53:29 - movie_service - INFO - Selected top 2 movies from year 1999
+2025-11-12 15:53:29 - export_service - INFO - Exporting 2 movie entries to data/test_consistency.csv
+2025-11-12 15:53:29 - export_service - INFO - Successfully exported movies to data/test_consistency.csv
+2025-11-12 15:53:29 - movie_service - DEBUG - Exported 2 movies sorted by votes
+2025-11-12 15:53:29 - export_service - INFO - Exporting 2 movie entries to data/test_consistency.csv
+2025-11-12 15:53:29 - export_service - INFO - Successfully exported movies to data/test_consistency.csv
+2025-11-12 15:53:29 - movie_service - DEBUG - Appended 2 movies sorted by name (with articles)
+2025-11-12 15:53:29 - export_service - INFO - Exporting 2 movie entries to data/test_consistency.csv
+2025-11-12 15:53:29 - export_service - INFO - Successfully exported movies to data/test_consistency.csv
+2025-11-12 15:53:29 - movie_service - DEBUG - Appended 2 movies sorted by name (without articles)
+2025-11-12 15:53:29 - movie_service - INFO - Successfully exported 2 movies with 3 sort methods to data/test_consistency.csv
+2025-11-12 15:53:29 - movie_recommendation_engine - INFO - Finding 2 similar movies for 2 movies using strategy: tmdb_api
+2025-11-12 15:53:29 - movie_recommendation_engine - INFO - Processing movie 1/2: Inception (ID: 2)
+2025-11-12 15:53:29 - movie_recommendation_engine - DEBUG - Getting candidates from TMDB API for Inception
+2025-11-12 15:53:29 - movie_recommendation_engine - DEBUG - Found 2 similar movies from TMDB API
+2025-11-12 15:53:29 - movie_recommendation_engine - DEBUG - Found 2 recommended movies from TMDB API
+2025-11-12 15:53:29 - movie_recommendation_engine - DEBUG - TMDB API strategy: 4 raw candidates -> 2 unique candidates (excluding target)
+2025-11-12 15:53:29 - movie_recommendation_engine - DEBUG - Found 2 candidates for Inception
+2025-11-12 15:53:29 - movie_recommendation_engine - DEBUG - Calculating similarity scores for 2 candidates for Inception
+2025-11-12 15:53:29 - movie_recommendation_engine - DEBUG - Ranked 2 candidates, returning top 2 for Inception
+2025-11-12 15:53:29 - movie_recommendation_engine - INFO - Found 2 similar movies for Inception
+2025-11-12 15:53:30 - movie_recommendation_engine - INFO - Processing movie 2/2: The Matrix (ID: 1)
+2025-11-12 15:53:30 - movie_recommendation_engine - DEBUG - Getting candidates from TMDB API for The Matrix
+2025-11-12 15:53:30 - movie_recommendation_engine - DEBUG - Found 2 similar movies from TMDB API
+2025-11-12 15:53:30 - movie_recommendation_engine - DEBUG - Found 2 recommended movies from TMDB API
+2025-11-12 15:53:30 - movie_recommendation_engine - DEBUG - TMDB API strategy: 4 raw candidates -> 2 unique candidates (excluding target)
+2025-11-12 15:53:30 - movie_recommendation_engine - DEBUG - Found 2 candidates for The Matrix
+2025-11-12 15:53:30 - movie_recommendation_engine - DEBUG - Calculating similarity scores for 2 candidates for The Matrix
+2025-11-12 15:53:30 - movie_recommendation_engine - DEBUG - Ranked 2 candidates, returning top 2 for The Matrix
+2025-11-12 15:53:30 - movie_recommendation_engine - INFO - Found 2 similar movies for The Matrix
+2025-11-12 15:53:30 - movie_recommendation_engine - INFO - Completed processing. Total API calls made: 16. Found similar movies for 2/2 movies
+2025-11-12 15:53:30 - export_service - INFO - Exporting 4 similar movie entries to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-8/test_workflow_data_consistency0/test_data/test_similar_consistency.csv
+2025-11-12 15:53:30 - export_service - INFO - Successfully exported similar movies to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-8/test_workflow_data_consistency0/test_data/test_similar_consistency.csv
+2025-11-12 15:53:30 - export_service - INFO - Export service initialized with output directory: data
+2025-11-12 15:53:30 - movie_service - INFO - Movie service initialized
+2025-11-12 15:53:30 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 15:53:30 - export_service - INFO - Export service initialized with output directory: /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-8/test_workflow_csv_format_valid0/test_data
+2025-11-12 15:53:30 - movie_service - INFO - Processing top 2 movies from year 1999 for export
+2025-11-12 15:53:30 - movie_service - INFO - Retrieving top 2 movies from year 1999 (min_votes: 100, min_rating: 6.0)
+2025-11-12 15:53:30 - movie_service - DEBUG - Retrieved 2 movies from page 1
+2025-11-12 15:53:30 - movie_service - INFO - Selected top 2 movies from year 1999
+2025-11-12 15:53:30 - export_service - INFO - Exporting 2 movie entries to data/test_format.csv
+2025-11-12 15:53:30 - export_service - INFO - Successfully exported movies to data/test_format.csv
+2025-11-12 15:53:30 - movie_service - DEBUG - Exported 2 movies sorted by votes
+2025-11-12 15:53:30 - export_service - INFO - Exporting 2 movie entries to data/test_format.csv
+2025-11-12 15:53:30 - export_service - INFO - Successfully exported movies to data/test_format.csv
+2025-11-12 15:53:30 - movie_service - DEBUG - Appended 2 movies sorted by name (with articles)
+2025-11-12 15:53:30 - export_service - INFO - Exporting 2 movie entries to data/test_format.csv
+2025-11-12 15:53:30 - export_service - INFO - Successfully exported movies to data/test_format.csv
+2025-11-12 15:53:30 - movie_service - DEBUG - Appended 2 movies sorted by name (without articles)
+2025-11-12 15:53:30 - movie_service - INFO - Successfully exported 2 movies with 3 sort methods to data/test_format.csv
+2025-11-12 15:53:30 - export_service - INFO - Export service initialized with output directory: data
+2025-11-12 15:53:30 - movie_service - INFO - Movie service initialized
+2025-11-12 15:53:30 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 15:53:30 - export_service - INFO - Export service initialized with output directory: /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-8/test_workflow_sorting_verifica0/test_data
+2025-11-12 15:53:30 - movie_service - INFO - Processing top 3 movies from year 1999 for export
+2025-11-12 15:53:30 - movie_service - INFO - Retrieving top 3 movies from year 1999 (min_votes: 100, min_rating: 6.0)
+2025-11-12 15:53:30 - movie_service - DEBUG - Retrieved 2 movies from page 1
+2025-11-12 15:53:30 - movie_service - INFO - Selected top 2 movies from year 1999
+2025-11-12 15:53:30 - export_service - INFO - Exporting 2 movie entries to data/test_sorting.csv
+2025-11-12 15:53:30 - export_service - INFO - Successfully exported movies to data/test_sorting.csv
+2025-11-12 15:53:30 - movie_service - DEBUG - Exported 2 movies sorted by votes
+2025-11-12 15:53:30 - export_service - INFO - Exporting 2 movie entries to data/test_sorting.csv
+2025-11-12 15:53:30 - export_service - INFO - Successfully exported movies to data/test_sorting.csv
+2025-11-12 15:53:30 - movie_service - DEBUG - Appended 2 movies sorted by name (with articles)
+2025-11-12 15:53:30 - export_service - INFO - Exporting 2 movie entries to data/test_sorting.csv
+2025-11-12 15:53:30 - export_service - INFO - Successfully exported movies to data/test_sorting.csv
+2025-11-12 15:53:30 - movie_service - DEBUG - Appended 2 movies sorted by name (without articles)
+2025-11-12 15:53:30 - movie_service - INFO - Successfully exported 2 movies with 3 sort methods to data/test_sorting.csv
+2025-11-12 15:53:30 - export_service - INFO - Export service initialized with output directory: data
+2025-11-12 15:53:30 - movie_service - INFO - Movie service initialized
+2025-11-12 15:53:30 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 15:53:30 - export_service - INFO - Export service initialized with output directory: /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-8/test_workflow_error_handling0/test_data
+2025-11-12 15:53:30 - movie_service - INFO - Retrieving top 10 movies from year 1999 (min_votes: 100, min_rating: 6.0)
+2025-11-12 15:53:30 - export_service - INFO - Export service initialized with output directory: data
+2025-11-12 15:53:30 - movie_service - INFO - Movie service initialized
+2025-11-12 15:53:30 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 15:53:30 - export_service - INFO - Export service initialized with output directory: /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-8/test_workflow_empty_results0/test_data
+2025-11-12 15:53:30 - movie_service - INFO - Retrieving top 10 movies from year 1999 (min_votes: 100, min_rating: 6.0)
+2025-11-12 15:53:30 - export_service - INFO - Export service initialized with output directory: /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-8/test_movie_to_csv_row0/test_data
+2025-11-12 15:53:30 - export_service - INFO - Export service initialized with output directory: /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-8/test_export_movies_to_csv0/test_data
+2025-11-12 15:53:30 - export_service - INFO - Exporting 3 movie entries to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-8/test_export_movies_to_csv0/test_data/test_movies.csv
+2025-11-12 15:53:30 - export_service - INFO - Successfully exported movies to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-8/test_export_movies_to_csv0/test_data/test_movies.csv
+2025-11-12 15:53:30 - export_service - INFO - Export service initialized with output directory: /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-8/test_export_movies_to_csv_appe0/test_data
+2025-11-12 15:53:30 - export_service - INFO - Exporting 1 movie entries to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-8/test_export_movies_to_csv_appe0/test_data/test_append.csv
+2025-11-12 15:53:30 - export_service - INFO - Successfully exported movies to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-8/test_export_movies_to_csv_appe0/test_data/test_append.csv
+2025-11-12 15:53:30 - export_service - INFO - Exporting 1 movie entries to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-8/test_export_movies_to_csv_appe0/test_data/test_append.csv
+2025-11-12 15:53:30 - export_service - INFO - Successfully exported movies to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-8/test_export_movies_to_csv_appe0/test_data/test_append.csv
+2025-11-12 15:53:30 - export_service - INFO - Export service initialized with output directory: /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-8/test_export_similar_movies_to_0/test_data
+2025-11-12 15:53:30 - export_service - INFO - Exporting 1 similar movie entries to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-8/test_export_similar_movies_to_0/test_data/test_similar.csv
+2025-11-12 15:53:30 - export_service - INFO - Successfully exported similar movies to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-8/test_export_similar_movies_to_0/test_data/test_similar.csv
+2025-11-12 15:53:30 - export_service - INFO - Export service initialized with output directory: /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-8/test_export_movies_to_csv_empt0/test_data
+2025-11-12 15:53:30 - export_service - INFO - Export service initialized with output directory: /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-8/test_export_similar_movies_to_1/test_data
+2025-11-12 15:53:30 - export_service - INFO - Export service initialized with output directory: data
+2025-11-12 15:53:30 - movie_service - INFO - Movie service initialized
+2025-11-12 15:53:30 - export_service - INFO - Export service initialized with output directory: data
+2025-11-12 15:53:30 - movie_service - INFO - Movie service initialized
+2025-11-12 15:53:30 - export_service - INFO - Export service initialized with output directory: data
+2025-11-12 15:53:30 - movie_service - INFO - Movie service initialized
+2025-11-12 15:53:30 - export_service - INFO - Export service initialized with output directory: data
+2025-11-12 15:53:30 - movie_service - INFO - Movie service initialized
+2025-11-12 15:53:30 - movie_service - INFO - Retrieving top 2 movies from year 1999 (min_votes: 100, min_rating: 6.0)
+2025-11-12 15:53:30 - movie_service - DEBUG - Retrieved 3 movies from page 1
+2025-11-12 15:53:30 - movie_service - INFO - Selected top 2 movies from year 1999
+2025-11-12 15:53:30 - export_service - INFO - Export service initialized with output directory: data
+2025-11-12 15:53:30 - movie_service - INFO - Movie service initialized
+2025-11-12 15:53:30 - export_service - INFO - Export service initialized with output directory: data
+2025-11-12 15:53:30 - movie_service - INFO - Movie service initialized
+2025-11-12 15:53:30 - export_service - INFO - Export service initialized with output directory: data
+2025-11-12 15:53:30 - movie_service - INFO - Movie service initialized
+2025-11-12 15:53:30 - export_service - INFO - Export service initialized with output directory: data
+2025-11-12 15:53:30 - movie_service - INFO - Movie service initialized
+2025-11-12 15:53:30 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 15:53:30 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 15:53:30 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 15:53:30 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 15:53:30 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 15:53:30 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 15:53:30 - movie_recommendation_engine - INFO - Finding 2 similar movies for 1 movies using strategy: tmdb_api
+2025-11-12 15:53:30 - movie_recommendation_engine - INFO - Processing movie 1/1: The Matrix (ID: 1)
+2025-11-12 15:53:30 - movie_recommendation_engine - DEBUG - Getting candidates from TMDB API for The Matrix
+2025-11-12 15:53:30 - movie_recommendation_engine - DEBUG - Found 2 similar movies from TMDB API
+2025-11-12 15:53:30 - movie_recommendation_engine - DEBUG - Found 2 recommended movies from TMDB API
+2025-11-12 15:53:30 - movie_recommendation_engine - DEBUG - TMDB API strategy: 4 raw candidates -> 2 unique candidates (excluding target)
+2025-11-12 15:53:30 - movie_recommendation_engine - DEBUG - Found 2 candidates for The Matrix
+2025-11-12 15:53:30 - movie_recommendation_engine - DEBUG - Calculating similarity scores for 2 candidates for The Matrix
+2025-11-12 15:53:30 - movie_recommendation_engine - DEBUG - Ranked 0 candidates, returning top 0 for The Matrix
+2025-11-12 15:53:30 - movie_recommendation_engine - WARNING - No similar movies found for The Matrix after ranking
+2025-11-12 15:53:30 - movie_recommendation_engine - INFO - Completed processing. Total API calls made: 8. Found similar movies for 0/1 movies
+2025-11-12 15:59:18 - export_service - INFO - Export service initialized with output directory: data
+2025-11-12 15:59:18 - movie_service - INFO - Movie service initialized
+2025-11-12 15:59:18 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 15:59:18 - export_service - INFO - Export service initialized with output directory: /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-9/test_complete_assignment_requi0/test_data
+2025-11-12 15:59:18 - movie_service - INFO - Processing top 10 movies from year 2020 for export
+2025-11-12 15:59:18 - movie_service - INFO - Retrieving top 10 movies from year 2020 (min_votes: 100, min_rating: 6.0)
+2025-11-12 15:59:18 - movie_service - DEBUG - Retrieved 10 movies from page 1
+2025-11-12 15:59:18 - movie_service - INFO - Selected top 10 movies from year 2020
+2025-11-12 15:59:18 - export_service - INFO - Exporting 10 movie entries to data/top_movies_2020.csv
+2025-11-12 15:59:18 - export_service - INFO - Successfully exported movies to data/top_movies_2020.csv
+2025-11-12 15:59:18 - movie_service - DEBUG - Exported 10 movies sorted by votes
+2025-11-12 15:59:18 - export_service - INFO - Exporting 10 movie entries to data/top_movies_2020.csv
+2025-11-12 15:59:18 - export_service - INFO - Successfully exported movies to data/top_movies_2020.csv
+2025-11-12 15:59:18 - movie_service - DEBUG - Appended 10 movies sorted by name (with articles)
+2025-11-12 15:59:18 - export_service - INFO - Exporting 10 movie entries to data/top_movies_2020.csv
+2025-11-12 15:59:18 - export_service - INFO - Successfully exported movies to data/top_movies_2020.csv
+2025-11-12 15:59:18 - movie_service - DEBUG - Appended 10 movies sorted by name (without articles)
+2025-11-12 15:59:18 - movie_service - INFO - Successfully exported 10 movies with 3 sort methods to data/top_movies_2020.csv
+2025-11-12 15:59:18 - movie_recommendation_engine - INFO - Finding 3 similar movies for 10 movies using strategy: tmdb_api
+2025-11-12 15:59:18 - movie_recommendation_engine - INFO - Processing movie 1/10: Movie 1 (ID: 100)
+2025-11-12 15:59:18 - movie_recommendation_engine - DEBUG - Getting candidates from TMDB API for Movie 1
+2025-11-12 15:59:18 - movie_recommendation_engine - DEBUG - Found 5 similar movies from TMDB API
+2025-11-12 15:59:18 - movie_recommendation_engine - DEBUG - TMDB API strategy: 5 raw candidates -> 5 unique candidates (excluding target)
+2025-11-12 15:59:18 - movie_recommendation_engine - DEBUG - Found 5 candidates for Movie 1
+2025-11-12 15:59:18 - movie_recommendation_engine - DEBUG - Calculating similarity scores for 5 candidates for Movie 1
+2025-11-12 15:59:18 - movie_recommendation_engine - DEBUG - Ranked 5 candidates, returning top 3 for Movie 1
+2025-11-12 15:59:18 - movie_recommendation_engine - INFO - Found 3 similar movies for Movie 1
+2025-11-12 15:59:18 - movie_recommendation_engine - INFO - Processing movie 2/10: Movie 2 (ID: 101)
+2025-11-12 15:59:18 - movie_recommendation_engine - DEBUG - Getting candidates from TMDB API for Movie 2
+2025-11-12 15:59:18 - movie_recommendation_engine - DEBUG - Found 5 similar movies from TMDB API
+2025-11-12 15:59:18 - movie_recommendation_engine - DEBUG - TMDB API strategy: 5 raw candidates -> 5 unique candidates (excluding target)
+2025-11-12 15:59:18 - movie_recommendation_engine - DEBUG - Found 5 candidates for Movie 2
+2025-11-12 15:59:18 - movie_recommendation_engine - DEBUG - Calculating similarity scores for 5 candidates for Movie 2
+2025-11-12 15:59:18 - movie_recommendation_engine - DEBUG - Ranked 5 candidates, returning top 3 for Movie 2
+2025-11-12 15:59:18 - movie_recommendation_engine - INFO - Found 3 similar movies for Movie 2
+2025-11-12 15:59:18 - movie_recommendation_engine - INFO - Processing movie 3/10: Movie 3 (ID: 102)
+2025-11-12 15:59:18 - movie_recommendation_engine - DEBUG - Getting candidates from TMDB API for Movie 3
+2025-11-12 15:59:18 - movie_recommendation_engine - DEBUG - Found 5 similar movies from TMDB API
+2025-11-12 15:59:18 - movie_recommendation_engine - DEBUG - TMDB API strategy: 5 raw candidates -> 5 unique candidates (excluding target)
+2025-11-12 15:59:18 - movie_recommendation_engine - DEBUG - Found 5 candidates for Movie 3
+2025-11-12 15:59:18 - movie_recommendation_engine - DEBUG - Calculating similarity scores for 5 candidates for Movie 3
+2025-11-12 15:59:18 - movie_recommendation_engine - DEBUG - Ranked 5 candidates, returning top 3 for Movie 3
+2025-11-12 15:59:18 - movie_recommendation_engine - INFO - Found 3 similar movies for Movie 3
+2025-11-12 15:59:18 - movie_recommendation_engine - INFO - Processing movie 4/10: Movie 4 (ID: 103)
+2025-11-12 15:59:18 - movie_recommendation_engine - DEBUG - Getting candidates from TMDB API for Movie 4
+2025-11-12 15:59:18 - movie_recommendation_engine - DEBUG - Found 5 similar movies from TMDB API
+2025-11-12 15:59:18 - movie_recommendation_engine - DEBUG - TMDB API strategy: 5 raw candidates -> 5 unique candidates (excluding target)
+2025-11-12 15:59:18 - movie_recommendation_engine - DEBUG - Found 5 candidates for Movie 4
+2025-11-12 15:59:18 - movie_recommendation_engine - DEBUG - Calculating similarity scores for 5 candidates for Movie 4
+2025-11-12 15:59:18 - movie_recommendation_engine - DEBUG - Ranked 5 candidates, returning top 3 for Movie 4
+2025-11-12 15:59:18 - movie_recommendation_engine - INFO - Found 3 similar movies for Movie 4
+2025-11-12 15:59:19 - movie_recommendation_engine - INFO - Processing movie 5/10: Movie 5 (ID: 104)
+2025-11-12 15:59:19 - movie_recommendation_engine - DEBUG - Getting candidates from TMDB API for Movie 5
+2025-11-12 15:59:19 - movie_recommendation_engine - DEBUG - Found 5 similar movies from TMDB API
+2025-11-12 15:59:19 - movie_recommendation_engine - DEBUG - TMDB API strategy: 5 raw candidates -> 5 unique candidates (excluding target)
+2025-11-12 15:59:19 - movie_recommendation_engine - DEBUG - Found 5 candidates for Movie 5
+2025-11-12 15:59:19 - movie_recommendation_engine - DEBUG - Calculating similarity scores for 5 candidates for Movie 5
+2025-11-12 15:59:19 - movie_recommendation_engine - DEBUG - Ranked 5 candidates, returning top 3 for Movie 5
+2025-11-12 15:59:19 - movie_recommendation_engine - INFO - Found 3 similar movies for Movie 5
+2025-11-12 15:59:19 - movie_recommendation_engine - INFO - Processing movie 6/10: Movie 6 (ID: 105)
+2025-11-12 15:59:19 - movie_recommendation_engine - DEBUG - Getting candidates from TMDB API for Movie 6
+2025-11-12 15:59:19 - movie_recommendation_engine - DEBUG - Found 5 similar movies from TMDB API
+2025-11-12 15:59:19 - movie_recommendation_engine - DEBUG - TMDB API strategy: 5 raw candidates -> 5 unique candidates (excluding target)
+2025-11-12 15:59:19 - movie_recommendation_engine - DEBUG - Found 5 candidates for Movie 6
+2025-11-12 15:59:19 - movie_recommendation_engine - DEBUG - Calculating similarity scores for 5 candidates for Movie 6
+2025-11-12 15:59:19 - movie_recommendation_engine - DEBUG - Ranked 5 candidates, returning top 3 for Movie 6
+2025-11-12 15:59:19 - movie_recommendation_engine - INFO - Found 3 similar movies for Movie 6
+2025-11-12 15:59:19 - movie_recommendation_engine - INFO - Processing movie 7/10: Movie 7 (ID: 106)
+2025-11-12 15:59:19 - movie_recommendation_engine - DEBUG - Getting candidates from TMDB API for Movie 7
+2025-11-12 15:59:19 - movie_recommendation_engine - DEBUG - Found 5 similar movies from TMDB API
+2025-11-12 15:59:19 - movie_recommendation_engine - DEBUG - TMDB API strategy: 5 raw candidates -> 5 unique candidates (excluding target)
+2025-11-12 15:59:19 - movie_recommendation_engine - DEBUG - Found 5 candidates for Movie 7
+2025-11-12 15:59:19 - movie_recommendation_engine - DEBUG - Calculating similarity scores for 5 candidates for Movie 7
+2025-11-12 15:59:19 - movie_recommendation_engine - DEBUG - Ranked 5 candidates, returning top 3 for Movie 7
+2025-11-12 15:59:19 - movie_recommendation_engine - INFO - Found 3 similar movies for Movie 7
+2025-11-12 15:59:19 - movie_recommendation_engine - INFO - Processing movie 8/10: Movie 8 (ID: 107)
+2025-11-12 15:59:19 - movie_recommendation_engine - DEBUG - Getting candidates from TMDB API for Movie 8
+2025-11-12 15:59:19 - movie_recommendation_engine - DEBUG - Found 5 similar movies from TMDB API
+2025-11-12 15:59:19 - movie_recommendation_engine - DEBUG - TMDB API strategy: 5 raw candidates -> 5 unique candidates (excluding target)
+2025-11-12 15:59:19 - movie_recommendation_engine - DEBUG - Found 5 candidates for Movie 8
+2025-11-12 15:59:19 - movie_recommendation_engine - DEBUG - Calculating similarity scores for 5 candidates for Movie 8
+2025-11-12 15:59:19 - movie_recommendation_engine - DEBUG - Ranked 5 candidates, returning top 3 for Movie 8
+2025-11-12 15:59:19 - movie_recommendation_engine - INFO - Found 3 similar movies for Movie 8
+2025-11-12 15:59:19 - movie_recommendation_engine - INFO - Processing movie 9/10: Movie 9 (ID: 108)
+2025-11-12 15:59:19 - movie_recommendation_engine - DEBUG - Getting candidates from TMDB API for Movie 9
+2025-11-12 15:59:19 - movie_recommendation_engine - DEBUG - Found 5 similar movies from TMDB API
+2025-11-12 15:59:19 - movie_recommendation_engine - DEBUG - TMDB API strategy: 5 raw candidates -> 5 unique candidates (excluding target)
+2025-11-12 15:59:19 - movie_recommendation_engine - DEBUG - Found 5 candidates for Movie 9
+2025-11-12 15:59:19 - movie_recommendation_engine - DEBUG - Calculating similarity scores for 5 candidates for Movie 9
+2025-11-12 15:59:19 - movie_recommendation_engine - DEBUG - Ranked 5 candidates, returning top 3 for Movie 9
+2025-11-12 15:59:19 - movie_recommendation_engine - INFO - Found 3 similar movies for Movie 9
+2025-11-12 15:59:20 - movie_recommendation_engine - INFO - Processing movie 10/10: Movie 10 (ID: 109)
+2025-11-12 15:59:20 - movie_recommendation_engine - DEBUG - Getting candidates from TMDB API for Movie 10
+2025-11-12 15:59:20 - movie_recommendation_engine - DEBUG - Found 5 similar movies from TMDB API
+2025-11-12 15:59:20 - movie_recommendation_engine - DEBUG - TMDB API strategy: 5 raw candidates -> 5 unique candidates (excluding target)
+2025-11-12 15:59:20 - movie_recommendation_engine - DEBUG - Found 5 candidates for Movie 10
+2025-11-12 15:59:20 - movie_recommendation_engine - DEBUG - Calculating similarity scores for 5 candidates for Movie 10
+2025-11-12 15:59:20 - movie_recommendation_engine - DEBUG - Ranked 5 candidates, returning top 3 for Movie 10
+2025-11-12 15:59:20 - movie_recommendation_engine - INFO - Found 3 similar movies for Movie 10
+2025-11-12 15:59:20 - movie_recommendation_engine - INFO - Completed processing. Total API calls made: 70. Found similar movies for 10/10 movies
+2025-11-12 15:59:20 - export_service - INFO - Exporting 30 similar movie entries to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-9/test_complete_assignment_requi0/test_data/similar_movies_2020.csv
+2025-11-12 15:59:20 - export_service - INFO - Successfully exported similar movies to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-9/test_complete_assignment_requi0/test_data/similar_movies_2020.csv
+2025-11-12 15:59:20 - export_service - INFO - Export service initialized with output directory: data
+2025-11-12 15:59:20 - movie_service - INFO - Movie service initialized
+2025-11-12 15:59:20 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 15:59:20 - export_service - INFO - Export service initialized with output directory: /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-9/test_timeline_with_different_y0/test_data
+2025-11-12 15:59:20 - movie_service - INFO - Processing top 5 movies from year 2019 for export
+2025-11-12 15:59:20 - movie_service - INFO - Retrieving top 5 movies from year 2019 (min_votes: 100, min_rating: 6.0)
+2025-11-12 15:59:20 - movie_service - DEBUG - Retrieved 5 movies from page 1
+2025-11-12 15:59:20 - movie_service - INFO - Selected top 5 movies from year 2019
+2025-11-12 15:59:20 - export_service - INFO - Exporting 5 movie entries to data/top_movies_2019.csv
+2025-11-12 15:59:20 - export_service - INFO - Successfully exported movies to data/top_movies_2019.csv
+2025-11-12 15:59:20 - movie_service - DEBUG - Exported 5 movies sorted by votes
+2025-11-12 15:59:20 - export_service - INFO - Exporting 5 movie entries to data/top_movies_2019.csv
+2025-11-12 15:59:20 - export_service - INFO - Successfully exported movies to data/top_movies_2019.csv
+2025-11-12 15:59:20 - movie_service - DEBUG - Appended 5 movies sorted by name (with articles)
+2025-11-12 15:59:20 - export_service - INFO - Exporting 5 movie entries to data/top_movies_2019.csv
+2025-11-12 15:59:20 - export_service - INFO - Successfully exported movies to data/top_movies_2019.csv
+2025-11-12 15:59:20 - movie_service - DEBUG - Appended 5 movies sorted by name (without articles)
+2025-11-12 15:59:20 - movie_service - INFO - Successfully exported 5 movies with 3 sort methods to data/top_movies_2019.csv
+2025-11-12 15:59:20 - movie_recommendation_engine - INFO - Finding 2 similar movies for 5 movies using strategy: tmdb_api
+2025-11-12 15:59:20 - movie_recommendation_engine - INFO - Processing movie 1/5: 2019 Movie 1 (ID: 200)
+2025-11-12 15:59:20 - movie_recommendation_engine - DEBUG - Getting candidates from TMDB API for 2019 Movie 1
+2025-11-12 15:59:20 - movie_recommendation_engine - DEBUG - Found 5 similar movies from TMDB API
+2025-11-12 15:59:20 - movie_recommendation_engine - DEBUG - TMDB API strategy: 5 raw candidates -> 5 unique candidates (excluding target)
+2025-11-12 15:59:20 - movie_recommendation_engine - DEBUG - Found 5 candidates for 2019 Movie 1
+2025-11-12 15:59:20 - movie_recommendation_engine - DEBUG - Calculating similarity scores for 5 candidates for 2019 Movie 1
+2025-11-12 15:59:20 - movie_recommendation_engine - DEBUG - Ranked 5 candidates, returning top 2 for 2019 Movie 1
+2025-11-12 15:59:20 - movie_recommendation_engine - INFO - Found 2 similar movies for 2019 Movie 1
+2025-11-12 15:59:20 - movie_recommendation_engine - INFO - Processing movie 2/5: 2019 Movie 2 (ID: 201)
+2025-11-12 15:59:20 - movie_recommendation_engine - DEBUG - Getting candidates from TMDB API for 2019 Movie 2
+2025-11-12 15:59:20 - movie_recommendation_engine - DEBUG - Found 5 similar movies from TMDB API
+2025-11-12 15:59:20 - movie_recommendation_engine - DEBUG - TMDB API strategy: 5 raw candidates -> 5 unique candidates (excluding target)
+2025-11-12 15:59:20 - movie_recommendation_engine - DEBUG - Found 5 candidates for 2019 Movie 2
+2025-11-12 15:59:20 - movie_recommendation_engine - DEBUG - Calculating similarity scores for 5 candidates for 2019 Movie 2
+2025-11-12 15:59:20 - movie_recommendation_engine - DEBUG - Ranked 5 candidates, returning top 2 for 2019 Movie 2
+2025-11-12 15:59:20 - movie_recommendation_engine - INFO - Found 2 similar movies for 2019 Movie 2
+2025-11-12 15:59:20 - movie_recommendation_engine - INFO - Processing movie 3/5: 2019 Movie 3 (ID: 202)
+2025-11-12 15:59:20 - movie_recommendation_engine - DEBUG - Getting candidates from TMDB API for 2019 Movie 3
+2025-11-12 15:59:20 - movie_recommendation_engine - DEBUG - Found 5 similar movies from TMDB API
+2025-11-12 15:59:20 - movie_recommendation_engine - DEBUG - TMDB API strategy: 5 raw candidates -> 5 unique candidates (excluding target)
+2025-11-12 15:59:20 - movie_recommendation_engine - DEBUG - Found 5 candidates for 2019 Movie 3
+2025-11-12 15:59:20 - movie_recommendation_engine - DEBUG - Calculating similarity scores for 5 candidates for 2019 Movie 3
+2025-11-12 15:59:20 - movie_recommendation_engine - DEBUG - Ranked 5 candidates, returning top 2 for 2019 Movie 3
+2025-11-12 15:59:20 - movie_recommendation_engine - INFO - Found 2 similar movies for 2019 Movie 3
+2025-11-12 15:59:20 - movie_recommendation_engine - INFO - Processing movie 4/5: 2019 Movie 4 (ID: 203)
+2025-11-12 15:59:20 - movie_recommendation_engine - DEBUG - Getting candidates from TMDB API for 2019 Movie 4
+2025-11-12 15:59:20 - movie_recommendation_engine - DEBUG - Found 5 similar movies from TMDB API
+2025-11-12 15:59:20 - movie_recommendation_engine - DEBUG - TMDB API strategy: 5 raw candidates -> 5 unique candidates (excluding target)
+2025-11-12 15:59:20 - movie_recommendation_engine - DEBUG - Found 5 candidates for 2019 Movie 4
+2025-11-12 15:59:20 - movie_recommendation_engine - DEBUG - Calculating similarity scores for 5 candidates for 2019 Movie 4
+2025-11-12 15:59:20 - movie_recommendation_engine - DEBUG - Ranked 5 candidates, returning top 2 for 2019 Movie 4
+2025-11-12 15:59:20 - movie_recommendation_engine - INFO - Found 2 similar movies for 2019 Movie 4
+2025-11-12 15:59:21 - movie_recommendation_engine - INFO - Processing movie 5/5: 2019 Movie 5 (ID: 204)
+2025-11-12 15:59:21 - movie_recommendation_engine - DEBUG - Getting candidates from TMDB API for 2019 Movie 5
+2025-11-12 15:59:21 - movie_recommendation_engine - DEBUG - Found 5 similar movies from TMDB API
+2025-11-12 15:59:21 - movie_recommendation_engine - DEBUG - TMDB API strategy: 5 raw candidates -> 5 unique candidates (excluding target)
+2025-11-12 15:59:21 - movie_recommendation_engine - DEBUG - Found 5 candidates for 2019 Movie 5
+2025-11-12 15:59:21 - movie_recommendation_engine - DEBUG - Calculating similarity scores for 5 candidates for 2019 Movie 5
+2025-11-12 15:59:21 - movie_recommendation_engine - DEBUG - Ranked 5 candidates, returning top 2 for 2019 Movie 5
+2025-11-12 15:59:21 - movie_recommendation_engine - INFO - Found 2 similar movies for 2019 Movie 5
+2025-11-12 15:59:21 - movie_recommendation_engine - INFO - Completed processing. Total API calls made: 35. Found similar movies for 5/5 movies
+2025-11-12 15:59:21 - export_service - INFO - Exporting 10 similar movie entries to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-9/test_timeline_with_different_y0/test_data/similar_movies_2019.csv
+2025-11-12 15:59:21 - export_service - INFO - Successfully exported similar movies to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-9/test_timeline_with_different_y0/test_data/similar_movies_2019.csv
+2025-11-12 15:59:21 - export_service - INFO - Export service initialized with output directory: data
+2025-11-12 15:59:21 - movie_service - INFO - Movie service initialized
+2025-11-12 15:59:21 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 15:59:21 - export_service - INFO - Export service initialized with output directory: /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-9/test_complete_application_work0/test_data
+2025-11-12 15:59:21 - movie_service - INFO - Processing top 2 movies from year 1999 for export
+2025-11-12 15:59:21 - movie_service - INFO - Retrieving top 2 movies from year 1999 (min_votes: 100, min_rating: 6.0)
+2025-11-12 15:59:21 - movie_service - DEBUG - Retrieved 2 movies from page 1
+2025-11-12 15:59:21 - movie_service - INFO - Selected top 2 movies from year 1999
+2025-11-12 15:59:21 - export_service - INFO - Exporting 2 movie entries to data/top_movies_1999.csv
+2025-11-12 15:59:21 - export_service - INFO - Successfully exported movies to data/top_movies_1999.csv
+2025-11-12 15:59:21 - movie_service - DEBUG - Exported 2 movies sorted by votes
+2025-11-12 15:59:21 - export_service - INFO - Exporting 2 movie entries to data/top_movies_1999.csv
+2025-11-12 15:59:21 - export_service - INFO - Successfully exported movies to data/top_movies_1999.csv
+2025-11-12 15:59:21 - movie_service - DEBUG - Appended 2 movies sorted by name (with articles)
+2025-11-12 15:59:21 - export_service - INFO - Exporting 2 movie entries to data/top_movies_1999.csv
+2025-11-12 15:59:21 - export_service - INFO - Successfully exported movies to data/top_movies_1999.csv
+2025-11-12 15:59:21 - movie_service - DEBUG - Appended 2 movies sorted by name (without articles)
+2025-11-12 15:59:21 - movie_service - INFO - Successfully exported 2 movies with 3 sort methods to data/top_movies_1999.csv
+2025-11-12 15:59:21 - movie_recommendation_engine - INFO - Finding 2 similar movies for 2 movies using strategy: tmdb_api
+2025-11-12 15:59:21 - movie_recommendation_engine - INFO - Processing movie 1/2: Inception (ID: 2)
+2025-11-12 15:59:21 - movie_recommendation_engine - DEBUG - Getting candidates from TMDB API for Inception
+2025-11-12 15:59:21 - movie_recommendation_engine - DEBUG - Found 2 similar movies from TMDB API
+2025-11-12 15:59:21 - movie_recommendation_engine - DEBUG - Found 2 recommended movies from TMDB API
+2025-11-12 15:59:21 - movie_recommendation_engine - DEBUG - TMDB API strategy: 4 raw candidates -> 2 unique candidates (excluding target)
+2025-11-12 15:59:21 - movie_recommendation_engine - DEBUG - Found 2 candidates for Inception
+2025-11-12 15:59:21 - movie_recommendation_engine - DEBUG - Calculating similarity scores for 2 candidates for Inception
+2025-11-12 15:59:21 - movie_recommendation_engine - DEBUG - Ranked 2 candidates, returning top 2 for Inception
+2025-11-12 15:59:21 - movie_recommendation_engine - INFO - Found 2 similar movies for Inception
+2025-11-12 15:59:21 - movie_recommendation_engine - INFO - Processing movie 2/2: The Matrix (ID: 1)
+2025-11-12 15:59:21 - movie_recommendation_engine - DEBUG - Getting candidates from TMDB API for The Matrix
+2025-11-12 15:59:21 - movie_recommendation_engine - DEBUG - Found 2 similar movies from TMDB API
+2025-11-12 15:59:21 - movie_recommendation_engine - DEBUG - Found 2 recommended movies from TMDB API
+2025-11-12 15:59:21 - movie_recommendation_engine - DEBUG - TMDB API strategy: 4 raw candidates -> 2 unique candidates (excluding target)
+2025-11-12 15:59:21 - movie_recommendation_engine - DEBUG - Found 2 candidates for The Matrix
+2025-11-12 15:59:21 - movie_recommendation_engine - DEBUG - Calculating similarity scores for 2 candidates for The Matrix
+2025-11-12 15:59:21 - movie_recommendation_engine - DEBUG - Ranked 2 candidates, returning top 2 for The Matrix
+2025-11-12 15:59:21 - movie_recommendation_engine - INFO - Found 2 similar movies for The Matrix
+2025-11-12 15:59:21 - movie_recommendation_engine - INFO - Completed processing. Total API calls made: 16. Found similar movies for 2/2 movies
+2025-11-12 15:59:21 - export_service - INFO - Exporting 4 similar movie entries to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-9/test_complete_application_work0/test_data/similar_movies_1999.csv
+2025-11-12 15:59:21 - export_service - INFO - Successfully exported similar movies to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-9/test_complete_application_work0/test_data/similar_movies_1999.csv
+2025-11-12 15:59:21 - export_service - INFO - Export service initialized with output directory: data
+2025-11-12 15:59:21 - movie_service - INFO - Movie service initialized
+2025-11-12 15:59:21 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 15:59:21 - export_service - INFO - Export service initialized with output directory: /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-9/test_workflow_data_consistency0/test_data
+2025-11-12 15:59:21 - movie_service - INFO - Processing top 2 movies from year 1999 for export
+2025-11-12 15:59:21 - movie_service - INFO - Retrieving top 2 movies from year 1999 (min_votes: 100, min_rating: 6.0)
+2025-11-12 15:59:21 - movie_service - DEBUG - Retrieved 2 movies from page 1
+2025-11-12 15:59:21 - movie_service - INFO - Selected top 2 movies from year 1999
+2025-11-12 15:59:21 - export_service - INFO - Exporting 2 movie entries to data/test_consistency.csv
+2025-11-12 15:59:21 - export_service - INFO - Successfully exported movies to data/test_consistency.csv
+2025-11-12 15:59:21 - movie_service - DEBUG - Exported 2 movies sorted by votes
+2025-11-12 15:59:21 - export_service - INFO - Exporting 2 movie entries to data/test_consistency.csv
+2025-11-12 15:59:21 - export_service - INFO - Successfully exported movies to data/test_consistency.csv
+2025-11-12 15:59:21 - movie_service - DEBUG - Appended 2 movies sorted by name (with articles)
+2025-11-12 15:59:21 - export_service - INFO - Exporting 2 movie entries to data/test_consistency.csv
+2025-11-12 15:59:21 - export_service - INFO - Successfully exported movies to data/test_consistency.csv
+2025-11-12 15:59:21 - movie_service - DEBUG - Appended 2 movies sorted by name (without articles)
+2025-11-12 15:59:21 - movie_service - INFO - Successfully exported 2 movies with 3 sort methods to data/test_consistency.csv
+2025-11-12 15:59:21 - movie_recommendation_engine - INFO - Finding 2 similar movies for 2 movies using strategy: tmdb_api
+2025-11-12 15:59:21 - movie_recommendation_engine - INFO - Processing movie 1/2: Inception (ID: 2)
+2025-11-12 15:59:21 - movie_recommendation_engine - DEBUG - Getting candidates from TMDB API for Inception
+2025-11-12 15:59:21 - movie_recommendation_engine - DEBUG - Found 2 similar movies from TMDB API
+2025-11-12 15:59:22 - movie_recommendation_engine - DEBUG - Found 2 recommended movies from TMDB API
+2025-11-12 15:59:22 - movie_recommendation_engine - DEBUG - TMDB API strategy: 4 raw candidates -> 2 unique candidates (excluding target)
+2025-11-12 15:59:22 - movie_recommendation_engine - DEBUG - Found 2 candidates for Inception
+2025-11-12 15:59:22 - movie_recommendation_engine - DEBUG - Calculating similarity scores for 2 candidates for Inception
+2025-11-12 15:59:22 - movie_recommendation_engine - DEBUG - Ranked 2 candidates, returning top 2 for Inception
+2025-11-12 15:59:22 - movie_recommendation_engine - INFO - Found 2 similar movies for Inception
+2025-11-12 15:59:22 - movie_recommendation_engine - INFO - Processing movie 2/2: The Matrix (ID: 1)
+2025-11-12 15:59:22 - movie_recommendation_engine - DEBUG - Getting candidates from TMDB API for The Matrix
+2025-11-12 15:59:22 - movie_recommendation_engine - DEBUG - Found 2 similar movies from TMDB API
+2025-11-12 15:59:22 - movie_recommendation_engine - DEBUG - Found 2 recommended movies from TMDB API
+2025-11-12 15:59:22 - movie_recommendation_engine - DEBUG - TMDB API strategy: 4 raw candidates -> 2 unique candidates (excluding target)
+2025-11-12 15:59:22 - movie_recommendation_engine - DEBUG - Found 2 candidates for The Matrix
+2025-11-12 15:59:22 - movie_recommendation_engine - DEBUG - Calculating similarity scores for 2 candidates for The Matrix
+2025-11-12 15:59:22 - movie_recommendation_engine - DEBUG - Ranked 2 candidates, returning top 2 for The Matrix
+2025-11-12 15:59:22 - movie_recommendation_engine - INFO - Found 2 similar movies for The Matrix
+2025-11-12 15:59:22 - movie_recommendation_engine - INFO - Completed processing. Total API calls made: 16. Found similar movies for 2/2 movies
+2025-11-12 15:59:22 - export_service - INFO - Exporting 4 similar movie entries to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-9/test_workflow_data_consistency0/test_data/test_similar_consistency.csv
+2025-11-12 15:59:22 - export_service - INFO - Successfully exported similar movies to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-9/test_workflow_data_consistency0/test_data/test_similar_consistency.csv
+2025-11-12 15:59:22 - export_service - INFO - Export service initialized with output directory: data
+2025-11-12 15:59:22 - movie_service - INFO - Movie service initialized
+2025-11-12 15:59:22 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 15:59:22 - export_service - INFO - Export service initialized with output directory: /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-9/test_workflow_sorting_verifica0/test_data
+2025-11-12 15:59:22 - movie_service - INFO - Processing top 3 movies from year 1999 for export
+2025-11-12 15:59:22 - movie_service - INFO - Retrieving top 3 movies from year 1999 (min_votes: 100, min_rating: 6.0)
+2025-11-12 15:59:22 - movie_service - DEBUG - Retrieved 2 movies from page 1
+2025-11-12 15:59:22 - movie_service - INFO - Selected top 2 movies from year 1999
+2025-11-12 15:59:22 - export_service - INFO - Exporting 2 movie entries to data/test_sorting.csv
+2025-11-12 15:59:22 - export_service - INFO - Successfully exported movies to data/test_sorting.csv
+2025-11-12 15:59:22 - movie_service - DEBUG - Exported 2 movies sorted by votes
+2025-11-12 15:59:22 - export_service - INFO - Exporting 2 movie entries to data/test_sorting.csv
+2025-11-12 15:59:22 - export_service - INFO - Successfully exported movies to data/test_sorting.csv
+2025-11-12 15:59:22 - movie_service - DEBUG - Appended 2 movies sorted by name (with articles)
+2025-11-12 15:59:22 - export_service - INFO - Exporting 2 movie entries to data/test_sorting.csv
+2025-11-12 15:59:22 - export_service - INFO - Successfully exported movies to data/test_sorting.csv
+2025-11-12 15:59:22 - movie_service - DEBUG - Appended 2 movies sorted by name (without articles)
+2025-11-12 15:59:22 - movie_service - INFO - Successfully exported 2 movies with 3 sort methods to data/test_sorting.csv
+2025-11-12 15:59:22 - export_service - INFO - Export service initialized with output directory: data
+2025-11-12 15:59:22 - movie_service - INFO - Movie service initialized
+2025-11-12 15:59:22 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 15:59:22 - export_service - INFO - Export service initialized with output directory: /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-9/test_workflow_error_handling0/test_data
+2025-11-12 15:59:22 - movie_service - INFO - Retrieving top 10 movies from year 1999 (min_votes: 100, min_rating: 6.0)
+2025-11-12 15:59:22 - export_service - INFO - Export service initialized with output directory: data
+2025-11-12 15:59:22 - movie_service - INFO - Movie service initialized
+2025-11-12 15:59:22 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 15:59:22 - export_service - INFO - Export service initialized with output directory: /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-9/test_workflow_empty_results0/test_data
+2025-11-12 15:59:22 - movie_service - INFO - Retrieving top 10 movies from year 1999 (min_votes: 100, min_rating: 6.0)
+2025-11-12 15:59:22 - export_service - INFO - Export service initialized with output directory: /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-9/test_movie_to_csv_row0/test_data
+2025-11-12 15:59:22 - export_service - INFO - Export service initialized with output directory: /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-9/test_export_movies_to_csv0/test_data
+2025-11-12 15:59:22 - export_service - INFO - Exporting 3 movie entries to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-9/test_export_movies_to_csv0/test_data/test_movies.csv
+2025-11-12 15:59:22 - export_service - INFO - Successfully exported movies to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-9/test_export_movies_to_csv0/test_data/test_movies.csv
+2025-11-12 15:59:22 - export_service - INFO - Export service initialized with output directory: /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-9/test_export_movies_to_csv_appe0/test_data
+2025-11-12 15:59:22 - export_service - INFO - Exporting 1 movie entries to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-9/test_export_movies_to_csv_appe0/test_data/test_append.csv
+2025-11-12 15:59:22 - export_service - INFO - Successfully exported movies to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-9/test_export_movies_to_csv_appe0/test_data/test_append.csv
+2025-11-12 15:59:22 - export_service - INFO - Exporting 1 movie entries to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-9/test_export_movies_to_csv_appe0/test_data/test_append.csv
+2025-11-12 15:59:22 - export_service - INFO - Successfully exported movies to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-9/test_export_movies_to_csv_appe0/test_data/test_append.csv
+2025-11-12 15:59:22 - export_service - INFO - Export service initialized with output directory: /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-9/test_export_similar_movies_to_0/test_data
+2025-11-12 15:59:22 - export_service - INFO - Exporting 1 similar movie entries to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-9/test_export_similar_movies_to_0/test_data/test_similar.csv
+2025-11-12 15:59:22 - export_service - INFO - Successfully exported similar movies to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-9/test_export_similar_movies_to_0/test_data/test_similar.csv
+2025-11-12 15:59:22 - export_service - INFO - Export service initialized with output directory: /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-9/test_export_movies_to_csv_empt0/test_data
+2025-11-12 15:59:22 - export_service - INFO - Export service initialized with output directory: /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-9/test_export_similar_movies_to_1/test_data
+2025-11-12 15:59:22 - export_service - INFO - Export service initialized with output directory: data
+2025-11-12 15:59:22 - movie_service - INFO - Movie service initialized
+2025-11-12 15:59:22 - export_service - INFO - Export service initialized with output directory: data
+2025-11-12 15:59:22 - movie_service - INFO - Movie service initialized
+2025-11-12 15:59:22 - export_service - INFO - Export service initialized with output directory: data
+2025-11-12 15:59:22 - movie_service - INFO - Movie service initialized
+2025-11-12 15:59:22 - export_service - INFO - Export service initialized with output directory: data
+2025-11-12 15:59:22 - movie_service - INFO - Movie service initialized
+2025-11-12 15:59:22 - movie_service - INFO - Retrieving top 2 movies from year 1999 (min_votes: 100, min_rating: 6.0)
+2025-11-12 15:59:22 - movie_service - DEBUG - Retrieved 3 movies from page 1
+2025-11-12 15:59:22 - movie_service - INFO - Selected top 2 movies from year 1999
+2025-11-12 15:59:22 - export_service - INFO - Export service initialized with output directory: data
+2025-11-12 15:59:22 - movie_service - INFO - Movie service initialized
+2025-11-12 15:59:22 - export_service - INFO - Export service initialized with output directory: data
+2025-11-12 15:59:22 - movie_service - INFO - Movie service initialized
+2025-11-12 15:59:22 - export_service - INFO - Export service initialized with output directory: data
+2025-11-12 15:59:22 - movie_service - INFO - Movie service initialized
+2025-11-12 15:59:22 - export_service - INFO - Export service initialized with output directory: data
+2025-11-12 15:59:22 - movie_service - INFO - Movie service initialized
+2025-11-12 15:59:22 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 15:59:22 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 15:59:22 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 15:59:22 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 15:59:22 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 15:59:22 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 15:59:22 - movie_recommendation_engine - INFO - Finding 2 similar movies for 1 movies using strategy: tmdb_api
+2025-11-12 15:59:22 - movie_recommendation_engine - INFO - Processing movie 1/1: The Matrix (ID: 1)
+2025-11-12 15:59:22 - movie_recommendation_engine - DEBUG - Getting candidates from TMDB API for The Matrix
+2025-11-12 15:59:22 - movie_recommendation_engine - DEBUG - Found 2 similar movies from TMDB API
+2025-11-12 15:59:22 - movie_recommendation_engine - DEBUG - Found 2 recommended movies from TMDB API
+2025-11-12 15:59:22 - movie_recommendation_engine - DEBUG - TMDB API strategy: 4 raw candidates -> 2 unique candidates (excluding target)
+2025-11-12 15:59:22 - movie_recommendation_engine - DEBUG - Found 2 candidates for The Matrix
+2025-11-12 15:59:22 - movie_recommendation_engine - DEBUG - Calculating similarity scores for 2 candidates for The Matrix
+2025-11-12 15:59:22 - movie_recommendation_engine - DEBUG - Ranked 0 candidates, returning top 0 for The Matrix
+2025-11-12 15:59:22 - movie_recommendation_engine - WARNING - No similar movies found for The Matrix after ranking
+2025-11-12 15:59:22 - movie_recommendation_engine - INFO - Completed processing. Total API calls made: 8. Found similar movies for 0/1 movies
+2025-11-12 16:00:09 - tmdb_client - INFO - TMDB client initialized
+2025-11-12 16:00:09 - tmdb_client - INFO - Retrieving movies from year 2020 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-12 16:00:09 - export_service - INFO - Export service initialized with output directory: data
+2025-11-12 16:00:09 - movie_service - INFO - Movie service initialized
+2025-11-12 16:00:09 - movie_service - INFO - Retrieving top 5 movies from year 2020 (min_votes: 100, min_rating: 6.0)
+2025-11-12 16:00:09 - tmdb_client - INFO - Retrieving movies from year 2020 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-12 16:00:09 - movie_service - INFO - Selected top 5 movies from year 2020
+2025-11-12 16:00:09 - export_service - INFO - Export service initialized with output directory: /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-10/test_real_export_top_movies_to0
+2025-11-12 16:00:09 - movie_service - INFO - Processing top 3 movies from year 2020 for export
+2025-11-12 16:00:09 - movie_service - INFO - Retrieving top 3 movies from year 2020 (min_votes: 100, min_rating: 6.0)
+2025-11-12 16:00:09 - tmdb_client - INFO - Retrieving movies from year 2020 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-12 16:00:10 - movie_service - INFO - Selected top 3 movies from year 2020
+2025-11-12 16:00:10 - export_service - INFO - Exporting 3 movie entries to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-10/test_real_export_top_movies_to0/real_api_test_movies.csv
+2025-11-12 16:00:10 - export_service - INFO - Successfully exported movies to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-10/test_real_export_top_movies_to0/real_api_test_movies.csv
+2025-11-12 16:00:10 - export_service - INFO - Exporting 3 movie entries to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-10/test_real_export_top_movies_to0/real_api_test_movies.csv
+2025-11-12 16:00:10 - export_service - INFO - Successfully exported movies to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-10/test_real_export_top_movies_to0/real_api_test_movies.csv
+2025-11-12 16:00:10 - export_service - INFO - Exporting 3 movie entries to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-10/test_real_export_top_movies_to0/real_api_test_movies.csv
+2025-11-12 16:00:10 - export_service - INFO - Successfully exported movies to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-10/test_real_export_top_movies_to0/real_api_test_movies.csv
+2025-11-12 16:00:10 - movie_service - INFO - Successfully exported 3 movies with 3 sort methods to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-10/test_real_export_top_movies_to0/real_api_test_movies.csv
+2025-11-12 16:00:10 - movie_service - INFO - Retrieving top 5 movies from year 2020 (min_votes: 100, min_rating: 6.0)
+2025-11-12 16:00:10 - tmdb_client - INFO - Retrieving movies from year 2020 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-12 16:00:10 - movie_service - INFO - Selected top 5 movies from year 2020
+2025-11-12 16:00:10 - movie_service - INFO - Retrieving top 5 movies from year 2020 (min_votes: 100, min_rating: 6.0)
+2025-11-12 16:00:10 - tmdb_client - INFO - Retrieving movies from year 2020 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-12 16:00:10 - movie_service - INFO - Selected top 5 movies from year 2020
+2025-11-12 16:00:10 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 16:00:10 - movie_service - INFO - Retrieving top 1 movies from year 2020 (min_votes: 100, min_rating: 6.0)
+2025-11-12 16:00:10 - tmdb_client - INFO - Retrieving movies from year 2020 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-12 16:00:10 - movie_service - INFO - Selected top 1 movies from year 2020
+2025-11-12 16:00:10 - movie_recommendation_engine - INFO - Finding 3 similar movies for 1 movies using strategy: tmdb_api
+2025-11-12 16:00:10 - movie_recommendation_engine - INFO - Processing movie 1/1: Soul (ID: 508442)
+2025-11-12 16:00:15 - movie_recommendation_engine - INFO - Found 3 similar movies for Soul
+2025-11-12 16:00:15 - movie_recommendation_engine - INFO - Completed processing. Total API calls made: 89. Found similar movies for 1/1 movies
+2025-11-12 16:00:15 - movie_service - INFO - Retrieving top 2 movies from year 2020 (min_votes: 100, min_rating: 6.0)
+2025-11-12 16:00:15 - tmdb_client - INFO - Retrieving movies from year 2020 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-12 16:00:15 - movie_service - INFO - Selected top 2 movies from year 2020
+2025-11-12 16:00:15 - movie_recommendation_engine - INFO - Finding 2 similar movies for 2 movies using strategy: tmdb_api
+2025-11-12 16:00:15 - movie_recommendation_engine - INFO - Processing movie 1/2: Soul (ID: 508442)
+2025-11-12 16:00:20 - movie_recommendation_engine - INFO - Found 2 similar movies for Soul
+2025-11-12 16:00:20 - movie_recommendation_engine - INFO - Processing movie 2/2: Tenet (ID: 577922)
+2025-11-12 16:00:27 - movie_recommendation_engine - INFO - Found 2 similar movies for Tenet
+2025-11-12 16:00:27 - movie_recommendation_engine - INFO - Completed processing. Total API calls made: 202. Found similar movies for 2/2 movies
+2025-11-12 16:00:27 - export_service - INFO - Export service initialized with output directory: /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-10/test_real_complete_workflow_to0
+2025-11-12 16:00:27 - movie_service - INFO - Processing top 5 movies from year 2020 for export
+2025-11-12 16:00:27 - movie_service - INFO - Retrieving top 5 movies from year 2020 (min_votes: 100, min_rating: 6.0)
+2025-11-12 16:00:27 - tmdb_client - INFO - Retrieving movies from year 2020 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-12 16:00:27 - movie_service - INFO - Selected top 5 movies from year 2020
+2025-11-12 16:00:27 - export_service - INFO - Exporting 5 movie entries to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-10/test_real_complete_workflow_to0/real_workflow_test.csv
+2025-11-12 16:00:27 - export_service - INFO - Successfully exported movies to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-10/test_real_complete_workflow_to0/real_workflow_test.csv
+2025-11-12 16:00:27 - export_service - INFO - Exporting 5 movie entries to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-10/test_real_complete_workflow_to0/real_workflow_test.csv
+2025-11-12 16:00:27 - export_service - INFO - Successfully exported movies to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-10/test_real_complete_workflow_to0/real_workflow_test.csv
+2025-11-12 16:00:27 - export_service - INFO - Exporting 5 movie entries to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-10/test_real_complete_workflow_to0/real_workflow_test.csv
+2025-11-12 16:00:27 - export_service - INFO - Successfully exported movies to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-10/test_real_complete_workflow_to0/real_workflow_test.csv
+2025-11-12 16:00:27 - movie_service - INFO - Successfully exported 5 movies with 3 sort methods to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-10/test_real_complete_workflow_to0/real_workflow_test.csv
+2025-11-12 16:00:27 - export_service - INFO - Export service initialized with output directory: /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-10/test_real_complete_workflow_wi0
+2025-11-12 16:00:27 - export_service - INFO - Export service initialized with output directory: /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-10/test_real_complete_workflow_wi0
+2025-11-12 16:00:27 - movie_service - INFO - Processing top 3 movies from year 2020 for export
+2025-11-12 16:00:27 - movie_service - INFO - Retrieving top 3 movies from year 2020 (min_votes: 100, min_rating: 6.0)
+2025-11-12 16:00:27 - tmdb_client - INFO - Retrieving movies from year 2020 (min_votes: 100, min_rating: 6.0, page: 1)
+2025-11-12 16:00:27 - movie_service - INFO - Selected top 3 movies from year 2020
+2025-11-12 16:00:27 - export_service - INFO - Exporting 3 movie entries to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-10/test_real_complete_workflow_wi0/real_workflow_movies.csv
+2025-11-12 16:00:27 - export_service - INFO - Successfully exported movies to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-10/test_real_complete_workflow_wi0/real_workflow_movies.csv
+2025-11-12 16:00:27 - export_service - INFO - Exporting 3 movie entries to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-10/test_real_complete_workflow_wi0/real_workflow_movies.csv
+2025-11-12 16:00:27 - export_service - INFO - Successfully exported movies to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-10/test_real_complete_workflow_wi0/real_workflow_movies.csv
+2025-11-12 16:00:27 - export_service - INFO - Exporting 3 movie entries to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-10/test_real_complete_workflow_wi0/real_workflow_movies.csv
+2025-11-12 16:00:27 - export_service - INFO - Successfully exported movies to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-10/test_real_complete_workflow_wi0/real_workflow_movies.csv
+2025-11-12 16:00:27 - movie_service - INFO - Successfully exported 3 movies with 3 sort methods to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-10/test_real_complete_workflow_wi0/real_workflow_movies.csv
+2025-11-12 16:00:27 - movie_recommendation_engine - INFO - Finding 2 similar movies for 2 movies using strategy: tmdb_api
+2025-11-12 16:00:27 - movie_recommendation_engine - INFO - Processing movie 1/2: Soul (ID: 508442)
+2025-11-12 16:00:31 - movie_recommendation_engine - INFO - Found 2 similar movies for Soul
+2025-11-12 16:00:32 - movie_recommendation_engine - INFO - Processing movie 2/2: Tenet (ID: 577922)
+2025-11-12 16:00:37 - movie_recommendation_engine - INFO - Found 2 similar movies for Tenet
+2025-11-12 16:00:37 - movie_recommendation_engine - INFO - Completed processing. Total API calls made: 202. Found similar movies for 2/2 movies
+2025-11-12 16:00:37 - export_service - INFO - Exporting 4 similar movie entries to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-10/test_real_complete_workflow_wi0/real_workflow_similar.csv
+2025-11-12 16:00:37 - export_service - INFO - Successfully exported similar movies to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-10/test_real_complete_workflow_wi0/real_workflow_similar.csv
+2025-11-12 16:06:22 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 16:06:22 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 16:06:22 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 16:06:22 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 16:06:22 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 16:06:22 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 16:06:22 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 16:06:22 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 16:06:22 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 16:06:22 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 16:06:22 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 16:06:22 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 16:06:22 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 16:06:22 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 16:06:22 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 16:06:22 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 16:06:22 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 16:06:22 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 16:06:22 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 16:06:22 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 16:06:22 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 16:06:22 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 16:06:22 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 16:06:22 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 16:06:22 - movie_recommendation_engine - DEBUG - Getting candidates from TMDB API for The Matrix
+2025-11-12 16:06:22 - movie_recommendation_engine - DEBUG - Found 1 similar movies from TMDB API
+2025-11-12 16:06:22 - movie_recommendation_engine - DEBUG - Found 1 recommended movies from TMDB API
+2025-11-12 16:06:22 - movie_recommendation_engine - DEBUG - TMDB API strategy: 2 raw candidates -> 2 unique candidates (excluding target)
+2025-11-12 16:06:22 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 16:06:22 - movie_recommendation_engine - DEBUG - Getting candidates from year 1999 for The Matrix
+2025-11-12 16:06:22 - movie_recommendation_engine - DEBUG - Found 1 movies from year 1999
+2025-11-12 16:06:22 - movie_recommendation_engine - DEBUG - Same year strategy: 1 raw candidates -> 1 candidates (excluding target)
+2025-11-12 16:06:22 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 16:06:22 - movie_recommendation_engine - INFO - Finding 3 similar movies for 1 movies using strategy: tmdb_api
+2025-11-12 16:06:22 - movie_recommendation_engine - INFO - Processing movie 1/1: The Matrix (ID: 1)
+2025-11-12 16:06:22 - movie_recommendation_engine - DEBUG - Getting candidates from TMDB API for The Matrix
+2025-11-12 16:06:22 - movie_recommendation_engine - DEBUG - Found 1 similar movies from TMDB API
+2025-11-12 16:06:22 - movie_recommendation_engine - DEBUG - Found 0 recommended movies from TMDB API
+2025-11-12 16:06:22 - movie_recommendation_engine - DEBUG - TMDB API strategy: 1 raw candidates -> 1 unique candidates (excluding target)
+2025-11-12 16:06:22 - movie_recommendation_engine - DEBUG - Found 1 candidates for The Matrix
+2025-11-12 16:06:22 - movie_recommendation_engine - DEBUG - Calculating similarity scores for 1 candidates for The Matrix
+2025-11-12 16:06:22 - movie_recommendation_engine - DEBUG - Ranked 1 candidates, returning top 1 for The Matrix
+2025-11-12 16:06:22 - movie_recommendation_engine - INFO - Found 1 similar movies for The Matrix
+2025-11-12 16:06:22 - movie_recommendation_engine - INFO - Completed processing. Total API calls made: 5. Found similar movies for 1/1 movies
+2025-11-12 16:06:33 - export_service - INFO - Export service initialized with output directory: data
+2025-11-12 16:06:33 - movie_service - INFO - Movie service initialized
+2025-11-12 16:06:33 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 16:06:33 - export_service - INFO - Export service initialized with output directory: /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-11/test_complete_assignment_requi0/test_data
+2025-11-12 16:06:33 - movie_service - INFO - Processing top 10 movies from year 2020 for export
+2025-11-12 16:06:33 - movie_service - INFO - Retrieving top 10 movies from year 2020 (min_votes: 100, min_rating: 6.0)
+2025-11-12 16:06:33 - movie_service - DEBUG - Retrieved 10 movies from page 1
+2025-11-12 16:06:33 - movie_service - INFO - Selected top 10 movies from year 2020
+2025-11-12 16:06:33 - export_service - INFO - Exporting 10 movie entries to data/top_movies_2020.csv
+2025-11-12 16:06:33 - export_service - INFO - Successfully exported movies to data/top_movies_2020.csv
+2025-11-12 16:06:33 - movie_service - DEBUG - Exported 10 movies sorted by votes
+2025-11-12 16:06:33 - export_service - INFO - Exporting 10 movie entries to data/top_movies_2020.csv
+2025-11-12 16:06:33 - export_service - INFO - Successfully exported movies to data/top_movies_2020.csv
+2025-11-12 16:06:33 - movie_service - DEBUG - Appended 10 movies sorted by name (with articles)
+2025-11-12 16:06:33 - export_service - INFO - Exporting 10 movie entries to data/top_movies_2020.csv
+2025-11-12 16:06:33 - export_service - INFO - Successfully exported movies to data/top_movies_2020.csv
+2025-11-12 16:06:33 - movie_service - DEBUG - Appended 10 movies sorted by name (without articles)
+2025-11-12 16:06:33 - movie_service - INFO - Successfully exported 10 movies with 3 sort methods to data/top_movies_2020.csv
+2025-11-12 16:06:33 - movie_recommendation_engine - INFO - Finding 3 similar movies for 10 movies using strategy: tmdb_api
+2025-11-12 16:06:33 - movie_recommendation_engine - INFO - Processing movie 1/10: Movie 1 (ID: 100)
+2025-11-12 16:06:33 - movie_recommendation_engine - DEBUG - Getting candidates from TMDB API for Movie 1
+2025-11-12 16:06:33 - movie_recommendation_engine - DEBUG - Found 5 similar movies from TMDB API
+2025-11-12 16:06:33 - movie_recommendation_engine - DEBUG - TMDB API strategy: 5 raw candidates -> 5 unique candidates (excluding target)
+2025-11-12 16:06:33 - movie_recommendation_engine - DEBUG - Found 5 candidates for Movie 1
+2025-11-12 16:06:33 - movie_recommendation_engine - DEBUG - Calculating similarity scores for 5 candidates for Movie 1
+2025-11-12 16:06:33 - movie_recommendation_engine - DEBUG - Ranked 5 candidates, returning top 3 for Movie 1
+2025-11-12 16:06:33 - movie_recommendation_engine - INFO - Found 3 similar movies for Movie 1
+2025-11-12 16:06:33 - movie_recommendation_engine - INFO - Processing movie 2/10: Movie 2 (ID: 101)
+2025-11-12 16:06:33 - movie_recommendation_engine - DEBUG - Getting candidates from TMDB API for Movie 2
+2025-11-12 16:06:33 - movie_recommendation_engine - DEBUG - Found 5 similar movies from TMDB API
+2025-11-12 16:06:33 - movie_recommendation_engine - DEBUG - TMDB API strategy: 5 raw candidates -> 5 unique candidates (excluding target)
+2025-11-12 16:06:33 - movie_recommendation_engine - DEBUG - Found 5 candidates for Movie 2
+2025-11-12 16:06:33 - movie_recommendation_engine - DEBUG - Calculating similarity scores for 5 candidates for Movie 2
+2025-11-12 16:06:33 - movie_recommendation_engine - DEBUG - Ranked 5 candidates, returning top 3 for Movie 2
+2025-11-12 16:06:33 - movie_recommendation_engine - INFO - Found 3 similar movies for Movie 2
+2025-11-12 16:06:34 - movie_recommendation_engine - INFO - Processing movie 3/10: Movie 3 (ID: 102)
+2025-11-12 16:06:34 - movie_recommendation_engine - DEBUG - Getting candidates from TMDB API for Movie 3
+2025-11-12 16:06:34 - movie_recommendation_engine - DEBUG - Found 5 similar movies from TMDB API
+2025-11-12 16:06:34 - movie_recommendation_engine - DEBUG - TMDB API strategy: 5 raw candidates -> 5 unique candidates (excluding target)
+2025-11-12 16:06:34 - movie_recommendation_engine - DEBUG - Found 5 candidates for Movie 3
+2025-11-12 16:06:34 - movie_recommendation_engine - DEBUG - Calculating similarity scores for 5 candidates for Movie 3
+2025-11-12 16:06:34 - movie_recommendation_engine - DEBUG - Ranked 5 candidates, returning top 3 for Movie 3
+2025-11-12 16:06:34 - movie_recommendation_engine - INFO - Found 3 similar movies for Movie 3
+2025-11-12 16:06:34 - movie_recommendation_engine - INFO - Processing movie 4/10: Movie 4 (ID: 103)
+2025-11-12 16:06:34 - movie_recommendation_engine - DEBUG - Getting candidates from TMDB API for Movie 4
+2025-11-12 16:06:34 - movie_recommendation_engine - DEBUG - Found 5 similar movies from TMDB API
+2025-11-12 16:06:34 - movie_recommendation_engine - DEBUG - TMDB API strategy: 5 raw candidates -> 5 unique candidates (excluding target)
+2025-11-12 16:06:34 - movie_recommendation_engine - DEBUG - Found 5 candidates for Movie 4
+2025-11-12 16:06:34 - movie_recommendation_engine - DEBUG - Calculating similarity scores for 5 candidates for Movie 4
+2025-11-12 16:06:34 - movie_recommendation_engine - DEBUG - Ranked 5 candidates, returning top 3 for Movie 4
+2025-11-12 16:06:34 - movie_recommendation_engine - INFO - Found 3 similar movies for Movie 4
+2025-11-12 16:06:34 - movie_recommendation_engine - INFO - Processing movie 5/10: Movie 5 (ID: 104)
+2025-11-12 16:06:34 - movie_recommendation_engine - DEBUG - Getting candidates from TMDB API for Movie 5
+2025-11-12 16:06:34 - movie_recommendation_engine - DEBUG - Found 5 similar movies from TMDB API
+2025-11-12 16:06:34 - movie_recommendation_engine - DEBUG - TMDB API strategy: 5 raw candidates -> 5 unique candidates (excluding target)
+2025-11-12 16:06:34 - movie_recommendation_engine - DEBUG - Found 5 candidates for Movie 5
+2025-11-12 16:06:34 - movie_recommendation_engine - DEBUG - Calculating similarity scores for 5 candidates for Movie 5
+2025-11-12 16:06:34 - movie_recommendation_engine - DEBUG - Ranked 5 candidates, returning top 3 for Movie 5
+2025-11-12 16:06:34 - movie_recommendation_engine - INFO - Found 3 similar movies for Movie 5
+2025-11-12 16:06:34 - movie_recommendation_engine - INFO - Processing movie 6/10: Movie 6 (ID: 105)
+2025-11-12 16:06:34 - movie_recommendation_engine - DEBUG - Getting candidates from TMDB API for Movie 6
+2025-11-12 16:06:34 - movie_recommendation_engine - DEBUG - Found 5 similar movies from TMDB API
+2025-11-12 16:06:34 - movie_recommendation_engine - DEBUG - TMDB API strategy: 5 raw candidates -> 5 unique candidates (excluding target)
+2025-11-12 16:06:34 - movie_recommendation_engine - DEBUG - Found 5 candidates for Movie 6
+2025-11-12 16:06:34 - movie_recommendation_engine - DEBUG - Calculating similarity scores for 5 candidates for Movie 6
+2025-11-12 16:06:34 - movie_recommendation_engine - DEBUG - Ranked 5 candidates, returning top 3 for Movie 6
+2025-11-12 16:06:34 - movie_recommendation_engine - INFO - Found 3 similar movies for Movie 6
+2025-11-12 16:06:34 - movie_recommendation_engine - INFO - Processing movie 7/10: Movie 7 (ID: 106)
+2025-11-12 16:06:34 - movie_recommendation_engine - DEBUG - Getting candidates from TMDB API for Movie 7
+2025-11-12 16:06:34 - movie_recommendation_engine - DEBUG - Found 5 similar movies from TMDB API
+2025-11-12 16:06:35 - movie_recommendation_engine - DEBUG - TMDB API strategy: 5 raw candidates -> 5 unique candidates (excluding target)
+2025-11-12 16:06:35 - movie_recommendation_engine - DEBUG - Found 5 candidates for Movie 7
+2025-11-12 16:06:35 - movie_recommendation_engine - DEBUG - Calculating similarity scores for 5 candidates for Movie 7
+2025-11-12 16:06:35 - movie_recommendation_engine - DEBUG - Ranked 5 candidates, returning top 3 for Movie 7
+2025-11-12 16:06:35 - movie_recommendation_engine - INFO - Found 3 similar movies for Movie 7
+2025-11-12 16:06:35 - movie_recommendation_engine - INFO - Processing movie 8/10: Movie 8 (ID: 107)
+2025-11-12 16:06:35 - movie_recommendation_engine - DEBUG - Getting candidates from TMDB API for Movie 8
+2025-11-12 16:06:35 - movie_recommendation_engine - DEBUG - Found 5 similar movies from TMDB API
+2025-11-12 16:06:35 - movie_recommendation_engine - DEBUG - TMDB API strategy: 5 raw candidates -> 5 unique candidates (excluding target)
+2025-11-12 16:06:35 - movie_recommendation_engine - DEBUG - Found 5 candidates for Movie 8
+2025-11-12 16:06:35 - movie_recommendation_engine - DEBUG - Calculating similarity scores for 5 candidates for Movie 8
+2025-11-12 16:06:35 - movie_recommendation_engine - DEBUG - Ranked 5 candidates, returning top 3 for Movie 8
+2025-11-12 16:06:35 - movie_recommendation_engine - INFO - Found 3 similar movies for Movie 8
+2025-11-12 16:06:35 - movie_recommendation_engine - INFO - Processing movie 9/10: Movie 9 (ID: 108)
+2025-11-12 16:06:35 - movie_recommendation_engine - DEBUG - Getting candidates from TMDB API for Movie 9
+2025-11-12 16:06:35 - movie_recommendation_engine - DEBUG - Found 5 similar movies from TMDB API
+2025-11-12 16:06:35 - movie_recommendation_engine - DEBUG - TMDB API strategy: 5 raw candidates -> 5 unique candidates (excluding target)
+2025-11-12 16:06:35 - movie_recommendation_engine - DEBUG - Found 5 candidates for Movie 9
+2025-11-12 16:06:35 - movie_recommendation_engine - DEBUG - Calculating similarity scores for 5 candidates for Movie 9
+2025-11-12 16:06:35 - movie_recommendation_engine - DEBUG - Ranked 5 candidates, returning top 3 for Movie 9
+2025-11-12 16:06:35 - movie_recommendation_engine - INFO - Found 3 similar movies for Movie 9
+2025-11-12 16:06:35 - movie_recommendation_engine - INFO - Processing movie 10/10: Movie 10 (ID: 109)
+2025-11-12 16:06:35 - movie_recommendation_engine - DEBUG - Getting candidates from TMDB API for Movie 10
+2025-11-12 16:06:35 - movie_recommendation_engine - DEBUG - Found 5 similar movies from TMDB API
+2025-11-12 16:06:35 - movie_recommendation_engine - DEBUG - TMDB API strategy: 5 raw candidates -> 5 unique candidates (excluding target)
+2025-11-12 16:06:35 - movie_recommendation_engine - DEBUG - Found 5 candidates for Movie 10
+2025-11-12 16:06:35 - movie_recommendation_engine - DEBUG - Calculating similarity scores for 5 candidates for Movie 10
+2025-11-12 16:06:35 - movie_recommendation_engine - DEBUG - Ranked 5 candidates, returning top 3 for Movie 10
+2025-11-12 16:06:35 - movie_recommendation_engine - INFO - Found 3 similar movies for Movie 10
+2025-11-12 16:06:35 - movie_recommendation_engine - INFO - Completed processing. Total API calls made: 70. Found similar movies for 10/10 movies
+2025-11-12 16:06:35 - export_service - INFO - Exporting 30 similar movie entries to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-11/test_complete_assignment_requi0/test_data/similar_movies_2020.csv
+2025-11-12 16:06:35 - export_service - INFO - Successfully exported similar movies to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-11/test_complete_assignment_requi0/test_data/similar_movies_2020.csv
+2025-11-12 16:06:35 - export_service - INFO - Export service initialized with output directory: data
+2025-11-12 16:06:35 - movie_service - INFO - Movie service initialized
+2025-11-12 16:06:35 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 16:06:35 - export_service - INFO - Export service initialized with output directory: /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-11/test_timeline_with_different_y0/test_data
+2025-11-12 16:06:35 - movie_service - INFO - Processing top 5 movies from year 2019 for export
+2025-11-12 16:06:35 - movie_service - INFO - Retrieving top 5 movies from year 2019 (min_votes: 100, min_rating: 6.0)
+2025-11-12 16:06:35 - movie_service - DEBUG - Retrieved 5 movies from page 1
+2025-11-12 16:06:35 - movie_service - INFO - Selected top 5 movies from year 2019
+2025-11-12 16:06:35 - export_service - INFO - Exporting 5 movie entries to data/top_movies_2019.csv
+2025-11-12 16:06:35 - export_service - INFO - Successfully exported movies to data/top_movies_2019.csv
+2025-11-12 16:06:35 - movie_service - DEBUG - Exported 5 movies sorted by votes
+2025-11-12 16:06:35 - export_service - INFO - Exporting 5 movie entries to data/top_movies_2019.csv
+2025-11-12 16:06:35 - export_service - INFO - Successfully exported movies to data/top_movies_2019.csv
+2025-11-12 16:06:35 - movie_service - DEBUG - Appended 5 movies sorted by name (with articles)
+2025-11-12 16:06:35 - export_service - INFO - Exporting 5 movie entries to data/top_movies_2019.csv
+2025-11-12 16:06:35 - export_service - INFO - Successfully exported movies to data/top_movies_2019.csv
+2025-11-12 16:06:35 - movie_service - DEBUG - Appended 5 movies sorted by name (without articles)
+2025-11-12 16:06:35 - movie_service - INFO - Successfully exported 5 movies with 3 sort methods to data/top_movies_2019.csv
+2025-11-12 16:06:35 - movie_recommendation_engine - INFO - Finding 2 similar movies for 5 movies using strategy: tmdb_api
+2025-11-12 16:06:35 - movie_recommendation_engine - INFO - Processing movie 1/5: 2019 Movie 1 (ID: 200)
+2025-11-12 16:06:35 - movie_recommendation_engine - DEBUG - Getting candidates from TMDB API for 2019 Movie 1
+2025-11-12 16:06:35 - movie_recommendation_engine - DEBUG - Found 5 similar movies from TMDB API
+2025-11-12 16:06:35 - movie_recommendation_engine - DEBUG - TMDB API strategy: 5 raw candidates -> 5 unique candidates (excluding target)
+2025-11-12 16:06:35 - movie_recommendation_engine - DEBUG - Found 5 candidates for 2019 Movie 1
+2025-11-12 16:06:35 - movie_recommendation_engine - DEBUG - Calculating similarity scores for 5 candidates for 2019 Movie 1
+2025-11-12 16:06:35 - movie_recommendation_engine - DEBUG - Ranked 5 candidates, returning top 2 for 2019 Movie 1
+2025-11-12 16:06:35 - movie_recommendation_engine - INFO - Found 2 similar movies for 2019 Movie 1
+2025-11-12 16:06:35 - movie_recommendation_engine - INFO - Processing movie 2/5: 2019 Movie 2 (ID: 201)
+2025-11-12 16:06:35 - movie_recommendation_engine - DEBUG - Getting candidates from TMDB API for 2019 Movie 2
+2025-11-12 16:06:35 - movie_recommendation_engine - DEBUG - Found 5 similar movies from TMDB API
+2025-11-12 16:06:36 - movie_recommendation_engine - DEBUG - TMDB API strategy: 5 raw candidates -> 5 unique candidates (excluding target)
+2025-11-12 16:06:36 - movie_recommendation_engine - DEBUG - Found 5 candidates for 2019 Movie 2
+2025-11-12 16:06:36 - movie_recommendation_engine - DEBUG - Calculating similarity scores for 5 candidates for 2019 Movie 2
+2025-11-12 16:06:36 - movie_recommendation_engine - DEBUG - Ranked 5 candidates, returning top 2 for 2019 Movie 2
+2025-11-12 16:06:36 - movie_recommendation_engine - INFO - Found 2 similar movies for 2019 Movie 2
+2025-11-12 16:06:36 - movie_recommendation_engine - INFO - Processing movie 3/5: 2019 Movie 3 (ID: 202)
+2025-11-12 16:06:36 - movie_recommendation_engine - DEBUG - Getting candidates from TMDB API for 2019 Movie 3
+2025-11-12 16:06:36 - movie_recommendation_engine - DEBUG - Found 5 similar movies from TMDB API
+2025-11-12 16:06:36 - movie_recommendation_engine - DEBUG - TMDB API strategy: 5 raw candidates -> 5 unique candidates (excluding target)
+2025-11-12 16:06:36 - movie_recommendation_engine - DEBUG - Found 5 candidates for 2019 Movie 3
+2025-11-12 16:06:36 - movie_recommendation_engine - DEBUG - Calculating similarity scores for 5 candidates for 2019 Movie 3
+2025-11-12 16:06:36 - movie_recommendation_engine - DEBUG - Ranked 5 candidates, returning top 2 for 2019 Movie 3
+2025-11-12 16:06:36 - movie_recommendation_engine - INFO - Found 2 similar movies for 2019 Movie 3
+2025-11-12 16:06:36 - movie_recommendation_engine - INFO - Processing movie 4/5: 2019 Movie 4 (ID: 203)
+2025-11-12 16:06:36 - movie_recommendation_engine - DEBUG - Getting candidates from TMDB API for 2019 Movie 4
+2025-11-12 16:06:36 - movie_recommendation_engine - DEBUG - Found 5 similar movies from TMDB API
+2025-11-12 16:06:36 - movie_recommendation_engine - DEBUG - TMDB API strategy: 5 raw candidates -> 5 unique candidates (excluding target)
+2025-11-12 16:06:36 - movie_recommendation_engine - DEBUG - Found 5 candidates for 2019 Movie 4
+2025-11-12 16:06:36 - movie_recommendation_engine - DEBUG - Calculating similarity scores for 5 candidates for 2019 Movie 4
+2025-11-12 16:06:36 - movie_recommendation_engine - DEBUG - Ranked 5 candidates, returning top 2 for 2019 Movie 4
+2025-11-12 16:06:36 - movie_recommendation_engine - INFO - Found 2 similar movies for 2019 Movie 4
+2025-11-12 16:06:36 - movie_recommendation_engine - INFO - Processing movie 5/5: 2019 Movie 5 (ID: 204)
+2025-11-12 16:06:36 - movie_recommendation_engine - DEBUG - Getting candidates from TMDB API for 2019 Movie 5
+2025-11-12 16:06:36 - movie_recommendation_engine - DEBUG - Found 5 similar movies from TMDB API
+2025-11-12 16:06:36 - movie_recommendation_engine - DEBUG - TMDB API strategy: 5 raw candidates -> 5 unique candidates (excluding target)
+2025-11-12 16:06:36 - movie_recommendation_engine - DEBUG - Found 5 candidates for 2019 Movie 5
+2025-11-12 16:06:36 - movie_recommendation_engine - DEBUG - Calculating similarity scores for 5 candidates for 2019 Movie 5
+2025-11-12 16:06:36 - movie_recommendation_engine - DEBUG - Ranked 5 candidates, returning top 2 for 2019 Movie 5
+2025-11-12 16:06:36 - movie_recommendation_engine - INFO - Found 2 similar movies for 2019 Movie 5
+2025-11-12 16:06:36 - movie_recommendation_engine - INFO - Completed processing. Total API calls made: 35. Found similar movies for 5/5 movies
+2025-11-12 16:06:36 - export_service - INFO - Exporting 10 similar movie entries to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-11/test_timeline_with_different_y0/test_data/similar_movies_2019.csv
+2025-11-12 16:06:36 - export_service - INFO - Successfully exported similar movies to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-11/test_timeline_with_different_y0/test_data/similar_movies_2019.csv
+2025-11-12 16:06:36 - export_service - INFO - Export service initialized with output directory: data
+2025-11-12 16:06:36 - movie_service - INFO - Movie service initialized
+2025-11-12 16:06:36 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 16:06:36 - export_service - INFO - Export service initialized with output directory: /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-11/test_complete_application_work0/test_data
+2025-11-12 16:06:36 - movie_service - INFO - Processing top 2 movies from year 1999 for export
+2025-11-12 16:06:36 - movie_service - INFO - Retrieving top 2 movies from year 1999 (min_votes: 100, min_rating: 6.0)
+2025-11-12 16:06:36 - movie_service - DEBUG - Retrieved 2 movies from page 1
+2025-11-12 16:06:36 - movie_service - INFO - Selected top 2 movies from year 1999
+2025-11-12 16:06:36 - export_service - INFO - Exporting 2 movie entries to data/top_movies_1999.csv
+2025-11-12 16:06:36 - export_service - INFO - Successfully exported movies to data/top_movies_1999.csv
+2025-11-12 16:06:36 - movie_service - DEBUG - Exported 2 movies sorted by votes
+2025-11-12 16:06:36 - export_service - INFO - Exporting 2 movie entries to data/top_movies_1999.csv
+2025-11-12 16:06:36 - export_service - INFO - Successfully exported movies to data/top_movies_1999.csv
+2025-11-12 16:06:36 - movie_service - DEBUG - Appended 2 movies sorted by name (with articles)
+2025-11-12 16:06:36 - export_service - INFO - Exporting 2 movie entries to data/top_movies_1999.csv
+2025-11-12 16:06:36 - export_service - INFO - Successfully exported movies to data/top_movies_1999.csv
+2025-11-12 16:06:36 - movie_service - DEBUG - Appended 2 movies sorted by name (without articles)
+2025-11-12 16:06:36 - movie_service - INFO - Successfully exported 2 movies with 3 sort methods to data/top_movies_1999.csv
+2025-11-12 16:06:36 - movie_recommendation_engine - INFO - Finding 2 similar movies for 2 movies using strategy: tmdb_api
+2025-11-12 16:06:36 - movie_recommendation_engine - INFO - Processing movie 1/2: Inception (ID: 2)
+2025-11-12 16:06:36 - movie_recommendation_engine - DEBUG - Getting candidates from TMDB API for Inception
+2025-11-12 16:06:36 - movie_recommendation_engine - DEBUG - Found 2 similar movies from TMDB API
+2025-11-12 16:06:36 - movie_recommendation_engine - DEBUG - Found 2 recommended movies from TMDB API
+2025-11-12 16:06:36 - movie_recommendation_engine - DEBUG - TMDB API strategy: 4 raw candidates -> 2 unique candidates (excluding target)
+2025-11-12 16:06:36 - movie_recommendation_engine - DEBUG - Found 2 candidates for Inception
+2025-11-12 16:06:36 - movie_recommendation_engine - DEBUG - Calculating similarity scores for 2 candidates for Inception
+2025-11-12 16:06:36 - movie_recommendation_engine - DEBUG - Ranked 2 candidates, returning top 2 for Inception
+2025-11-12 16:06:36 - movie_recommendation_engine - INFO - Found 2 similar movies for Inception
+2025-11-12 16:06:37 - movie_recommendation_engine - INFO - Processing movie 2/2: The Matrix (ID: 1)
+2025-11-12 16:06:37 - movie_recommendation_engine - DEBUG - Getting candidates from TMDB API for The Matrix
+2025-11-12 16:06:37 - movie_recommendation_engine - DEBUG - Found 2 similar movies from TMDB API
+2025-11-12 16:06:37 - movie_recommendation_engine - DEBUG - Found 2 recommended movies from TMDB API
+2025-11-12 16:06:37 - movie_recommendation_engine - DEBUG - TMDB API strategy: 4 raw candidates -> 2 unique candidates (excluding target)
+2025-11-12 16:06:37 - movie_recommendation_engine - DEBUG - Found 2 candidates for The Matrix
+2025-11-12 16:06:37 - movie_recommendation_engine - DEBUG - Calculating similarity scores for 2 candidates for The Matrix
+2025-11-12 16:06:37 - movie_recommendation_engine - DEBUG - Ranked 2 candidates, returning top 2 for The Matrix
+2025-11-12 16:06:37 - movie_recommendation_engine - INFO - Found 2 similar movies for The Matrix
+2025-11-12 16:06:37 - movie_recommendation_engine - INFO - Completed processing. Total API calls made: 16. Found similar movies for 2/2 movies
+2025-11-12 16:06:37 - export_service - INFO - Exporting 4 similar movie entries to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-11/test_complete_application_work0/test_data/similar_movies_1999.csv
+2025-11-12 16:06:37 - export_service - INFO - Successfully exported similar movies to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-11/test_complete_application_work0/test_data/similar_movies_1999.csv
+2025-11-12 16:06:37 - export_service - INFO - Export service initialized with output directory: data
+2025-11-12 16:06:37 - movie_service - INFO - Movie service initialized
+2025-11-12 16:06:37 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 16:06:37 - export_service - INFO - Export service initialized with output directory: /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-11/test_workflow_data_consistency0/test_data
+2025-11-12 16:06:37 - movie_service - INFO - Processing top 2 movies from year 1999 for export
+2025-11-12 16:06:37 - movie_service - INFO - Retrieving top 2 movies from year 1999 (min_votes: 100, min_rating: 6.0)
+2025-11-12 16:06:37 - movie_service - DEBUG - Retrieved 2 movies from page 1
+2025-11-12 16:06:37 - movie_service - INFO - Selected top 2 movies from year 1999
+2025-11-12 16:06:37 - export_service - INFO - Exporting 2 movie entries to data/test_consistency.csv
+2025-11-12 16:06:37 - export_service - INFO - Successfully exported movies to data/test_consistency.csv
+2025-11-12 16:06:37 - movie_service - DEBUG - Exported 2 movies sorted by votes
+2025-11-12 16:06:37 - export_service - INFO - Exporting 2 movie entries to data/test_consistency.csv
+2025-11-12 16:06:37 - export_service - INFO - Successfully exported movies to data/test_consistency.csv
+2025-11-12 16:06:37 - movie_service - DEBUG - Appended 2 movies sorted by name (with articles)
+2025-11-12 16:06:37 - export_service - INFO - Exporting 2 movie entries to data/test_consistency.csv
+2025-11-12 16:06:37 - export_service - INFO - Successfully exported movies to data/test_consistency.csv
+2025-11-12 16:06:37 - movie_service - DEBUG - Appended 2 movies sorted by name (without articles)
+2025-11-12 16:06:37 - movie_service - INFO - Successfully exported 2 movies with 3 sort methods to data/test_consistency.csv
+2025-11-12 16:06:37 - movie_recommendation_engine - INFO - Finding 2 similar movies for 2 movies using strategy: tmdb_api
+2025-11-12 16:06:37 - movie_recommendation_engine - INFO - Processing movie 1/2: Inception (ID: 2)
+2025-11-12 16:06:37 - movie_recommendation_engine - DEBUG - Getting candidates from TMDB API for Inception
+2025-11-12 16:06:37 - movie_recommendation_engine - DEBUG - Found 2 similar movies from TMDB API
+2025-11-12 16:06:37 - movie_recommendation_engine - DEBUG - Found 2 recommended movies from TMDB API
+2025-11-12 16:06:37 - movie_recommendation_engine - DEBUG - TMDB API strategy: 4 raw candidates -> 2 unique candidates (excluding target)
+2025-11-12 16:06:37 - movie_recommendation_engine - DEBUG - Found 2 candidates for Inception
+2025-11-12 16:06:37 - movie_recommendation_engine - DEBUG - Calculating similarity scores for 2 candidates for Inception
+2025-11-12 16:06:37 - movie_recommendation_engine - DEBUG - Ranked 2 candidates, returning top 2 for Inception
+2025-11-12 16:06:37 - movie_recommendation_engine - INFO - Found 2 similar movies for Inception
+2025-11-12 16:06:37 - movie_recommendation_engine - INFO - Processing movie 2/2: The Matrix (ID: 1)
+2025-11-12 16:06:37 - movie_recommendation_engine - DEBUG - Getting candidates from TMDB API for The Matrix
+2025-11-12 16:06:37 - movie_recommendation_engine - DEBUG - Found 2 similar movies from TMDB API
+2025-11-12 16:06:37 - movie_recommendation_engine - DEBUG - Found 2 recommended movies from TMDB API
+2025-11-12 16:06:37 - movie_recommendation_engine - DEBUG - TMDB API strategy: 4 raw candidates -> 2 unique candidates (excluding target)
+2025-11-12 16:06:37 - movie_recommendation_engine - DEBUG - Found 2 candidates for The Matrix
+2025-11-12 16:06:37 - movie_recommendation_engine - DEBUG - Calculating similarity scores for 2 candidates for The Matrix
+2025-11-12 16:06:38 - movie_recommendation_engine - DEBUG - Ranked 2 candidates, returning top 2 for The Matrix
+2025-11-12 16:06:38 - movie_recommendation_engine - INFO - Found 2 similar movies for The Matrix
+2025-11-12 16:06:38 - movie_recommendation_engine - INFO - Completed processing. Total API calls made: 16. Found similar movies for 2/2 movies
+2025-11-12 16:06:38 - export_service - INFO - Exporting 4 similar movie entries to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-11/test_workflow_data_consistency0/test_data/test_similar_consistency.csv
+2025-11-12 16:06:38 - export_service - INFO - Successfully exported similar movies to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-11/test_workflow_data_consistency0/test_data/test_similar_consistency.csv
+2025-11-12 16:06:38 - export_service - INFO - Export service initialized with output directory: data
+2025-11-12 16:06:38 - movie_service - INFO - Movie service initialized
+2025-11-12 16:06:38 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 16:06:38 - export_service - INFO - Export service initialized with output directory: /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-11/test_workflow_sorting_verifica0/test_data
+2025-11-12 16:06:38 - movie_service - INFO - Processing top 3 movies from year 1999 for export
+2025-11-12 16:06:38 - movie_service - INFO - Retrieving top 3 movies from year 1999 (min_votes: 100, min_rating: 6.0)
+2025-11-12 16:06:38 - movie_service - DEBUG - Retrieved 2 movies from page 1
+2025-11-12 16:06:38 - movie_service - INFO - Selected top 2 movies from year 1999
+2025-11-12 16:06:38 - export_service - INFO - Exporting 2 movie entries to data/test_sorting.csv
+2025-11-12 16:06:38 - export_service - INFO - Successfully exported movies to data/test_sorting.csv
+2025-11-12 16:06:38 - movie_service - DEBUG - Exported 2 movies sorted by votes
+2025-11-12 16:06:38 - export_service - INFO - Exporting 2 movie entries to data/test_sorting.csv
+2025-11-12 16:06:38 - export_service - INFO - Successfully exported movies to data/test_sorting.csv
+2025-11-12 16:06:38 - movie_service - DEBUG - Appended 2 movies sorted by name (with articles)
+2025-11-12 16:06:38 - export_service - INFO - Exporting 2 movie entries to data/test_sorting.csv
+2025-11-12 16:06:38 - export_service - INFO - Successfully exported movies to data/test_sorting.csv
+2025-11-12 16:06:38 - movie_service - DEBUG - Appended 2 movies sorted by name (without articles)
+2025-11-12 16:06:38 - movie_service - INFO - Successfully exported 2 movies with 3 sort methods to data/test_sorting.csv
+2025-11-12 16:06:38 - export_service - INFO - Export service initialized with output directory: data
+2025-11-12 16:06:38 - movie_service - INFO - Movie service initialized
+2025-11-12 16:06:38 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 16:06:38 - export_service - INFO - Export service initialized with output directory: /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-11/test_workflow_error_handling0/test_data
+2025-11-12 16:06:38 - movie_service - INFO - Retrieving top 10 movies from year 1999 (min_votes: 100, min_rating: 6.0)
+2025-11-12 16:06:38 - export_service - INFO - Export service initialized with output directory: data
+2025-11-12 16:06:38 - movie_service - INFO - Movie service initialized
+2025-11-12 16:06:38 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 16:06:38 - export_service - INFO - Export service initialized with output directory: /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-11/test_workflow_empty_results0/test_data
+2025-11-12 16:06:38 - movie_service - INFO - Retrieving top 10 movies from year 1999 (min_votes: 100, min_rating: 6.0)
+2025-11-12 16:06:38 - export_service - INFO - Export service initialized with output directory: /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-11/test_movie_to_csv_row0/test_data
+2025-11-12 16:06:38 - export_service - INFO - Export service initialized with output directory: /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-11/test_export_movies_to_csv0/test_data
+2025-11-12 16:06:38 - export_service - INFO - Exporting 3 movie entries to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-11/test_export_movies_to_csv0/test_data/test_movies.csv
+2025-11-12 16:06:38 - export_service - INFO - Successfully exported movies to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-11/test_export_movies_to_csv0/test_data/test_movies.csv
+2025-11-12 16:06:38 - export_service - INFO - Export service initialized with output directory: /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-11/test_export_movies_to_csv_appe0/test_data
+2025-11-12 16:06:38 - export_service - INFO - Exporting 1 movie entries to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-11/test_export_movies_to_csv_appe0/test_data/test_append.csv
+2025-11-12 16:06:38 - export_service - INFO - Successfully exported movies to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-11/test_export_movies_to_csv_appe0/test_data/test_append.csv
+2025-11-12 16:06:38 - export_service - INFO - Exporting 1 movie entries to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-11/test_export_movies_to_csv_appe0/test_data/test_append.csv
+2025-11-12 16:06:38 - export_service - INFO - Successfully exported movies to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-11/test_export_movies_to_csv_appe0/test_data/test_append.csv
+2025-11-12 16:06:38 - export_service - INFO - Export service initialized with output directory: /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-11/test_export_similar_movies_to_0/test_data
+2025-11-12 16:06:38 - export_service - INFO - Exporting 1 similar movie entries to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-11/test_export_similar_movies_to_0/test_data/test_similar.csv
+2025-11-12 16:06:38 - export_service - INFO - Successfully exported similar movies to /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-11/test_export_similar_movies_to_0/test_data/test_similar.csv
+2025-11-12 16:06:38 - export_service - INFO - Export service initialized with output directory: /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-11/test_export_movies_to_csv_empt0/test_data
+2025-11-12 16:06:38 - export_service - INFO - Export service initialized with output directory: /private/var/folders/qd/tgbdx8411yv4yrlm7chhb6dr0000gn/T/pytest-of-suhaibaden/pytest-11/test_export_similar_movies_to_1/test_data
+2025-11-12 16:06:38 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 16:06:38 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 16:06:38 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 16:06:38 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 16:06:38 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 16:06:38 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 16:06:38 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 16:06:38 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 16:06:38 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 16:06:38 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 16:06:38 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 16:06:38 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 16:06:38 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 16:06:38 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 16:06:38 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 16:06:38 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 16:06:38 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 16:06:38 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 16:06:38 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 16:06:38 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 16:06:38 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 16:06:38 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 16:06:38 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 16:06:38 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 16:06:38 - movie_recommendation_engine - DEBUG - Getting candidates from TMDB API for The Matrix
+2025-11-12 16:06:38 - movie_recommendation_engine - DEBUG - Found 1 similar movies from TMDB API
+2025-11-12 16:06:38 - movie_recommendation_engine - DEBUG - Found 1 recommended movies from TMDB API
+2025-11-12 16:06:38 - movie_recommendation_engine - DEBUG - TMDB API strategy: 2 raw candidates -> 2 unique candidates (excluding target)
+2025-11-12 16:06:38 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 16:06:38 - movie_recommendation_engine - DEBUG - Getting candidates from year 1999 for The Matrix
+2025-11-12 16:06:38 - movie_recommendation_engine - DEBUG - Found 1 movies from year 1999
+2025-11-12 16:06:38 - movie_recommendation_engine - DEBUG - Same year strategy: 1 raw candidates -> 1 candidates (excluding target)
+2025-11-12 16:06:38 - movie_recommendation_engine - INFO - Movie recommendation engine initialized
+2025-11-12 16:06:38 - movie_recommendation_engine - INFO - Finding 3 similar movies for 1 movies using strategy: tmdb_api
+2025-11-12 16:06:38 - movie_recommendation_engine - INFO - Processing movie 1/1: The Matrix (ID: 1)
+2025-11-12 16:06:38 - movie_recommendation_engine - DEBUG - Getting candidates from TMDB API for The Matrix
+2025-11-12 16:06:38 - movie_recommendation_engine - DEBUG - Found 1 similar movies from TMDB API
+2025-11-12 16:06:38 - movie_recommendation_engine - DEBUG - Found 0 recommended movies from TMDB API
+2025-11-12 16:06:38 - movie_recommendation_engine - DEBUG - TMDB API strategy: 1 raw candidates -> 1 unique candidates (excluding target)
+2025-11-12 16:06:38 - movie_recommendation_engine - DEBUG - Found 1 candidates for The Matrix
+2025-11-12 16:06:38 - movie_recommendation_engine - DEBUG - Calculating similarity scores for 1 candidates for The Matrix
+2025-11-12 16:06:38 - movie_recommendation_engine - DEBUG - Ranked 1 candidates, returning top 1 for The Matrix
+2025-11-12 16:06:38 - movie_recommendation_engine - INFO - Found 1 similar movies for The Matrix
+2025-11-12 16:06:38 - movie_recommendation_engine - INFO - Completed processing. Total API calls made: 5. Found similar movies for 1/1 movies
+2025-11-12 16:06:38 - export_service - INFO - Export service initialized with output directory: data
+2025-11-12 16:06:38 - movie_service - INFO - Movie service initialized
+2025-11-12 16:06:38 - export_service - INFO - Export service initialized with output directory: data
+2025-11-12 16:06:38 - movie_service - INFO - Movie service initialized
+2025-11-12 16:06:38 - export_service - INFO - Export service initialized with output directory: data
+2025-11-12 16:06:38 - movie_service - INFO - Movie service initialized
+2025-11-12 16:06:38 - export_service - INFO - Export service initialized with output directory: data
+2025-11-12 16:06:38 - movie_service - INFO - Movie service initialized
+2025-11-12 16:06:38 - movie_service - INFO - Retrieving top 2 movies from year 1999 (min_votes: 100, min_rating: 6.0)
+2025-11-12 16:06:38 - movie_service - DEBUG - Retrieved 3 movies from page 1
+2025-11-12 16:06:38 - movie_service - INFO - Selected top 2 movies from year 1999
+2025-11-12 16:06:38 - export_service - INFO - Export service initialized with output directory: data
+2025-11-12 16:06:38 - movie_service - INFO - Movie service initialized
+2025-11-12 16:06:38 - export_service - INFO - Export service initialized with output directory: data
+2025-11-12 16:06:38 - movie_service - INFO - Movie service initialized
+2025-11-12 16:06:38 - export_service - INFO - Export service initialized with output directory: data
+2025-11-12 16:06:38 - movie_service - INFO - Movie service initialized
+2025-11-12 16:06:38 - export_service - INFO - Export service initialized with output directory: data
+2025-11-12 16:06:38 - movie_service - INFO - Movie service initialized

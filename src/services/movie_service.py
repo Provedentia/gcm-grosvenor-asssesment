@@ -40,13 +40,13 @@ class MovieService:
             movies: List of Movie models with basic information
 
         Returns:
-            List of Movie models with enriched details (genres, keywords, etc.)
+            List of Movie models with enriched details (genres, keywords, director, collection, etc.)
         """
         enriched_movies: List[Movie] = []
 
         for movie in movies:
             try:
-                # Get detailed movie information
+                # Get detailed movie information (includes collection)
                 details_data = self.tmdb_client.get_movie_details(movie.id)
                 if not details_data:
                     # If details not available, use the basic movie data
@@ -57,6 +57,19 @@ class MovieService:
                 keywords_data = self.tmdb_client.get_movie_keywords(movie.id)
                 if keywords_data and "keywords" in keywords_data:
                     details_data["keywords"] = keywords_data
+
+                # Get credits to extract director
+                credits_data = self.tmdb_client.get_movie_credits(movie.id)
+                if credits_data and "crew" in credits_data:
+                    # Find director from crew
+                    crew = credits_data.get("crew", [])
+                    director = None
+                    for person in crew:
+                        if person.get("job") == "Director":
+                            director = person.get("name")
+                            break
+                    if director:
+                        details_data["director"] = director
 
                 # Create enriched movie from detailed data
                 enriched_movie = movie_from_tmdb_response(details_data)

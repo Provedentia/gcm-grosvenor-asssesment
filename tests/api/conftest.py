@@ -1,6 +1,15 @@
 """
-Pytest configuration for real API tests.
-These tests use the actual TMDB API and require a valid API key.
+Pytest configuration and fixtures for real API tests.
+
+This module provides fixtures for tests that use the actual TMDB API.
+All fixtures automatically load the API key from .env file or environment.
+
+Fixtures:
+    - tmdb_api_key: Loads API key from environment/env file
+    - real_tmdb_client: Creates a real TMDBClient instance
+    - real_movie_service: Creates MovieService with real API
+    - real_recommendation_service: Creates RecommendationService with real API
+    - real_export_service: Creates ExportService with temp directory
 """
 
 import os
@@ -12,7 +21,7 @@ from dotenv import load_dotenv
 from src.api.TMDB import TMDBClient
 from src.services.export_service import ExportService
 from src.services.movie_service import MovieService
-from src.services.recommendation_service import RecommendationService
+from src.services.movie_recommendation_engine import RecommendationService
 
 
 # Load .env file before checking for API key

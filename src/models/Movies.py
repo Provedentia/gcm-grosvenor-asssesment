@@ -145,6 +145,10 @@ class Movie(BaseModel):
     spoken_languages: Optional[List[Dict[str, Any]]] = Field(
         None, description="Spoken languages"
     )
+    # Similarity-focused fields
+    director: Optional[str] = Field(None, description="Movie director name")
+    collection_id: Optional[int] = Field(None, description="Collection/franchise ID")
+    collection_name: Optional[str] = Field(None, description="Collection/franchise name")
 
     @field_validator("release_date")
     @classmethod
@@ -260,6 +264,38 @@ class Movie(BaseModel):
         """
         if self.keywords:
             return [keyword.name for keyword in self.keywords]
+        return []
+
+    @property
+    def production_company_names(self) -> List[str]:
+        """
+        Get list of production company names.
+
+        Returns:
+            List of production company names
+        """
+        if self.production_companies:
+            return [
+                company.get("name", "")
+                for company in self.production_companies
+                if isinstance(company, dict) and company.get("name")
+            ]
+        return []
+
+    @property
+    def production_company_ids(self) -> List[int]:
+        """
+        Get list of production company IDs.
+
+        Returns:
+            List of production company IDs
+        """
+        if self.production_companies:
+            return [
+                company.get("id")
+                for company in self.production_companies
+                if isinstance(company, dict) and company.get("id") is not None
+            ]
         return []
 
     def normalize_title_for_sorting(self, ignore_articles: bool = False) -> str:
@@ -402,11 +438,30 @@ def movie_from_tmdb_response(data: Union[Dict[str, Any], Mapping[str, Any]]) -> 
         ]
         movie_data.pop("genres", None)
 
-    # Add processed genres and keywords back
+    # Handle collection (belongs_to_collection)
+    collection_id: Optional[int] = None
+    collection_name: Optional[str] = None
+    collection_data: Any = movie_data.get("belongs_to_collection")
+    if collection_data is not None and isinstance(collection_data, dict):
+        collection_id = collection_data.get("id")
+        collection_name = collection_data.get("name")
+    movie_data.pop("belongs_to_collection", None)
+
+    # Handle director (from credits - will be set during enrichment)
+    # Director is not in the main movie response, so it's None here
+    movie_data.pop("director", None)
+    movie_data.pop("collection_id", None)
+    movie_data.pop("collection_name", None)
+
+    # Add processed fields back
     if genres:
         movie_data["genres"] = genres
     if keywords:
         movie_data["keywords"] = keywords
+    if collection_id is not None:
+        movie_data["collection_id"] = collection_id
+    if collection_name:
+        movie_data["collection_name"] = collection_name
 
     return Movie(**movie_data)
 

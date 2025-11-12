@@ -1,5 +1,11 @@
 """
-Pytest configuration and fixtures for testing.
+Pytest configuration and shared fixtures for the test suite.
+
+This module provides:
+- Mock TMDB API response fixtures
+- Sample movie data fixtures
+- Test environment setup
+- Utility functions for consistent test data
 """
 
 import os
@@ -9,9 +15,12 @@ from unittest.mock import MagicMock
 
 import pytest
 
-# Import Movie for type hints (imported inside fixture to avoid circular imports)
 from src.models.Movies import Movie
 
+
+# ============================================================================
+# Mock API Response Fixtures
+# ============================================================================
 
 @pytest.fixture
 def mock_tmdb_api_response() -> Dict[str, Any]:
@@ -73,8 +82,20 @@ def mock_tmdb_api_response() -> Dict[str, Any]:
     }
 
 
+# ============================================================================
+# Helper Functions for Dynamic Mock Data
+# ============================================================================
+
 def _get_movie_details_by_id(movie_id: int) -> Dict[str, Any]:
-    """Helper function to get movie details by ID."""
+    """
+    Helper function to get movie details by ID for testing.
+
+    Args:
+        movie_id: TMDB movie ID
+
+    Returns:
+        Mock movie details dictionary
+    """
     movies = {
         1: {
             "id": 1,
@@ -228,7 +249,15 @@ def _get_movie_details_by_id(movie_id: int) -> Dict[str, Any]:
 
 
 def _get_keywords_by_id(movie_id: int) -> Dict[str, Any]:
-    """Helper function to get keywords by movie ID."""
+    """
+    Helper function to get keywords by movie ID for testing.
+
+    Args:
+        movie_id: TMDB movie ID
+
+    Returns:
+        Mock keywords dictionary
+    """
     keywords_map = {
         1: {
             "id": 1,
@@ -330,9 +359,18 @@ def mock_similar_movies_response() -> Dict[str, Any]:
     }
 
 
+# ============================================================================
+# Sample Movie Data Fixtures
+# ============================================================================
+
 @pytest.fixture
 def sample_movies() -> List[Movie]:
-    """Sample Movie models for testing."""
+    """
+    Sample Movie models for testing.
+
+    Returns:
+        List of 3 Movie objects with complete metadata for testing
+    """
     from src.models.Movies import Genre, Keyword, Movie
 
     return [
@@ -403,9 +441,21 @@ def sample_movies() -> List[Movie]:
     ]
 
 
+# ============================================================================
+# Test Environment Fixtures
+# ============================================================================
+
 @pytest.fixture
 def test_output_dir(tmp_path: Path) -> Path:
-    """Create a temporary output directory for tests."""
+    """
+    Create a temporary output directory for tests.
+
+    Args:
+        tmp_path: Pytest's temporary directory fixture
+
+    Returns:
+        Path to the test output directory
+    """
     output_dir = tmp_path / "test_data"
     output_dir.mkdir(parents=True, exist_ok=True)
     return output_dir
@@ -413,14 +463,25 @@ def test_output_dir(tmp_path: Path) -> Path:
 
 @pytest.fixture
 def mock_env_vars(monkeypatch: pytest.MonkeyPatch) -> None:
-    """Set up mock environment variables for testing."""
+    """
+    Set up mock environment variables for testing.
+
+    Sets:
+        TMDB_API_KEY: Mock API key for tests
+        LOG_LEVEL: DEBUG level for detailed test logging
+    """
     monkeypatch.setenv("TMDB_API_KEY", "test_api_key_12345")
     monkeypatch.setenv("LOG_LEVEL", "DEBUG")
 
 
 @pytest.fixture
 def cleanup_test_files():
-    """Cleanup test files after tests."""
+    """
+    Cleanup test files after tests.
+
+    Note: Actual cleanup is handled by pytest's tmp_path fixture.
+    This fixture exists for backwards compatibility.
+    """
     yield
     # Cleanup will be handled by tmp_path fixture
     pass

@@ -1,5 +1,11 @@
 """
 Unit tests for ExportService.
+
+Tests the ExportService class which handles:
+- Converting movie data to CSV format
+- Exporting top movies to CSV files
+- Exporting similar movies with similarity metrics to CSV files
+- Appending data to existing CSV files
 """
 
 import csv
@@ -13,7 +19,7 @@ from src.services.export_service import ExportService
 
 
 class TestExportService:
-    """Test cases for ExportService."""
+    """Test suite for ExportService functionality."""
 
     @pytest.fixture
     def export_service(self, test_output_dir):

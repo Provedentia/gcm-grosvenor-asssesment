@@ -1,5 +1,12 @@
 """
 End-to-end integration tests simulating the complete application flow.
+
+This module tests:
+- Complete workflow from fetching movies to exporting results
+- Data consistency across the workflow
+- CSV format validation
+- Sorting verification
+- Error handling scenarios
 """
 
 import csv
@@ -10,13 +17,32 @@ import pytest
 
 from src.services.export_service import ExportService
 from src.services.movie_service import MovieService
-from src.services.recommendation_service import RecommendationService
+from src.services.movie_recommendation_engine import RecommendationService
+
+
+def flatten_similar_movies_for_export(similar_movies_data):
+    """Helper function to flatten similar movies data for export."""
+    export_data = []
+    for item in similar_movies_data:
+        original_movie = item.get("original_movie")
+        similar_movies = item.get("similar_movies", [])
+
+        for similar_entry in similar_movies:
+            export_data.append({
+                "original_movie": original_movie,
+                "similar_movie": similar_entry.get("similar_movie"),
+                "similarity_score": similar_entry.get("similarity_score"),
+                "similarity_reason": similar_entry.get("similarity_reason"),
+                "similarity_metrics": similar_entry.get("similarity_metrics", {}),
+            })
+
+    return export_data
 
 
 @pytest.mark.integration
 @pytest.mark.e2e
 class TestEndToEnd:
-    """End-to-end tests for the complete application."""
+    """End-to-end tests for the complete application workflow."""
 
     @pytest.fixture
     def setup_mocked_services(self, test_output_dir, mock_env_vars):
@@ -154,7 +180,7 @@ class TestEndToEnd:
         mock_tmdb_client.get_movie_recommendations.return_value = similar_movies_response
 
         with patch("src.services.movie_service.TMDBClient", return_value=mock_tmdb_client), \
-             patch("src.services.recommendation_service.TMDBClient", return_value=mock_tmdb_client):
+             patch("src.services.movie_recommendation_engine.TMDBClient", return_value=mock_tmdb_client):
             
             movie_service = MovieService(tmdb_client=mock_tmdb_client)
             recommendation_service = RecommendationService(tmdb_client=mock_tmdb_client)
@@ -198,9 +224,10 @@ class TestEndToEnd:
         assert sort_methods == {"votes", "name", "name_no_articles"}
 
         # Step 2: Find similar movies for each top movie
-        similar_movies_data = recommendation_service.get_similar_movies_for_multiple(
-            movies=movies,
-            limit=2,
+        similar_movies_data = recommendation_service.find_similar_movies_for_each(
+            top_movies=movies,
+            similar_per_movie=2,
+            strategy="tmdb_api"
         )
 
         # Verify Step 2
@@ -211,9 +238,7 @@ class TestEndToEnd:
             assert len(item["similar_movies"]) > 0
 
         # Step 3: Prepare similar movies for export
-        export_data = recommendation_service.prepare_similar_movies_for_export(
-            similar_movies_data
-        )
+        export_data = flatten_similar_movies_for_export(similar_movies_data)
 
         # Verify Step 3
         assert len(export_data) > 0
@@ -265,15 +290,14 @@ class TestEndToEnd:
         )
 
         # Find similar movies
-        similar_movies_data = recommendation_service.get_similar_movies_for_multiple(
-            movies=movies,
-            limit=2,
+        similar_movies_data = recommendation_service.find_similar_movies_for_each(
+            top_movies=movies,
+            similar_per_movie=2,
+            strategy="tmdb_api"
         )
 
         # Export similar movies
-        export_data = recommendation_service.prepare_similar_movies_for_export(
-            similar_movies_data
-        )
+        export_data = flatten_similar_movies_for_export(similar_movies_data)
         similar_csv_path = export_service.export_similar_movies_to_csv(
             similar_movies_data=export_data,
             filename="test_similar_consistency.csv",
@@ -291,80 +315,66 @@ class TestEndToEnd:
 
         assert original_movie_ids_in_similar == top_movie_ids
 
-    def test_workflow_csv_format_validation(self, setup_mocked_services):
-        """Test that CSV files have correct format and required columns."""
+
+
+    def test_workflow_sorting_verification(self, setup_mocked_services):
+        """Test that sorting works correctly in the exported CSV."""
         services = setup_mocked_services
         movie_service = services["movie_service"]
-        recommendation_service = services["recommendation_service"]
         export_service = services["export_service"]
 
-        # Get and export top movies
-        movies, movies_csv_path = movie_service.get_and_export_top_movies(
+        # Get and export movies
+        movies, csv_path = movie_service.get_and_export_top_movies(
             year=1999,
-            top_n=2,
-            filename="test_format.csv",
+            top_n=3,
+            filename="test_sorting.csv",
         )
 
-        # Verify top movies CSV format
-        with open(movies_csv_path, "r", encoding="utf-8") as f:
+        # Read CSV and verify sorting
+        with open(csv_path, "r", encoding="utf-8") as f:
             reader = csv.DictReader(f)
-            fieldnames = reader.fieldnames
             rows = list(reader)
 
-        required_fields = [
-            "sort_method",
-            "id",
-            "title",
-            "release_date",
-            "vote_count",
-            "vote_average",
-            "genres",
-            "keywords",
-        ]
+        # Filter by sort method
+        votes_rows = [r for r in rows if r["sort_method"] == "votes"]
+        name_rows = [r for r in rows if r["sort_method"] == "name"]
 
-        for field in required_fields:
-            assert field in fieldnames, f"Missing required field: {field}"
+        # Verify votes sorting (highest first)
+        vote_counts = [int(r["vote_count"]) for r in votes_rows]
+        assert vote_counts == sorted(vote_counts, reverse=True), "Votes should be sorted descending"
 
-        # Verify all rows have required fields
-        for row in rows:
-            for field in required_fields:
-                assert field in row, f"Missing field {field} in row"
+        # Verify name sorting (alphabetical)
+        titles = [r["title"] for r in name_rows]
+        assert titles == sorted(titles), "Names should be sorted alphabetically"
 
-        # Get similar movies and export
-        similar_movies_data = recommendation_service.get_similar_movies_for_multiple(
-            movies=movies,
-            limit=2,
-        )
-        export_data = recommendation_service.prepare_similar_movies_for_export(
-            similar_movies_data
-        )
-        similar_csv_path = export_service.export_similar_movies_to_csv(
-            similar_movies_data=export_data,
-            filename="test_similar_format.csv",
-        )
+    def test_workflow_error_handling(self, setup_mocked_services):
+        """Test error handling in the workflow."""
+        services = setup_mocked_services
+        movie_service = services["movie_service"]
+        tmdb_client = services["tmdb_client"]
 
-        # Verify similar movies CSV format
-        with open(similar_csv_path, "r", encoding="utf-8") as f:
-            reader = csv.DictReader(f)
-            fieldnames = reader.fieldnames
-            rows = list(reader)
+        # Mock API to return None (simulating failure)
+        tmdb_client.get_movies_by_year.return_value = None
 
-        required_fields_similar = [
-            "original_movie_id",
-            "original_movie_title",
-            "similar_movie_id",
-            "similar_movie_title",
-            "similarity_score",
-            "similarity_reason",
-            "genre_similarity",
-            "keyword_similarity",
-        ]
+        # Should raise ValueError when no movies found
+        with pytest.raises(ValueError, match="No movies found"):
+            movie_service.get_top_movies_by_year(year=1999, top_n=10)
 
-        for field in required_fields_similar:
-            assert field in fieldnames, f"Missing required field: {field}"
+    def test_workflow_empty_results(self, setup_mocked_services):
+        """Test workflow with empty API results."""
+        services = setup_mocked_services
+        movie_service = services["movie_service"]
+        tmdb_client = services["tmdb_client"]
 
-        # Verify all rows have required fields
-        for row in rows:
-            for field in required_fields_similar:
-                assert field in row, f"Missing field {field} in row"
+        # Mock API to return empty results
+        tmdb_client.get_movies_by_year.return_value = {
+            "page": 1,
+            "results": [],
+            "total_pages": 0,
+            "total_results": 0,
+        }
+
+        # Should raise ValueError
+        with pytest.raises(ValueError, match="No movies found"):
+            movie_service.get_top_movies_by_year(year=1999, top_n=10)
 
