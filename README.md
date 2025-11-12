@@ -63,15 +63,6 @@ python main.py --year 2019 --top-n 5 --output movies_2019.csv
 python main.py --year 2021 --min-votes 500 --min-rating 7.0
 ```
 
-### Testing
-
-Run the test script to verify everything works:
-
-```bash
-# Make sure TMDB_API_KEY is set in .env or environment
-python test_movie_service.py
-```
-
 ### Getting Similar Movies
 
 To also find and export similar movies:
