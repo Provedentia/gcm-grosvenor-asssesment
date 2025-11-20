@@ -104,14 +104,14 @@ def main():
         )
 
         logger.info(f"Successfully processed {len(movies)} movies")
-        print(f"\n✅ Success! Exported {len(movies)} movies to: {csv_path}")
+        print(f"\nSuccess! Exported {len(movies)} movies to: {csv_path}")
         print(f"\nMovies retrieved:")
         for i, movie in enumerate(movies, 1):
             print(f"  {i}. {movie.title} ({movie.release_year}) - Votes: {movie.vote_count}")
 
         # Find similar movies if requested
         if args.similar_movies:
-            print(f"\n🔍 Finding similar movies for each movie using '{args.strategy}' strategy...")
+            print(f"\nFinding similar movies for each movie using '{args.strategy}' strategy...")
             logger.info(f"Using recommendation strategy: {args.strategy}")
 
             # Initialize recommendation engine
@@ -148,7 +148,7 @@ def main():
                 )
 
                 total_similar = sum(len(item.get("similar_movies", [])) for item in recommendations_data)
-                print(f"\n✅ Success! Exported {total_similar} similar movies to: {similar_csv_path}")
+                print(f"\nSuccess! Exported {total_similar} similar movies to: {similar_csv_path}")
                 print(f"   Strategy used: {args.strategy}")
                 print(f"   API calls made: {recommendation_engine.api_calls_made}")
                 logger.info(
@@ -156,18 +156,18 @@ def main():
                     f"using strategy {args.strategy} ({recommendation_engine.api_calls_made} API calls)"
                 )
             else:
-                print("\n⚠️  No similar movies found")
+                print("\nNo similar movies found")
                 logger.warning("No similar movies found")
 
         return 0
 
     except ValueError as e:
         logger.error(f"Value error: {e}")
-        print(f"❌ Error: {e}", file=sys.stderr)
+        print(f"Error: {e}", file=sys.stderr)
         return 1
     except Exception as e:
         logger.error(f"Unexpected error: {e}", exc_info=True)
-        print(f"❌ Unexpected error: {e}", file=sys.stderr)
+        print(f"Unexpected error: {e}", file=sys.stderr)
         return 1
 
 

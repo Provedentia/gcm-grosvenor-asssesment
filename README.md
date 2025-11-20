@@ -280,13 +280,13 @@ See `tests/api/README.md` for more details on real API tests.
 ### Test Coverage
 
 Tests cover:
-- ✅ Movie retrieval and sorting
-- ✅ CSV export with multiple sort methods
-- ✅ Similar movie finding
-- ✅ Similarity score calculation
-- ✅ Complete workflow from API to CSV
-- ✅ Error handling
-- ✅ Data validation
+- Movie retrieval and sorting
+- CSV export with multiple sort methods
+- Similar movie finding
+- Similarity score calculation
+- Complete workflow from API to CSV
+- Error handling
+- Data validation
 
 ## Error Handling
 

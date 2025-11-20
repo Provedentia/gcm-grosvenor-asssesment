@@ -4,5 +4,6 @@ pycache/
 .pytest_cache/
 logs/
 .DS_Store
-
+docs/
 .env.production.local
+__pycache__/

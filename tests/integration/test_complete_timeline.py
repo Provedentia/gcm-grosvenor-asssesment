@@ -181,7 +181,7 @@ class TestCompleteTimeline:
         similar_limit = 3
 
         # Step 1: Get top 10 movies from year 2020
-        print(f"\n📽️  Step 1: Getting top {top_n} movies from year {year}...")
+        print(f"\nStep 1: Getting top {top_n} movies from year {year}...")
         movies, movies_csv_path = movie_service.get_and_export_top_movies(
             year=year,
             top_n=top_n,
@@ -216,10 +216,10 @@ class TestCompleteTimeline:
         titles = [r["title"] for r in name_rows]
         assert titles == sorted(titles), "Names should be sorted alphabetically"
 
-        print(f"✅ Step 1 Complete: {len(movies)} movies exported to {movies_csv_path}")
+        print(f"Step 1 Complete: {len(movies)} movies exported to {movies_csv_path}")
 
         # Step 2: Find 3 similar movies for each of the top 10 movies
-        print(f"\n🔍 Step 2: Finding {similar_limit} similar movies for each movie...")
+        print(f"\nStep 2: Finding {similar_limit} similar movies for each movie...")
         similar_movies_data = recommendation_service.find_similar_movies_for_each(
             top_movies=movies,
             similar_per_movie=similar_limit,
@@ -233,10 +233,10 @@ class TestCompleteTimeline:
         expected_similar = top_n * similar_limit  # 10 movies * 3 similar = 30
         assert total_similar_movies >= similar_limit, f"Expected at least {similar_limit} similar movies per movie"
 
-        print(f"✅ Step 2 Complete: Found {total_similar_movies} similar movies")
+        print(f"Step 2 Complete: Found {total_similar_movies} similar movies")
 
         # Step 3: Prepare similar movies for export
-        print(f"\n📊 Step 3: Preparing similar movies data for export...")
+        print(f"\nStep 3: Preparing similar movies data for export...")
         export_data = flatten_similar_movies_for_export(similar_movies_data)
 
         # Verify Step 3
@@ -248,10 +248,10 @@ class TestCompleteTimeline:
             assert "similarity_reason" in entry, "Missing similarity_reason in export data"
             assert "similarity_metrics" in entry, "Missing similarity_metrics in export data"
 
-        print(f"✅ Step 3 Complete: Prepared {len(export_data)} entries for export")
+        print(f"Step 3 Complete: Prepared {len(export_data)} entries for export")
 
         # Step 4: Export similar movies to CSV
-        print(f"\n💾 Step 4: Exporting similar movies to CSV...")
+        print(f"\nStep 4: Exporting similar movies to CSV...")
         similar_csv_path = export_service.export_similar_movies_to_csv(
             similar_movies_data=export_data,
             filename="similar_movies_2020.csv",
@@ -295,10 +295,10 @@ class TestCompleteTimeline:
         original_movie_ids = {int(row["original_movie_id"]) for row in rows}
         assert len(original_movie_ids) == top_n, f"Should have similar movies for all {top_n} original movies"
 
-        print(f"✅ Step 4 Complete: Exported {len(rows)} similar movie entries to {similar_csv_path}")
+        print(f"Step 4 Complete: Exported {len(rows)} similar movie entries to {similar_csv_path}")
 
         # Final verification: Check both CSV files exist and have correct content
-        print(f"\n📋 Final Verification:")
+        print(f"\nFinal Verification:")
         print(f"  - Top movies CSV: {movies_csv_path} ({len(list(csv.DictReader(open(movies_csv_path))))} rows)")
         print(f"  - Similar movies CSV: {similar_csv_path} ({len(rows)} rows)")
         print(f"  - Total original movies: {top_n}")
@@ -312,7 +312,7 @@ class TestCompleteTimeline:
         assert movies_file_size > 0, "Top movies CSV should not be empty"
         assert similar_file_size > 0, "Similar movies CSV should not be empty"
 
-        print(f"\n✅ All requirements met! Complete timeline test passed.")
+        print(f"\nAll requirements met! Complete timeline test passed.")
 
     def test_timeline_with_different_year(self, setup_complete_mock_environment):
         """Test complete timeline with a different year."""
